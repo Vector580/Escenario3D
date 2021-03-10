@@ -24,7 +24,7 @@ static int slices = 16;
 static int stacks = 16;
 
 /* GLUT callback Handlers */
-
+//Prueba HUGO
 static void resize(int width, int height)
 {
     const float ar = (float) width / (float) height;
