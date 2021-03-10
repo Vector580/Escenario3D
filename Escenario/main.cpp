@@ -11,7 +11,7 @@
  * number of geometry stacks and slices can be adjusted
  * using the + and - keys.
  */
-//Comentario de prueba
+
 #ifdef __APPLE__
 #include <GLUT/glut.h>
 #else
