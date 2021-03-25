@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1615346004 source:c:\users\hucom\documents\github\escenario3d\escenario\main.cpp
+	<GLUT/glut.h>
+	<GL/glut.h>
+	<stdlib.h>
+
+1426371328 c:\program files\codeblocks\mingw\include\gl\glut.h
+	"freeglut_std.h"
+
+1426371328 c:\program files\codeblocks\mingw\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1616641508 source:c:\users\hucom\documents\github\escenario3d\escenario\matriz.cpp
+	"Matriz.h"
+
+1616641674 c:\users\hucom\documents\github\escenario3d\escenario\matriz.h
+
