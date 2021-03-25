@@ -55,6 +55,7 @@ void Operador::rotate(float grade, float tx, float ty, float tz)
     //Inversas
     float rotate_xp[4][4]={{1,0,0,0},{0,cos(-rad),-sin(rad),0},{0,sin(-rad),-cos(-rad),0},{0,0,0,1}};
     float rotate_yp[4][4]={{cos(-rad),0,sin(-rad),0},{0,1,0,0},{-sin(-rad),0,-cos(-rad),0},{0,0,0,1}};
+    float rotate_zp[4][4]={{cos(-rad),-sin(-rad),0,0},{sin(-rad),-cos(-rad),0,0},{0,0,1,0},{0,0,0,1}};
 
     float trans[4][4]={{1,0,0,tx},{0,1,0,ty},{0,0,1,tz},{0,0,0,1}};
     float transp[4][4]={{1,0,0,-tx},{0,1,0,-ty},{0,0,1,-tz},{0,0,0,1}};
