@@ -1,6 +1,7 @@
 #ifndef MATRIZ_H
 #define MATRIZ_H
 
+#include <GL/glut.h>
 
 class Matriz
 {
