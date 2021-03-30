@@ -2,17 +2,22 @@
 
 Operador::Operador()
 {
-    //ctor
+    Ap=A.getPunter();
 }
 
 Operador::~Operador()
 {
     //dtor
 }
+
+void Operador::LoadIdenty()
+{
+    A.LoadIdenty();
+}
 //Operadores geometrico
 
 //Operador de translacion, recibe las cordenadas del punto a moverse
-void Operador::translate(float tx, float ty, float tz)
+void Operador::trasladar(float tx, float ty, float tz)
 {
     float trans[4][4]={{1,0,0,tx},{0,1,0,ty},{0,0,1,tz},{0,0,0,1}};
     float aux[4][4]={{0,0,0,0},{0,0,0,0},{0,0,0,0},{0,0,0,0}};
@@ -20,15 +25,15 @@ void Operador::translate(float tx, float ty, float tz)
     for (i=0;i<4;i++)
         for (j=0;j<4;j++)
             for (k=0;k<4;k++)
-                aux[i][j]=aux[i][j]+(A[i][k]*trans[k][j]);
+                aux[i][j]=aux[i][j]+((*(Ap+i+k*(i+1)))*trans[k][j]);
 
     for (i=0;i<4;i++)
             for (j=0;j<4;j++)
-                A[i][j]=aux[i][j];
+                *(Ap+i+j*(i+1))=aux[i][j];
 
 }
 
-void Operador::scale(float sx, float sy, float sz)
+void Operador::escalar(float sx, float sy, float sz)
 {
     float scale[4][4]={{sx,0,0,1},{0,sy,0,1},{0,0,sz,1},{0,0,0,1}};
     float aux[4][4]={{0,0,0,0},{0,0,0,0},{0,0,0,0},{0,0,0,0}};
@@ -36,14 +41,14 @@ void Operador::scale(float sx, float sy, float sz)
     for (i=0;i<4;i++)
         for (j=0;j<4;j++)
             for (k=0;k<4;k++)
-                aux[i][j]=aux[i][j]+(A[i][k]*scale[k][j]);
+                aux[i][j]=aux[i][j]+((*(Ap+i+k*(i+1)))*scale[k][j]);
 
     for (i=0;i<4;i++)
             for (j=0;j<4;j++)
-                A[i][j]=aux[i][j];
+                *(Ap+i+j*(i+1))=aux[i][j];
 }
 
-void Operador::rotate(float grade, float tx, float ty, float tz)
+void Operador::rotar(float grade, float tx, float ty, float tz)
 {
     float rad=grade*0.0174533;
     float aux[4][4]={{0,0,0,0},{0,0,0,0},{0,0,0,0},{0,0,0,0}};
@@ -63,35 +68,45 @@ void Operador::rotate(float grade, float tx, float ty, float tz)
     for (i=0;i<4;i++)
         for (j=0;j<4;j++)
             for (k=0;k<4;k++)
-                aux[i][j]=aux[i][j]+(A[i][k]*transp[k][j]);
+                aux[i][j]=aux[i][j]+((*(Ap+i+k*(i+1)))*transp[k][j]);
 
     for (i=0;i<4;i++)
         for (j=0;j<4;j++)
             for (k=0;k<4;k++)
-                aux[i][j]=aux[i][j]+(A[i][k]*rotate_xp[k][j]);
+                aux[i][j]=aux[i][j]+((*(Ap+i+k*(i+1)))*rotate_xp[k][j]);
 
     for (i=0;i<4;i++)
         for (j=0;j<4;j++)
             for (k=0;k<4;k++)
-                aux[i][j]=aux[i][j]+(A[i][k]*rotate_yp[k][j]);
+                aux[i][j]=aux[i][j]+((*(Ap+i+k*(i+1)))*rotate_yp[k][j]);
 
     for (i=0;i<4;i++)
         for (j=0;j<4;j++)
             for (k=0;k<4;k++)
-                aux[i][j]=aux[i][j]+(A[i][k]*rotate_z[k][j]);
+                aux[i][j]=aux[i][j]+((*(Ap+i+k*(i+1)))*rotate_z[k][j]);
     for (i=0;i<4;i++)
         for (j=0;j<4;j++)
             for (k=0;k<4;k++)
-                aux[i][j]=aux[i][j]+(A[i][k]*rotate_y[k][j]);
+                aux[i][j]=aux[i][j]+((*(Ap+i+k*(i+1)))*rotate_y[k][j]);
 
     for (i=0;i<4;i++)
         for (j=0;j<4;j++)
             for (k=0;k<4;k++)
-                aux[i][j]=aux[i][j]+(A[i][k]*rotate_x[k][j]);
+                aux[i][j]=aux[i][j]+((*(Ap+i+k*(i+1)))*rotate_x[k][j]);
 
     for (i=0;i<4;i++)
             for (j=0;j<4;j++)
-                A[i][j]=aux[i][j];
+                *(Ap+i+j*(i+1))=aux[i][j];
+}
+
+void Operador::push()
+{
+    pila.push(A);
+}
+
+void Operador::pop()
+{
+    A=pila.pop();
 }
 
 

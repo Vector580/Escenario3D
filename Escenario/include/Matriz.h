@@ -8,10 +8,12 @@ class Matriz
     public:
         Matriz();
         virtual ~Matriz();
-
+        void LoadIdenty();
+        float* getPunter();
 
     private:
         float M[4][4];
+        float *p;
 };
 
 #endif // MATRIZ_H
