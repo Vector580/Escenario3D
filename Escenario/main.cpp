@@ -10,7 +10,8 @@
 #include <stdio.h>
 #include <math.h>
 #include "Operador.h"
-
+#include "Prisma.h"
+#include "Piramide.h"
 void init(void)
 {
      //Establece el color de la ventana de visualizacion
@@ -30,6 +31,25 @@ void init(void)
 void graficar()
 {
     Operador ope;
+    Prisma cubo1;
+    Piramide piramide1;
+
+    cubo1.setPoints(0,0,0,0);
+    cubo1.setPoints(1,0,0,1);
+    cubo1.setPoints(1,1,0,2);
+    cubo1.setPoints(0,1,0,3);
+    cubo1.setPoints(0,0,-1,4);
+    cubo1.setPoints(1,0,-1,5);
+    cubo1.setPoints(1,1,-1,6);
+    cubo1.setPoints(0,1,-1,7);
+    cubo1.Draw();
+    piramide1.setPoints(0,0,0,0);
+    piramide1.setPoints(1,0,0,1);
+    piramide1.setPoints(1,0,-1,2);
+    piramide1.setPoints(0,0,-1,3);
+    piramide1.setPoints(0.5,1,-0.5,4);
+    piramide1.Draw();
+
     ope.LoadIdenty();
     ope.imprimir();
 }
