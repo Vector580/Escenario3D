@@ -21,6 +21,7 @@ Matriz::~Matriz()
     //dtor
 }
 
+//Funcion para cargar identidad
 void Matriz::LoadIdenty()
 {
     int i,j;

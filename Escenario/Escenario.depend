@@ -40,3 +40,27 @@
 1617123568 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\operador.cpp
 	"Operador.h"
 
+1617127987 source:c:\users\hucom\documents\github\escenario3d\escenario\main.cpp
+	<GLUT/glut.h>
+	<GL/glut.h>
+	<stdlib.h>
+	<stdio.h>
+	<math.h>
+	"Operador.h"
+
+1617127987 c:\users\hucom\documents\github\escenario3d\escenario\include\operador.h
+	<GL/glut.h>
+	<stdlib.h>
+	<stdio.h>
+	<stack>
+	<math.h>
+	"iostream"
+	"Matriz.h"
+
+1617127987 c:\users\hucom\documents\github\escenario3d\escenario\include\matriz.h
+	<GL/glut.h>
+	<stdio.h>
+
+1617128746 source:c:\users\hucom\documents\github\escenario3d\escenario\src\matriz.cpp
+	"Matriz.h"
+
