@@ -64,13 +64,15 @@
 1617128746 source:c:\users\hucom\documents\github\escenario3d\escenario\src\matriz.cpp
 	"Matriz.h"
 
-1617129782 source:c:\users\btpas\documents\github\escenario3d\escenario\main.cpp
+1617131585 source:c:\users\btpas\documents\github\escenario3d\escenario\main.cpp
 	<GLUT/glut.h>
 	<GL/glut.h>
 	<stdlib.h>
 	<stdio.h>
 	<math.h>
 	"Operador.h"
+	"Prisma.h"
+	"Piramide.h"
 
 1617129782 c:\users\btpas\documents\github\escenario3d\escenario\include\operador.h
 	<GL/glut.h>

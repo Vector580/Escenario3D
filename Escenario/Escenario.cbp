@@ -45,10 +45,16 @@
 			<Add directory="C:/Program Files/CodeBlocks/MinGW/lib" />
 		</Linker>
 		<Unit filename="include/Matriz.h" />
+		<Unit filename="include/Objeto.h" />
 		<Unit filename="include/Operador.h" />
+		<Unit filename="include/Piramide.h" />
+		<Unit filename="include/Prisma.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Matriz.cpp" />
+		<Unit filename="src/Objeto.cpp" />
 		<Unit filename="src/Operador.cpp" />
+		<Unit filename="src/Piramide.cpp" />
+		<Unit filename="src/Prisma.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
