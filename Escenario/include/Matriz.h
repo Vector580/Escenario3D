@@ -2,7 +2,7 @@
 #define MATRIZ_H
 
 #include <GL/glut.h>
-
+#include <stdio.h>
 class Matriz
 {
     public:

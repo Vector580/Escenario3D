@@ -13,7 +13,7 @@ Matriz::Matriz()
                 M[i][j]=0;
         }
     }
-     *p=&M[0][0];
+     p=&M[0][0];
 }
 
 Matriz::~Matriz()
@@ -34,9 +34,17 @@ void Matriz::LoadIdenty()
                 M[i][j]=0;
         }
     }
+    for (i=0;i<4;i++)
+    {
+        for (j=0;j<4;j++)
+           printf("%f \t",M[i][j]);
+        printf("\n");
+    }
+    printf("\n");
 }
 
 float* Matriz::getPunter()
 {
-    return *p;
+    return p;
 }
+

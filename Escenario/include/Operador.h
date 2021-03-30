@@ -4,17 +4,18 @@
 
 #include <GL/glut.h>
 #include<stdlib.h>
+#include <stdio.h>
 #include <stack>
 #include<math.h>
 #include "iostream"
-#include <Matriz.h>
+#include "Matriz.h"
 
 class Operador
 {
     private:
         Matriz A;
         float *Ap;
-        stack<Matriz> pila;
+        std::stack<Matriz> pila;
 
     public:
         Operador();
@@ -26,6 +27,7 @@ class Operador
         void rotar(float grade, float tx, float ty, float tz);
         void push();
         void pop();
+        void imprimir();
 };
 
 #endif // OPERADOR_H

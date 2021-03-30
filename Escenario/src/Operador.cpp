@@ -106,7 +106,17 @@ void Operador::push()
 
 void Operador::pop()
 {
-    A=pila.pop();
+    A=pila.top();
+    pila.pop();
 }
 
-
+void Operador::imprimir()
+{
+    int i,j;
+    for (i=0;i<4;i++)
+    {
+        for (j=0;j<4;j++)
+           printf("%f \t",*(Ap+i+j*(i+1)));
+        printf("\n");
+    }
+}
