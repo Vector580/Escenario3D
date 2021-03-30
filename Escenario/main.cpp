@@ -5,7 +5,7 @@
 #endif
 
 #include <stdlib.h>
-#include "Cubo.h"
+#include "Prisma.h"
 #include "Piramide.h"
 
 GLfloat anguloCuboX = 0.0f;
@@ -14,7 +14,7 @@ GLfloat anguloEsfera = 0.0f;
 
 GLint ancho, alto;
 int hazPerspectiva = 0;
-Cubo cubo1;
+Prisma cubo1;
 Piramide piramide1;
 
 void reshape(int width, int height)
