@@ -8,8 +8,6 @@
 #include "Prisma.h"
 #include "Piramide.h"
 #include "Casa.h"
-#include "Carro.h"
-#include "Camioneta.h"
 
 GLfloat anguloCuboX = 0.0f;
 GLfloat anguloCuboY = 0.0f;
@@ -21,8 +19,7 @@ Operador opera;
 Prisma cubo1;
 Piramide piramide1;
 Casa casa_base(&opera);
-Camioneta camioneta1;
-Carro carro1;
+
 
 void reshape(int width, int height)
 {
@@ -32,7 +29,7 @@ void reshape(int width, int height)
     if(hazPerspectiva)
       gluPerspective(60.0f, (GLfloat)width/(GLfloat)height, 1.0f, 20.0f);
     else
-      glOrtho(-4, 4, -4, 4, 1, 10);
+      glOrtho(-6, 6, -6, 6, -3, 10);
 
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
@@ -58,28 +55,37 @@ void drawCube(void)
     piramide1.setPoints(1.25,1,1.25,2);
     piramide1.setPoints(-.25,1,1.25,3);
     piramide1.setPoints(0.5,1.5,0.5,4);
-    piramide1.Draw();
-    casa_base.Draw();*/
+    piramide1.Draw();*/
+    opera.LoadIdenty();
 
-    //camioneta1.Draw();
-    carro1.Draw();
+    //
+    opera.escalar(0.8,0.8,0.8);
+    opera.trasladar(0.1,0.1,0.1);
+    opera.rotacion(15,1,0,0);
+
+
+    casa_base.Multiplicar();
+    casa_base.Draw();
+    opera.LoadIdenty();
+       anguloCuboX+=0.1f;
+    anguloCuboY+=0.1f;
+    anguloEsfera+=0.2f;
+
 }
 
 void display()
 {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-    glLoadIdentity();
-    glTranslatef(0.0f, 0.0f, -5.0f);
-    glRotatef(anguloCuboX, 1.0f, 0.0f, 0.0f);
-    glRotatef(anguloCuboY, 0.0f, 1.0f, 0.0f);
+   //glLoadIdentity();
+
+    //glTranslatef(0.0f, 0.0f, -5.0f);
+    //glRotatef(anguloCuboX, 1.0f, 0.0f, 0.0f);
+    //glRotatef(anguloCuboY, 0.0f, 1.0f, 0.0f);
     drawCube();
 
     glutSwapBuffers();
 
-    anguloCuboX+=0.1f;
-    anguloCuboY+=0.1f;
-    anguloEsfera+=0.2f;
 
 }
 
@@ -87,8 +93,8 @@ void init()
 {
    glClearColor(0,0,0,0);
    glEnable(GL_DEPTH_TEST);
-   ancho = 400;
-   alto = 400;
+   ancho = 600;
+   alto = 600;
 }
 
 void idle()
@@ -123,7 +129,7 @@ int main(int argc, char **argv)
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
     glutInitWindowPosition(100, 100);
-    glutInitWindowSize(400, 400);
+    glutInitWindowSize(600, 600);
     glutCreateWindow("F I G U R A S");
     init();
     glutDisplayFunc(display);
@@ -133,4 +139,3 @@ int main(int argc, char **argv)
     glutMainLoop();
     return 0;
 }
-

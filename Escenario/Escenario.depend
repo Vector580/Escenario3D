@@ -40,7 +40,7 @@
 1617221731 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\operador.cpp
 	"Operador.h"
 
-1617213325 source:c:\users\hucom\documents\github\escenario3d\escenario\main.cpp
+1617229568 source:c:\users\hucom\documents\github\escenario3d\escenario\main.cpp
 	<GLUT/glut.h>
 	<GL/glut.h>
 	<stdlib.h>
@@ -48,7 +48,7 @@
 	"Piramide.h"
 	"Casa.h"
 
-1617214552 c:\users\hucom\documents\github\escenario3d\escenario\include\operador.h
+1617229568 c:\users\hucom\documents\github\escenario3d\escenario\include\operador.h
 	<GL/glut.h>
 	<stdlib.h>
 	<stdio.h>
@@ -61,7 +61,7 @@
 	<GL/glut.h>
 	<stdio.h>
 
-1617128746 source:c:\users\hucom\documents\github\escenario3d\escenario\src\matriz.cpp
+1617229178 source:c:\users\hucom\documents\github\escenario3d\escenario\src\matriz.cpp
 	"Matriz.h"
 
 1617227850 source:c:\users\btpas\documents\github\escenario3d\escenario\main.cpp
@@ -140,7 +140,7 @@
 	"Matriz.h"
 	"Operador.h"
 
-1617214815 source:c:\users\hucom\documents\github\escenario3d\escenario\src\operador.cpp
+1617229568 source:c:\users\hucom\documents\github\escenario3d\escenario\src\operador.cpp
 	"Operador.h"
 
 1617131639 source:c:\users\hucom\documents\github\escenario3d\escenario\src\piramide.cpp
@@ -157,10 +157,10 @@
 
 1617131639 c:\users\hucom\documents\github\escenario3d\escenario\include\prisma.h
 
-1617214875 source:c:\users\hucom\documents\github\escenario3d\escenario\src\casa.cpp
+1617229568 source:c:\users\hucom\documents\github\escenario3d\escenario\src\casa.cpp
 	"Casa.h"
 
-1617214030 c:\users\hucom\documents\github\escenario3d\escenario\include\casa.h
+1617221964 c:\users\hucom\documents\github\escenario3d\escenario\include\casa.h
 	"Matriz.h"
 	"Operador.h"
 	"Piramide.h"
@@ -220,5 +220,19 @@
 	<GL/glut.h>
 
 1617228368 c:\users\btpas\documents\github\escenario3d\escenario\include\camioneta.h
+	"Prisma.h"
+
+1617229183 source:c:\users\hucom\documents\github\escenario3d\escenario\src\camioneta.cpp
+	"Camioneta.h"
+	<GL/glut.h>
+
+1617229183 c:\users\hucom\documents\github\escenario3d\escenario\include\camioneta.h
+	"Prisma.h"
+
+1617229183 source:c:\users\hucom\documents\github\escenario3d\escenario\src\carro.cpp
+	"Carro.h"
+	<GL/glut.h>
+
+1617229183 c:\users\hucom\documents\github\escenario3d\escenario\include\carro.h
 	"Prisma.h"
 

@@ -34,14 +34,14 @@ void Matriz::LoadIdenty()
             else
                 M[i][j]=0;
         }
-    }
+    }/*
     for (i=0;i<4;i++)
     {
         for (j=0;j<4;j++)
            printf("%f \t",M[i][j]);
         printf("\n");
     }
-    printf("\n");
+    printf("\n");*/
 }
 
 float* Matriz::getPunter()

@@ -64,6 +64,7 @@ Casa::Casa(Operador *Op)
     Puntos[40][0]=0;Puntos[40][1]=0.525;Puntos[40][2]=-0.8;
 
 
+    //Reincio de puntos
     for (int i=0;i<41;i++)
         for (int j=0;j<4;j++)
             Puntos_aux[i][j]=Puntos[i][j];
@@ -89,7 +90,14 @@ void Casa:: Rotar (float grade, float angx, float angy, float angz)
 }
 void Casa::Multiplicar()
 {
-    Ope->multiplicar(Puntos_aux,40);
+    Ope->multiplicar(Puntos_aux,41);
+    /* for (int i=0;i<41;i++)
+    {
+        for (int j=0;j<3;j++)
+           printf("%d:::::%f  \t",i,Puntos_aux[i][j]);
+        printf("\n");
+    }
+    printf("\n FINNNNNNNNNNNNNNNNNN");*/
 }
 void Casa:: Update()
 {
@@ -97,7 +105,9 @@ void Casa:: Update()
 }
 void Casa:: Draw()
 {
-    Ope->multiplicar(Puntos_aux,41);
+
+   // Ope->multiplicar(Puntos_aux,41);
+
     int n,j;
     //REducior con ciclos
     base.setPoints(Puntos_aux[0][0],Puntos_aux[0][1],Puntos_aux[0][2],0);
@@ -217,6 +227,7 @@ void Casa:: Draw()
             glVertex3f( Puntos_aux[40][0],Puntos_aux[40][1] ,Puntos_aux[40][2] );
     glEnd();
 
-
+    for (int i=0;i<41;i++)
+        for (int j=0;j<4;j++)
+            Puntos_aux[i][j]=Puntos[i][j];
 }
-
