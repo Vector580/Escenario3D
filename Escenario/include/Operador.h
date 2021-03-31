@@ -25,6 +25,7 @@ class Operador
         void trasladar(float tx, float ty, float tz);
         void escalar(float sx, float sy, float sz);
         void rotar(float grade, float tx, float ty, float tz);
+        void multiplicar(float vert[][3],int tam);
         void push();
         void pop();
         void imprimir();

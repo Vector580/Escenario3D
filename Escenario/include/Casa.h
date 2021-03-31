@@ -13,6 +13,7 @@ class Casa
         Prisma base;
         Piramide techo;
         float Puntos[40][3];
+        float Puntos_aux[40][3];
 
     public:
         Casa(Operador*);
@@ -20,6 +21,7 @@ class Casa
         void Trasladar(float, float, float);
         void Escalar (float, float, float);
         void Rotar (float, float, float, float);
+        void Multiplicar();
         void Update();
         void Draw();
 };

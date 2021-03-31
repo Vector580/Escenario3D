@@ -22,6 +22,7 @@ Arbol::Arbol()
    Puntos[14][0]=-6; Puntos[14][1]=-2; Puntos[14][2]=6;
    Puntos[15][0]=-4; Puntos[15][1]=-2; Puntos[15][2]=6;
    Puntos[16][0]=-4; Puntos[16][1]=-4; Puntos[16][2]=6;
+   /*
    Puntos[17][0]=; Puntos[17][1]=; Puntos[17][2]=;
    Puntos[18][0]=; Puntos[18][1]=; Puntos[18][2]=;
    Puntos[19][0]=; Puntos[19][1]=; Puntos[19][2]=;
@@ -57,7 +58,7 @@ Arbol::Arbol()
    Puntos[49][0]=; Puntos[49][1]=; Puntos[49][2]=;
    Puntos[50][0]=; Puntos[50][1]=; Puntos[50][2]=;
    Puntos[51][0]=; Puntos[51][1]=; Puntos[51][2]=;
-   Puntos[52][0]=; Puntos[52][1]=; Puntos[52][2]=;
+   Puntos[52][0]=; Puntos[52][1]=; Puntos[52][2]=;*/
 }
 
 Arbol::~Arbol()

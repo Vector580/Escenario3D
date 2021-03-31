@@ -103,7 +103,11 @@ void Operador::rotar(float grade, float tx, float ty, float tz)
                 *(Ap+(4*j+i))=aux[i][j];
 }
 
+void Operador::multiplicar(float vert[][3],int tam)
+{
 
+
+}
 void Operador::push()
 {
     pila.push(A);
