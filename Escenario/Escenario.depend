@@ -64,17 +64,15 @@
 1617128746 source:c:\users\hucom\documents\github\escenario3d\escenario\src\matriz.cpp
 	"Matriz.h"
 
-1617131585 source:c:\users\btpas\documents\github\escenario3d\escenario\main.cpp
+1617227850 source:c:\users\btpas\documents\github\escenario3d\escenario\main.cpp
 	<GLUT/glut.h>
 	<GL/glut.h>
 	<stdlib.h>
-	<stdio.h>
-	<math.h>
-	"Operador.h"
 	"Prisma.h"
 	"Piramide.h"
+	"Casa.h"
 
-1617129782 c:\users\btpas\documents\github\escenario3d\escenario\include\operador.h
+1617227850 c:\users\btpas\documents\github\escenario3d\escenario\include\operador.h
 	<GL/glut.h>
 	<stdlib.h>
 	<stdio.h>
@@ -90,7 +88,7 @@
 1617129782 source:c:\users\btpas\documents\github\escenario3d\escenario\src\matriz.cpp
 	"Matriz.h"
 
-1617129782 source:c:\users\btpas\documents\github\escenario3d\escenario\src\operador.cpp
+1617227850 source:c:\users\btpas\documents\github\escenario3d\escenario\src\operador.cpp
 	"Operador.h"
 
 1617130178 source:c:\users\btpas\documents\github\escenario3d\escenario\src\piramide.cpp
@@ -192,4 +190,35 @@
 
 1617221629 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\casa.cpp
 	"Casa.h"
+
+1617227850 c:\users\btpas\documents\github\escenario3d\escenario\include\casa.h
+	"Matriz.h"
+	"Operador.h"
+	"Piramide.h"
+	"Prisma.h"
+
+1617227850 source:c:\users\btpas\documents\github\escenario3d\escenario\src\arbol.cpp
+	"Arbol.h"
+
+1617227850 c:\users\btpas\documents\github\escenario3d\escenario\include\arbol.h
+	"Matriz.h"
+	"Prisma.h"
+	"Operador.h"
+
+1617227850 source:c:\users\btpas\documents\github\escenario3d\escenario\src\casa.cpp
+	"Casa.h"
+
+1617228294 source:c:\users\btpas\documents\github\escenario3d\escenario\src\carro.cpp
+	"Carro.h"
+	<GL/glut.h>
+
+1617227870 c:\users\btpas\documents\github\escenario3d\escenario\include\carro.h
+	"Prisma.h"
+
+1617228290 source:c:\users\btpas\documents\github\escenario3d\escenario\src\camioneta.cpp
+	"Camioneta.h"
+	<GL/glut.h>
+
+1617228368 c:\users\btpas\documents\github\escenario3d\escenario\include\camioneta.h
+	"Prisma.h"
 
