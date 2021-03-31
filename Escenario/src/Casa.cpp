@@ -67,10 +67,7 @@ Casa::Casa(Operador *Op)
     for (int i=0;i<41;i++)
         for (int j=0;j<4;j++)
             Puntos_aux[i][j]=Puntos[i][j];
-
-
-
-
+    Ope=Op;
 }
 
 Casa::~Casa()
@@ -80,19 +77,19 @@ Casa::~Casa()
 
 void Casa:: Trasladar(float x, float y, float z)
 {
-    Op->trasladar(x,y,z);
+    Ope->trasladar(x,y,z);
 }
 void Casa:: Escalar (float escX, float escY, float escZ)
 {
-    Op->escalar(escX,escY,escZ);
+    Ope->escalar(escX,escY,escZ);
 }
 void Casa:: Rotar (float grade, float angx, float angy, float angz)
 {
-    Op->rotar(grade, angx, angy, angz);
+    Ope->rotar(grade, angx, angy, angz);
 }
 void Casa::Multiplicar()
 {
-    Op->multiplicar(Puntos_aux,40);
+    Ope->multiplicar(Puntos_aux,40);
 }
 void Casa:: Update()
 {
@@ -100,7 +97,7 @@ void Casa:: Update()
 }
 void Casa:: Draw()
 {
-    Op->multiplicar(Puntos_aux,41);
+    Ope->multiplicar(Puntos_aux,41);
     int n,j;
     //REducior con ciclos
     base.setPoints(Puntos_aux[0][0],Puntos_aux[0][1],Puntos_aux[0][2],0);

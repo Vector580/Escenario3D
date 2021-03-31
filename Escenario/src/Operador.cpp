@@ -103,31 +103,56 @@ void Operador::rotar(float grade, float tx, float ty, float tz)
                 *(Ap+(4*j+i))=aux[i][j];
 }
 
-void Operador::multiplicar(float vert[][3],int tam)
+void Operador::multiplicar(float aux[][3],int tam)
 {
-    int i, j,x,y;
-    float aux_sum [tam][4]={0,0,0,0};
-    float aux [tam][4]={0,0,0,0};
-    for (int i=0;i<tam;i++)
-        for (int j=0;j<4;j++){
-
-            if(j!=3)
-                aux[i][j]=vert[i][j];
+    int bond,i,j,k;//variable bandera
+    float auxi[3];//Punto auxiliar
+    float arreAux[4],suma;//Arreglo auxiliar para multiplicar y variable suma
+    arreAux[3]=1;//El 1 nos ayuda a multiplicar porque necesitamos (x,y,z,1)
+    //ciclo paramultplicar por los puntos
+    for(i=0;i<tam;i++)
+    {
+        //Se guarda el punto en el arreglo auxiliar
+        arreAux[0]=aux[i][0];
+        arreAux[1]=aux[i][1];
+        arreAux[2]=aux[i][2];
+        //Bond nos ayuda a asignar el nuevo objeto punto
+        bond=0;
+        //El ciclo se hace 3 veces k se mueve en las filas
+        for (k=0;k<3;k++)
+        {
+            //Suma guarda la suma de fila por columna
+            suma=0;
+            //j apunta a las columnas de la matriz y a la coordenada
+            for (j=0;j<4;j++)
+            {
+                suma=suma+((*(Ap+(4*j+k)))*arreAux[j]);
+            }
+            //Si bond=0 suma es la componete x
+            if(bond==0)
+            {
+                auxi[0]=suma;
+                bond=1;
+            }
+            //Sino, la suma es la componente y
             else
-                aux[i][j]=1;
+            {
+                if(bond==1)
+                {
+                    auxi[1]=suma;
+                    bond=2;
+                }
+                else
+                    auxi[2]=suma;
+            }
         }
-
-
-     for (int i=0;i<tam;i++)
-        for (int j=0;j<4;j++)
-            for (int k=0;k<4;k++)
-            aux_sum[i][j]=aux_sum[i][j]+((*(Ap+(4*k+i)))*aux_sum[k][j]);
-
-
-    for (int i=0;i<tam;i++)
-        for (int j=0;j<3;j++)
-             vert[i][j]=aux_sum[i][j];
+        //Se guarda el nuevo punto
+        aux[i][0]=auxi[0];
+        aux[i][1]=auxi[1];
+        aux[i][2]=auxi[2];
+    }
 }
+
 void Operador::push()
 {
     pila.push(A);

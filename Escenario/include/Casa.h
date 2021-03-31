@@ -9,7 +9,7 @@ class Casa
 {
     private:
         Matriz MatL;
-        Operador *Op;
+        Operador *Ope;
         Prisma base;
         Piramide techo;
         float Puntos[41][3];

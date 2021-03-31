@@ -56,7 +56,6 @@ void drawCube(void)
     piramide1.setPoints(-.25,1,1.25,3);
     piramide1.setPoints(0.5,1.5,0.5,4);
     piramide1.Draw();*/
-
     casa_base.Draw();
 }
 
