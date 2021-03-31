@@ -12,8 +12,8 @@ class Casa
         Operador *Op;
         Prisma base;
         Piramide techo;
-        float Puntos[40][3];
-        float Puntos_aux[40][3];
+        float Puntos[41][3];
+        float Puntos_aux[41][3];
 
     public:
         Casa(Operador*);

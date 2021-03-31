@@ -100,7 +100,7 @@ void Casa:: Update()
 }
 void Casa:: Draw()
 {
-
+    Op->multiplicar(Puntos_aux,41);
     int n,j;
     //REducior con ciclos
     base.setPoints(Puntos_aux[0][0],Puntos_aux[0][1],Puntos_aux[0][2],0);

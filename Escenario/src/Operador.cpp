@@ -105,8 +105,28 @@ void Operador::rotar(float grade, float tx, float ty, float tz)
 
 void Operador::multiplicar(float vert[][3],int tam)
 {
+    int i, j,x,y;
+    float aux_sum [tam][4]={0,0,0,0};
+    float aux [tam][4]={0,0,0,0};
+    for (int i=0;i<tam;i++)
+        for (int j=0;j<4;j++){
+
+            if(j!=3)
+                aux[i][j]=vert[i][j];
+            else
+                aux[i][j]=1;
+        }
 
 
+     for (int i=0;i<tam;i++)
+        for (int j=0;j<4;j++)
+            for (int k=0;k<4;k++)
+            aux_sum[i][j]=aux_sum[i][j]+((*(Ap+(4*k+i)))*aux_sum[k][j]);
+
+
+    for (int i=0;i<tam;i++)
+        for (int j=0;j<3;j++)
+             vert[i][j]=aux_sum[i][j];
 }
 void Operador::push()
 {
