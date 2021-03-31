@@ -7,6 +7,7 @@
 #include <stdlib.h>
 #include "Prisma.h"
 #include "Piramide.h"
+#include "Casa.h"
 
 GLfloat anguloCuboX = 0.0f;
 GLfloat anguloCuboY = 0.0f;
@@ -14,8 +15,11 @@ GLfloat anguloEsfera = 0.0f;
 
 GLint ancho, alto;
 int hazPerspectiva = 0;
+Operador opera;
 Prisma cubo1;
 Piramide piramide1;
+Casa casa_base(&opera);
+
 
 void reshape(int width, int height)
 {
@@ -35,21 +39,25 @@ void reshape(int width, int height)
 
 void drawCube(void)
 {
+    /*
     cubo1.setPoints(0,0,0,0);
     cubo1.setPoints(1,0,0,1);
     cubo1.setPoints(1,1,0,2);
     cubo1.setPoints(0,1,0,3);
-    cubo1.setPoints(0,0,-1,4);
-    cubo1.setPoints(1,0,-1,5);
-    cubo1.setPoints(1,1,-1,6);
-    cubo1.setPoints(0,1,-1,7);
+    cubo1.setPoints(0,0,1,4);
+    cubo1.setPoints(1,0,1,5);
+    cubo1.setPoints(1,1,1,6);
+    cubo1.setPoints(0,1,1,7);
+
     cubo1.Draw();
-    piramide1.setPoints(0,0,0,0);
-    piramide1.setPoints(1,0,0,1);
-    piramide1.setPoints(1,0,-1,2);
-    piramide1.setPoints(0,0,-1,3);
-    piramide1.setPoints(0.5,1,-0.5,4);
-    piramide1.Draw();
+    piramide1.setPoints(-.25,1,-.25,0);
+    piramide1.setPoints(1.25,1,-.25,1);
+    piramide1.setPoints(1.25,1,1.25,2);
+    piramide1.setPoints(-.25,1,1.25,3);
+    piramide1.setPoints(0.5,1.5,0.5,4);
+    piramide1.Draw();*/
+
+    casa_base.Draw();
 }
 
 void display()
