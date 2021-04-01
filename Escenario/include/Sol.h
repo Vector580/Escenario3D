@@ -1,16 +1,33 @@
 #ifndef SOL_H
 #define SOL_H
-
+#include"Operador.h"
+#include "Cilindro.h"
 
 class Sol
 {
     public:
-        Sol();
-        virtual ~Sol();
+        Sol(Operador*);
+        ~Sol();
+        void Trasladar(float, float, float);
+        void Escalar (float, float, float);
+        void Rotar (float, float, float, float);
+        void Multiplicar();
+        void Update();
+        void Draw();
 
-    protected:
 
-    private:
+    private:        //Matriz MatL;
+        Operador *Ope;
+        float Puntos[360][3];
+             float px;
+        float py;
+        float pz;
+        int radio;
+        int profundidad;
+        Cilindro cilin;
+
+
+
 };
 
 #endif // SOL_H

@@ -12,6 +12,7 @@
 #include "Carro.h"
 #include "Arbol.h"
 #include "Cilindro.h"
+#include "Sol.h"
 GLfloat anguloCuboX = 0.0f;
 GLfloat anguloCuboY = 0.0f;
 GLfloat anguloEsfera = 0.0f;
@@ -25,7 +26,8 @@ Casa casa_base(&opera);
 Camioneta camioneta1(&opera);
 Carro carro1(&opera);
 Arbol arb(&opera);
-Cilindro cilin;
+Cilindro cilin(&opera);
+Sol sol(&opera);
 
 
 void reshape(int width, int height)
@@ -36,7 +38,7 @@ void reshape(int width, int height)
     if(hazPerspectiva)
       gluPerspective(60.0f, (GLfloat)width/(GLfloat)height, 1.0f, 20.0f);
     else
-      glOrtho(-300, 300, -300, 300, -300, 300);
+      glOrtho(-600, 600, -325, 325, -300, 300);
 
     glMatrixMode(GL_MODELVIEW);
     glPointSize(2);
@@ -47,7 +49,7 @@ void reshape(int width, int height)
 
 void drawCube(void)
 {
-
+/*
     glLoadIdentity();
     anguloCuboX+=0.05f;
     glRotatef(15, 1.0f, 0.0f, 0.0f);
@@ -55,20 +57,32 @@ void drawCube(void)
     cilin.setCentro(100,-100,1);
     cilin.setRadio(40);
     cilin.setProfundidad(40);
-    cilin.Draw();
-    anguloCuboX+=0.05f;
+    cilin.Draw();*/
 
 
+    cilin.setCentro(0,0,0);
+    cilin.setRadio(10);
+    cilin.setProfundidad(10);
 
     anguloCuboX+=0.1f;
     opera.LoadIdenty();
-    //opera.push();
+    opera.push();
     opera.rotacion(anguloCuboX,1,0,0);
     opera.escalar(10,10,10);
     camioneta1.Draw(1);
     arb.Draw();
-    opera.escalar(5,5,5);
+    opera.pop();
+    opera.push();
+    //opera.escalar(0.3,0.3,0.3);
+    opera.rotacion(anguloCuboX,1,0,0);
+    cilin.Draw();
+    opera.pop();
+    opera.push();
+    opera.escalar(50,50,50);
     casa_base.Draw(3);
+    opera.pop();
+    sol.Draw();
+
 
 
     //
@@ -142,8 +156,8 @@ int main(int argc, char **argv)
 {
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
-    glutInitWindowPosition(100, 100);
-    glutInitWindowSize(600, 600);
+    glutInitWindowPosition(10, 10);
+    glutInitWindowSize(1200,650);
     glutCreateWindow("F I G U R A S");
     init();
     glutDisplayFunc(display);

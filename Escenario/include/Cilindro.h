@@ -1,18 +1,21 @@
 #ifndef CILINDRO_H
 #define CILINDRO_H
-
+#include "Operador.h"
 
 class Cilindro
 {
     public:
         Cilindro();
+        Cilindro(Operador*);
       ~Cilindro();
+      void setApunter(Operador*);
       void setCentro(float x, float y, float z);
       void setRadio(int radio);
       void setProfundidad(int profundidad);
       void Draw();
 
     private:
+        Operador *Ope;
         float px;
         float py;
         float pz;

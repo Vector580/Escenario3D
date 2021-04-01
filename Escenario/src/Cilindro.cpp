@@ -1,8 +1,20 @@
 #include "Cilindro.h"
 #include <math.h>
 #include <GL/glut.h>
+
 Cilindro::Cilindro()
 {
+
+}
+
+Cilindro::Cilindro(Operador *Op)
+{
+    Ope=Op;
+    px=0;
+    pz=0;
+    pz=0;
+    radio=4;
+    profundidad=4;
     /*
     float rad;
     int angulo, y, x;
@@ -39,6 +51,10 @@ Cilindro::~Cilindro()
 {
     //dtor
 }
+void Cilindro::setApunter(Operador *Op)
+{
+    Ope=Op;
+}
 void Cilindro::setCentro(float x, float y, float z)
 {
     px=x;
@@ -55,6 +71,8 @@ void Cilindro::setProfundidad(int profun)
 }
 void Cilindro::Draw()
 {
+    radio=radio*10;
+
     float rad;
     int angulo, y, x;
 
@@ -65,8 +83,8 @@ void Cilindro::Draw()
         rad=angulo*0.0174533;//Se convierte los angulos a radianes
         x = radio*cos(rad);//Se calcula la posicion de x
         y = radio*sin(rad);//Se calcula la posicion de y
-        Puntos[indice][0]=x+px;
-        Puntos[indice][1]=y+py;
+        Puntos[indice][0]=(x+px)/10;
+       Puntos[indice][1]=(y+py)/10;
         Puntos[indice][2]=0+pz;
         //auxp[indice]=vertices[indice];
         indice++;
@@ -76,13 +94,14 @@ void Cilindro::Draw()
         rad=angulo*0.0174533;//Se convierte los angulos a radianes
         x = radio*cos(rad);//Se calcula la posicion de x
         y = radio*sin(rad);//Se calcula la posicion de y
-        Puntos[indice][0]=x+px;
-       Puntos[indice][1]=y+py;
+        Puntos[indice][0]=(x+px)/10;
+       Puntos[indice][1]=(y+py)/10;
         Puntos[indice][2]=profundidad+pz;
         //auxp[indice]=vertices[indice];
         indice++;
 
     }
+   Ope->multiplicar(Puntos,360);
 
     for(int i=0;i<180;i++)
     {
