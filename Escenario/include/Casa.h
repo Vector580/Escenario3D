@@ -23,7 +23,7 @@ class Casa
         void Rotar (float, float, float, float);
         void Multiplicar();
         void Update();
-        void Draw();
+        void Draw(int color);
 };
 
 #endif // CASA_H

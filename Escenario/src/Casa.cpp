@@ -97,14 +97,28 @@ void Casa:: Update()
 {
 
 }
-void Casa:: Draw()
+void Casa:: Draw(int color)
 {
 
     Ope->multiplicar(Puntos_aux,41);
 
     int n,j;
+    switch (color)
+    {
+        case 1:  glColor3f(0.3f, 0.3f, 0.3f);
+                break;
+        case 2: glColor3f(0.0f, 1.0f, 0.0f);
+                break;
+        case 3: glColor3f(0.0f, 0.0f, 1.0f);
+                break;
+        case 4: glColor3f(1.0f, 1.0f, 0.0f);
+                break;
+        case 5: glColor3f(1.0f, 0.0f, 1.0f);
+                break;
+    }
+
     //REducior con ciclos
-    glColor3f(0.3f, 0.3f, 0.3f);
+
      for(int i=0;i<8;i++)
         base.setPoints(Puntos_aux[i][0],Puntos_aux[i][1],Puntos_aux[i][2],i);
     base.Draw();
