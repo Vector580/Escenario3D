@@ -2,6 +2,7 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
+<<<<<<< HEAD
 	<File name="include\Operador.h" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="530" topLine="0" />
@@ -20,6 +21,31 @@
 	<File name="include\Carro.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="143" topLine="0" />
+=======
+	<File name="src\Arbol.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="322" topLine="161" />
+		</Cursor>
+	</File>
+	<File name="src\Operador.cpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1315" topLine="30" />
+		</Cursor>
+	</File>
+	<File name="src\Matriz.cpp" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="548" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\Arbol.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="459" topLine="11" />
+		</Cursor>
+	</File>
+	<File name="src\Prisma.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="19" topLine="0" />
+>>>>>>> a22c4ed88f63105d48633a018f64f44fc3d5e5fa
 		</Cursor>
 	</File>
 	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -27,6 +53,7 @@
 			<Cursor1 position="755" topLine="9" />
 		</Cursor>
 	</File>
+<<<<<<< HEAD
 	<File name="src\Matriz.cpp" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="548" topLine="0" />
@@ -37,11 +64,14 @@
 			<Cursor1 position="262" topLine="0" />
 		</Cursor>
 	</File>
+=======
+>>>>>>> a22c4ed88f63105d48633a018f64f44fc3d5e5fa
 	<File name="src\Piramide.cpp" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="126" topLine="0" />
 		</Cursor>
 	</File>
+<<<<<<< HEAD
 	<File name="include\Prisma.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="250" topLine="0" />
@@ -50,6 +80,21 @@
 	<File name="src\Carro.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="3717" topLine="20" />
+=======
+	<File name="main.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1424" topLine="58" />
+		</Cursor>
+	</File>
+	<File name="include\Operador.h" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="530" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\Objeto.cpp" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="336" topLine="0" />
+>>>>>>> a22c4ed88f63105d48633a018f64f44fc3d5e5fa
 		</Cursor>
 	</File>
 	<File name="src\Camioneta.cpp" open="1" top="1" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -57,6 +102,7 @@
 			<Cursor1 position="4320" topLine="66" />
 		</Cursor>
 	</File>
+<<<<<<< HEAD
 	<File name="src\Objeto.cpp" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="336" topLine="0" />
@@ -75,6 +121,11 @@
 	<File name="src\Arbol.cpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="61" topLine="0" />
+=======
+	<File name="include\Prisma.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="250" topLine="0" />
+>>>>>>> a22c4ed88f63105d48633a018f64f44fc3d5e5fa
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>
