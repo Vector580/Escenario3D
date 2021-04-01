@@ -6,7 +6,7 @@ class Camioneta
 {
     private:
             Prisma prisAux;
-            float Puntos[36][3];
+            float Puntos[50][3];
 
     public:
             Camioneta();

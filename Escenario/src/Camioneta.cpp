@@ -140,5 +140,21 @@ void Camioneta::Draw(int color)
     glVertex3f(Puntos[36][0],Puntos[36][1],Puntos[36][2]);
     glVertex3f(Puntos[37][0],Puntos[37][1],Puntos[37][2]);
     glEnd();
-    for (i =38; i<48; i++)
+
+    glBegin(GL_LINES);
+    glVertex3f(Puntos[40][0],Puntos[40][1],Puntos[40][2]);
+    glVertex3f(Puntos[41][0],Puntos[41][1],Puntos[41][2]);
+    glEnd();
+    /*glBegin(GL_LINES);
+    glVertex3f(Puntos[41][0],Puntos[41][1],Puntos[41][2]);
+    glVertex3f(Puntos[42][0],Puntos[42][1],Puntos[42][2]);
+    glEnd();
+    glBegin(GL_LINES);
+    glVertex3f(Puntos[42][0],Puntos[42][1],Puntos[42][2]);
+    glVertex3f(Puntos[43][0],Puntos[43][1],Puntos[43][2]);
+    glEnd();
+    glBegin(GL_LINES);
+    glVertex3f(Puntos[43][0],Puntos[43][1],Puntos[43][2]);
+    glVertex3f(Puntos[40][0],Puntos[40][1],Puntos[40][2]);
+    glEnd();*/
 }
