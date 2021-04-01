@@ -72,7 +72,7 @@ void drawCube(void)
        anguloCuboX+=0.1f;
     anguloCuboY+=0.1f;
     anguloEsfera+=0.2f;*/
-    //camioneta1.Draw(1);
+    camioneta1.Draw(1);
     //carro1.Draw(2);
 }
 

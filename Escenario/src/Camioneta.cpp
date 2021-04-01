@@ -38,6 +38,30 @@ Camioneta::Camioneta()
     Puntos[29][0] = 1.1;     Puntos[29][1] = 0.75;    Puntos[29][2] = -2.15;
     Puntos[30][0] = 1.1;     Puntos[30][1] = 1.0;    Puntos[30][2] = -2.15;
     Puntos[31][0] = 1.0;     Puntos[31][1] = 1.0;    Puntos[31][2] = -2.15;
+
+    Puntos[32][0] = 3.5;     Puntos[32][1] = 0.5;    Puntos[32][2] = -0.15;
+    Puntos[33][0] = 3.5;     Puntos[33][1] = 2.25;    Puntos[33][2] = -0.15;
+
+    Puntos[34][0] = 3.5;     Puntos[34][1] = 0.5;    Puntos[34][2] = -3.15;
+    Puntos[35][0] = 3.5;     Puntos[35][1] = 2.25;    Puntos[35][2] = -3.15;
+
+    //PUERTA MARCO
+    Puntos[36][0] = 2.1;     Puntos[36][1] = 0.5;    Puntos[36][2] = -0.15;
+    Puntos[37][0] = 2.1;     Puntos[37][1] = 1.5;    Puntos[37][2] = -0.15;
+
+    Puntos[38][0] = 2.1;     Puntos[38][1] = 0.5;    Puntos[38][2] = -3.15;
+    Puntos[39][0] = 2.1;     Puntos[39][1] = 1.5;    Puntos[39][2] = -3.15;
+
+    //AGARRADERA DE LA PUERTA (HACER PARA)
+    Puntos[40][0] = 3.0;     Puntos[40][1] = 1.0;    Puntos[40][2] = -0.15;
+    Puntos[41][0] = 3.25;     Puntos[41][1] = 1.125;    Puntos[41][2] = -0.15;
+    Puntos[42][0] = 3.25;     Puntos[40][1] = 1.125;    Puntos[42][2] = -0.15;
+    Puntos[43][0] = 3.0;     Puntos[41][1] = 1.0;    Puntos[43][2] = -0.15;
+
+    Puntos[44][0] = 3.0;     Puntos[44][1] = 1.0;    Puntos[44][2] = -3.15;
+    Puntos[45][0] = 3.25;     Puntos[45][1] = 1.125;    Puntos[45][2] = -3.15;
+    Puntos[46][0] = 3.25;     Puntos[46][1] = 1.125;    Puntos[46][2] = -3.15;
+    Puntos[47][0] = 3.0;     Puntos[47][1] = 1.0;    Puntos[47][2] = -3.15;
 }
 
 Camioneta::~Camioneta()
@@ -96,4 +120,25 @@ void Camioneta::Draw(int color)
         j++;
     }
     prisAux.Draw();
+    glBegin(GL_LINES);
+    glVertex3f(Puntos[32][0],Puntos[32][1],Puntos[32][2]);
+    glVertex3f(Puntos[33][0],Puntos[33][1],Puntos[33][2]);
+    glEnd();
+    glBegin(GL_LINES);
+    glVertex3f(Puntos[34][0],Puntos[34][1],Puntos[34][2]);
+    glVertex3f(Puntos[35][0],Puntos[35][1],Puntos[35][2]);
+    glEnd();
+    glBegin(GL_LINES);
+    glVertex3f(Puntos[36][0],Puntos[36][1],Puntos[36][2]);
+    glVertex3f(Puntos[37][0],Puntos[37][1],Puntos[37][2]);
+    glEnd();
+    glBegin(GL_LINES);
+    glVertex3f(Puntos[38][0],Puntos[36][1],Puntos[36][2]);
+    glVertex3f(Puntos[39][0],Puntos[37][1],Puntos[37][2]);
+    glEnd();
+    glBegin(GL_LINES);
+    glVertex3f(Puntos[36][0],Puntos[36][1],Puntos[36][2]);
+    glVertex3f(Puntos[37][0],Puntos[37][1],Puntos[37][2]);
+    glEnd();
+    for (i =38; i<48; i++)
 }
