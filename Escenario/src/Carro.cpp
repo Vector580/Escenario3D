@@ -1,7 +1,7 @@
 #include "Carro.h"
 #include <GL/glut.h>
 
-Carro::Carro()
+Carro::Carro(Operador *Op)
 {
     Puntos[0][0] = 1.0;     Puntos[0][1] = 0.25;    Puntos[0][2] = 0;
     Puntos[1][0] = 1.1;     Puntos[1][1] = 0.25;    Puntos[1][2] = 0;
@@ -63,11 +63,37 @@ Carro::Carro()
     Puntos[46][0] = 3.725;     Puntos[46][1] = 1.250;    Puntos[46][2] = -3.15;
     Puntos[47][0] = 3.6;     Puntos[47][1] = 1.250;    Puntos[47][2] = -3.15;
 
+    for(int i=0;i<50;i++)
+        for(int j=0;j<3;j++)
+            PuntosAux[i][j]=Puntos[i][j];
+    Ope = Op;
 }
 
 Carro::~Carro()
 {
     //dtor
+}
+
+
+void Carro:: Trasladar(float x, float y, float z)
+{
+    Ope->trasladar(x,y,z);
+}
+void Carro:: Escalar (float escX, float escY, float escZ)
+{
+    Ope->escalar(escX,escY,escZ);
+}
+void Carro:: Rotar (float grade, float angx, float angy, float angz)
+{
+    Ope->rotar(grade, angx, angy, angz);
+}
+void Carro::Multiplicar()
+{
+    Ope->multiplicar(PuntosAux,51);
+}
+void Carro:: Update()
+{
+
 }
 
 void Carro::Draw(int color)

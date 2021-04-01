@@ -21,8 +21,8 @@ Operador opera;
 Prisma cubo1;
 Piramide piramide1;
 Casa casa_base(&opera);
-Camioneta camioneta1;
-Carro carro1;
+Camioneta camioneta1(&opera);
+Carro carro1(&opera);
 Arbol arb(&opera);
 
 
@@ -73,21 +73,18 @@ void drawCube(void)
 
 
     casa_base.Multiplicar();
-    casa_base.Draw();
-<<<<<<< HEAD
-    opera.LoadIdenty();*/
-    camioneta1.Draw(4);
-=======
+    casa_base.Draw();*/
     opera.LoadIdenty();
-    anguloCuboY+=0.1f;
-    anguloEsfera+=0.2f;*/
+    camioneta1.Multiplicar();
+    camioneta1.Draw(4);
+    //anguloCuboY+=0.1f;
+    //anguloEsfera+=0.2f;
     //camioneta1.Draw(1);
->>>>>>> a22c4ed88f63105d48633a018f64f44fc3d5e5fa
     //carro1.Draw(2);
 
-    anguloCuboX+=0.05f;
+    //anguloCuboX+=0.05f;
     anguloCuboY+=0.05f;
-    anguloEsfera+=0.1f;
+    //anguloEsfera+=0.1f;
 
 
 }
@@ -98,9 +95,9 @@ void display()
 
    glLoadIdentity();
 
-    glTranslatef(0.0f, 0.0f, -5.0f);
+    /*glTranslatef(0.0f, 0.0f, -5.0f);
     glRotatef(anguloCuboX, 1.0f, 0.0f, 0.0f);
-    glRotatef(anguloCuboY, 0.0f, 1.0f, 0.0f);
+    glRotatef(anguloCuboY, 0.0f, 1.0f, 0.0f);*/
     drawCube();
 
     glutSwapBuffers();

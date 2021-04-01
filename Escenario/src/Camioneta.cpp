@@ -1,7 +1,7 @@
 #include "Camioneta.h"
 #include <GL/glut.h>
 
-Camioneta::Camioneta()
+Camioneta::Camioneta(Operador *Op)
 {
     Puntos[0][0] = 1.0;     Puntos[0][1] = 0.25;    Puntos[0][2] = 0;
     Puntos[1][0] = 1.1;     Puntos[1][1] = 0.25;    Puntos[1][2] = 0;
@@ -63,11 +63,36 @@ Camioneta::Camioneta()
     Puntos[46][0] = 3.250;     Puntos[46][1] = 1.250;    Puntos[46][2] = -3.15;
     Puntos[47][0] = 3.125;     Puntos[47][1] = 1.250;    Puntos[47][2] = -3.15;
 
+    for(int i=0;i<50;i++)
+        for(int j=0;j<3;j++)
+            PuntosAux[i][j]=Puntos[i][j];
+   Ope = Op;
 }
 
 Camioneta::~Camioneta()
 {
     //dtor
+}
+
+void Camioneta:: Trasladar(float x, float y, float z)
+{
+    Ope->trasladar(x,y,z);
+}
+void Camioneta:: Escalar (float escX, float escY, float escZ)
+{
+    Ope->escalar(escX,escY,escZ);
+}
+void Camioneta:: Rotar (float grade, float angx, float angy, float angz)
+{
+    Ope->rotar(grade, angx, angy, angz);
+}
+void Camioneta::Multiplicar()
+{
+    Ope->multiplicar(PuntosAux,51);
+}
+void Camioneta:: Update()
+{
+
 }
 
 void Camioneta::Draw(int color)
