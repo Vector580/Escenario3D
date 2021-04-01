@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1617130810 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\matriz.cpp
+1617250798 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\matriz.cpp
 	"Matriz.h"
 
 1617123860 c:\users\victor\desktop\proyectos\escenario3d\escenario\include\matriz.h
@@ -20,15 +20,18 @@
 	<GL/glu.h>
 	<stdlib.h>
 
-1617219181 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\main.cpp
+1617267047 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\main.cpp
 	<GLUT/glut.h>
 	<GL/glut.h>
 	<stdlib.h>
 	"Prisma.h"
 	"Piramide.h"
 	"Casa.h"
+	"Camioneta.h"
+	"Carro.h"
+	"Arbol.h"
 
-1617218665 c:\users\victor\desktop\proyectos\escenario3d\escenario\include\operador.h
+1617250798 c:\users\victor\desktop\proyectos\escenario3d\escenario\include\operador.h
 	<GL/glut.h>
 	<stdlib.h>
 	<stdio.h>
@@ -37,7 +40,7 @@
 	"iostream"
 	"Matriz.h"
 
-1617221731 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\operador.cpp
+1617250798 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\operador.cpp
 	"Operador.h"
 
 1617229568 source:c:\users\hucom\documents\github\escenario3d\escenario\main.cpp
@@ -182,15 +185,15 @@
 	"Piramide.h"
 	"Prisma.h"
 
-1617218665 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\arbol.cpp
+1617266067 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\arbol.cpp
 	"Arbol.h"
 
-1617218665 c:\users\victor\desktop\proyectos\escenario3d\escenario\include\arbol.h
+1617265679 c:\users\victor\desktop\proyectos\escenario3d\escenario\include\arbol.h
 	"Matriz.h"
 	"Prisma.h"
 	"Operador.h"
 
-1617221629 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\casa.cpp
+1617266760 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\casa.cpp
 	"Casa.h"
 
 1617227850 c:\users\btpas\documents\github\escenario3d\escenario\include\casa.h
@@ -237,4 +240,18 @@
 
 1617229183 c:\users\hucom\documents\github\escenario3d\escenario\include\carro.h
 	"Prisma.h"
+
+1617266763 c:\users\victor\desktop\proyectos\escenario3d\escenario\include\camioneta.h
+	"Prisma.h"
+
+1617266763 c:\users\victor\desktop\proyectos\escenario3d\escenario\include\carro.h
+	"Prisma.h"
+
+1617266763 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\camioneta.cpp
+	"Camioneta.h"
+	<GL/glut.h>
+
+1617266763 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\carro.cpp
+	"Carro.h"
+	<GL/glut.h>
 

@@ -10,6 +10,7 @@
 #include "Casa.h"
 #include "Camioneta.h"
 #include "Carro.h"
+#include "Arbol.h"
 GLfloat anguloCuboX = 0.0f;
 GLfloat anguloCuboY = 0.0f;
 GLfloat anguloEsfera = 0.0f;
@@ -22,6 +23,8 @@ Piramide piramide1;
 Casa casa_base(&opera);
 Camioneta camioneta1;
 Carro carro1;
+Arbol arb(&opera);
+
 
 void reshape(int width, int height)
 {
@@ -31,7 +34,7 @@ void reshape(int width, int height)
     if(hazPerspectiva)
       gluPerspective(60.0f, (GLfloat)width/(GLfloat)height, 1.0f, 20.0f);
     else
-      glOrtho(-6, 6, -6, 6, -3, 10);
+      glOrtho(-20, 20, -20, 20, -20, 20);
 
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
@@ -58,21 +61,23 @@ void drawCube(void)
     piramide1.setPoints(-.25,1,1.25,3);
     piramide1.setPoints(0.5,1.5,0.5,4);
     piramide1.Draw();*/
+    anguloCuboX+=0.1f;
     opera.LoadIdenty();
+    opera.rotacion(anguloCuboX,1,0,0);
+    arb.Multiplicar();
+    arb.Draw();
 
     //
     /*opera.escalar(0.8,0.8,0.8);
     opera.trasladar(0.1,0.1,0.1);
-    opera.rotacion(15,1,0,0);
 
 
     casa_base.Multiplicar();
     casa_base.Draw();
     opera.LoadIdenty();
-       anguloCuboX+=0.1f;
     anguloCuboY+=0.1f;
     anguloEsfera+=0.2f;*/
-    camioneta1.Draw(1);
+    //camioneta1.Draw(1);
     //carro1.Draw(2);
 }
 

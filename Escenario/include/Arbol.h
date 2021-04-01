@@ -8,8 +8,9 @@
 class Arbol //: public Objeto
 {
     public:
-        Arbol();
+        Arbol(Operador*);
         virtual ~Arbol();
+        void Multiplicar();
         void Trasladar(float, float, float);
         void Escalar (float, float, float);
         void Rotar (float, float, float, float);
@@ -18,9 +19,10 @@ class Arbol //: public Objeto
 
     private:
         Matriz MatL;
-        Operador *Op;
+        Operador *Ope;
         Prisma tronco;
-        float Puntos[52][3];
+        float Puntos[51][3];
+        float aux[51][3];
 };
 
 #endif // ARBOL_H
