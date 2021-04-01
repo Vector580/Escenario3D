@@ -45,6 +45,8 @@
 			<Add directory="C:/Program Files/CodeBlocks/MinGW/lib" />
 		</Linker>
 		<Unit filename="include/Arbol.h" />
+		<Unit filename="include/Camioneta.h" />
+		<Unit filename="include/Carro.h" />
 		<Unit filename="include/Casa.h" />
 		<Unit filename="include/Matriz.h" />
 		<Unit filename="include/Objeto.h" />
@@ -53,6 +55,8 @@
 		<Unit filename="include/Prisma.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Arbol.cpp" />
+		<Unit filename="src/Camioneta.cpp" />
+		<Unit filename="src/Carro.cpp" />
 		<Unit filename="src/Casa.cpp" />
 		<Unit filename="src/Matriz.cpp" />
 		<Unit filename="src/Objeto.cpp" />

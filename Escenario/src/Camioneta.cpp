@@ -53,15 +53,16 @@ Camioneta::Camioneta()
     Puntos[39][0] = 2.1;     Puntos[39][1] = 1.5;    Puntos[39][2] = -3.15;
 
     //AGARRADERA DE LA PUERTA (HACER PARA)
-    Puntos[40][0] = 3.0;     Puntos[40][1] = 1.0;    Puntos[40][2] = -0.15;
-    Puntos[41][0] = 3.25;     Puntos[41][1] = 1.125;    Puntos[41][2] = -0.15;
-    Puntos[42][0] = 3.25;     Puntos[40][1] = 1.125;    Puntos[42][2] = -0.15;
-    Puntos[43][0] = 3.0;     Puntos[41][1] = 1.0;    Puntos[43][2] = -0.15;
+    Puntos[40][0] = 3.125;     Puntos[40][1] = 1.125;    Puntos[40][2] = -0.15;
+    Puntos[41][0] = 3.250;     Puntos[41][1] = 1.125;    Puntos[41][2] = -0.15;
+    Puntos[42][0] = 3.250;     Puntos[42][1] = 1.250;    Puntos[42][2] = -0.15;
+    Puntos[43][0] = 3.125;     Puntos[43][1] = 1.250;    Puntos[43][2] = -0.15;
 
-    Puntos[44][0] = 3.0;     Puntos[44][1] = 1.0;    Puntos[44][2] = -3.15;
-    Puntos[45][0] = 3.25;     Puntos[45][1] = 1.125;    Puntos[45][2] = -3.15;
-    Puntos[46][0] = 3.25;     Puntos[46][1] = 1.125;    Puntos[46][2] = -3.15;
-    Puntos[47][0] = 3.0;     Puntos[47][1] = 1.0;    Puntos[47][2] = -3.15;
+    Puntos[44][0] = 3.125;     Puntos[44][1] = 1.125;    Puntos[44][2] = -3.15;
+    Puntos[45][0] = 3.250;     Puntos[45][1] = 1.125;    Puntos[45][2] = -3.15;
+    Puntos[46][0] = 3.250;     Puntos[46][1] = 1.250;    Puntos[46][2] = -3.15;
+    Puntos[47][0] = 3.125;     Puntos[47][1] = 1.250;    Puntos[47][2] = -3.15;
+
 }
 
 Camioneta::~Camioneta()
@@ -133,19 +134,15 @@ void Camioneta::Draw(int color)
     glVertex3f(Puntos[37][0],Puntos[37][1],Puntos[37][2]);
     glEnd();
     glBegin(GL_LINES);
-    glVertex3f(Puntos[38][0],Puntos[36][1],Puntos[36][2]);
-    glVertex3f(Puntos[39][0],Puntos[37][1],Puntos[37][2]);
-    glEnd();
-    glBegin(GL_LINES);
-    glVertex3f(Puntos[36][0],Puntos[36][1],Puntos[36][2]);
-    glVertex3f(Puntos[37][0],Puntos[37][1],Puntos[37][2]);
+    glVertex3f(Puntos[38][0],Puntos[38][1],Puntos[38][2]);
+    glVertex3f(Puntos[39][0],Puntos[39][1],Puntos[39][2]);
     glEnd();
 
     glBegin(GL_LINES);
     glVertex3f(Puntos[40][0],Puntos[40][1],Puntos[40][2]);
     glVertex3f(Puntos[41][0],Puntos[41][1],Puntos[41][2]);
     glEnd();
-    /*glBegin(GL_LINES);
+    glBegin(GL_LINES);
     glVertex3f(Puntos[41][0],Puntos[41][1],Puntos[41][2]);
     glVertex3f(Puntos[42][0],Puntos[42][1],Puntos[42][2]);
     glEnd();
@@ -156,5 +153,22 @@ void Camioneta::Draw(int color)
     glBegin(GL_LINES);
     glVertex3f(Puntos[43][0],Puntos[43][1],Puntos[43][2]);
     glVertex3f(Puntos[40][0],Puntos[40][1],Puntos[40][2]);
-    glEnd();*/
+    glEnd();
+
+    glBegin(GL_LINES);
+    glVertex3f(Puntos[44][0],Puntos[44][1],Puntos[44][2]);
+    glVertex3f(Puntos[45][0],Puntos[45][1],Puntos[45][2]);
+    glEnd();
+    glBegin(GL_LINES);
+    glVertex3f(Puntos[45][0],Puntos[45][1],Puntos[45][2]);
+    glVertex3f(Puntos[46][0],Puntos[46][1],Puntos[46][2]);
+    glEnd();
+    glBegin(GL_LINES);
+    glVertex3f(Puntos[46][0],Puntos[46][1],Puntos[46][2]);
+    glVertex3f(Puntos[47][0],Puntos[47][1],Puntos[47][2]);
+    glEnd();
+    glBegin(GL_LINES);
+    glVertex3f(Puntos[47][0],Puntos[47][1],Puntos[47][2]);
+    glVertex3f(Puntos[44][0],Puntos[44][1],Puntos[44][2]);
+    glEnd();
 }

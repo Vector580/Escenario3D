@@ -68,23 +68,26 @@ void drawCube(void)
 
     casa_base.Multiplicar();
     casa_base.Draw();
-    opera.LoadIdenty();
-       anguloCuboX+=0.1f;
-    anguloCuboY+=0.1f;
-    anguloEsfera+=0.2f;*/
-    camioneta1.Draw(1);
+    opera.LoadIdenty();*/
+    camioneta1.Draw(4);
     //carro1.Draw(2);
+
+    anguloCuboX+=0.05f;
+    anguloCuboY+=0.05f;
+    anguloEsfera+=0.1f;
+
+
 }
 
 void display()
 {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-   //glLoadIdentity();
+   glLoadIdentity();
 
-    //glTranslatef(0.0f, 0.0f, -5.0f);
-    //glRotatef(anguloCuboX, 1.0f, 0.0f, 0.0f);
-    //glRotatef(anguloCuboY, 0.0f, 1.0f, 0.0f);
+    glTranslatef(0.0f, 0.0f, -5.0f);
+    glRotatef(anguloCuboX, 1.0f, 0.0f, 0.0f);
+    glRotatef(anguloCuboY, 0.0f, 1.0f, 0.0f);
     drawCube();
 
     glutSwapBuffers();
