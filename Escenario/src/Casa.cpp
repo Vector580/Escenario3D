@@ -91,13 +91,7 @@ void Casa:: Rotar (float grade, float angx, float angy, float angz)
 void Casa::Multiplicar()
 {
     Ope->multiplicar(Puntos_aux,41);
-    /* for (int i=0;i<41;i++)
-    {
-        for (int j=0;j<3;j++)
-           printf("%d:::::%f  \t",i,Puntos_aux[i][j]);
-        printf("\n");
-    }
-    printf("\n FINNNNNNNNNNNNNNNNNN");*/
+
 }
 void Casa:: Update()
 {
@@ -106,18 +100,12 @@ void Casa:: Update()
 void Casa:: Draw()
 {
 
-   // Ope->multiplicar(Puntos_aux,41);
+    Ope->multiplicar(Puntos_aux,41);
 
     int n,j;
     //REducior con ciclos
-    base.setPoints(Puntos_aux[0][0],Puntos_aux[0][1],Puntos_aux[0][2],0);
-    base.setPoints(Puntos_aux[1][0],Puntos_aux[1][1],Puntos_aux[1][2],1);
-    base.setPoints(Puntos_aux[2][0],Puntos_aux[2][1],Puntos_aux[2][2],2);
-    base.setPoints(Puntos_aux[3][0],Puntos_aux[3][1],Puntos_aux[3][2],3);
-    base.setPoints(Puntos_aux[4][0],Puntos_aux[4][1],Puntos_aux[4][2],4);
-    base.setPoints(Puntos_aux[5][0],Puntos_aux[5][1],Puntos_aux[5][2],5);
-    base.setPoints(Puntos_aux[6][0],Puntos_aux[6][1],Puntos_aux[6][2],6);
-    base.setPoints(Puntos_aux[7][0],Puntos_aux[7][1],Puntos_aux[7][2],7);
+     for(int i=0;i<8;i++)
+        base.setPoints(Puntos_aux[i][0],Puntos_aux[i][1],Puntos_aux[i][2],i);
     base.Draw();
 
     techo.setPoints(Puntos_aux[8][0],Puntos_aux[8][1],Puntos_aux[8][2],0);
@@ -131,15 +119,15 @@ void Casa:: Draw()
         if (n!=16)
         {
             glBegin(GL_LINES);
-            glVertex3f( Puntos_aux[n][0],Puntos_aux[n][1] ,Puntos_aux[n][2] );
-            glVertex3f( Puntos_aux[n+1][0],Puntos_aux[n+1][1] ,Puntos_aux[n+1][2]);
+            glVertex3fv( Puntos_aux[n]);
+            glVertex3fv( Puntos_aux[n+1]);
             glEnd();
         }
         else
         {
             glBegin(GL_LINES);
-            glVertex3f( Puntos_aux[n][0],Puntos_aux[n][1] ,Puntos_aux[n][2] );
-            glVertex3f( Puntos_aux[13][0],Puntos_aux[13][1] ,Puntos_aux[13][2] );
+            glVertex3fv( Puntos_aux[n]);
+            glVertex3fv( Puntos_aux[13]);
             glEnd();
         }
     }
@@ -148,15 +136,15 @@ void Casa:: Draw()
         if (n!=20)
         {
             glBegin(GL_LINES);
-            glVertex3f( Puntos_aux[n][0],Puntos_aux[n][1] ,Puntos_aux[n][2] );
-            glVertex3f( Puntos_aux[n+1][0],Puntos_aux[n+1][1] ,Puntos_aux[n+1][2]);
+            glVertex3fv( Puntos_aux[n]);
+            glVertex3fv( Puntos_aux[n+1]);
             glEnd();
         }
         else
         {
             glBegin(GL_LINES);
-            glVertex3f( Puntos_aux[n][0],Puntos_aux[n][1] ,Puntos_aux[n][2] );
-            glVertex3f( Puntos_aux[17][0],Puntos_aux[17][1] ,Puntos_aux[17][2] );
+            glVertex3fv( Puntos_aux[n]);
+            glVertex3fv( Puntos_aux[17]);
             glEnd();
         }
     }
@@ -165,15 +153,15 @@ void Casa:: Draw()
         if (n!=24)
         {
             glBegin(GL_LINES);
-            glVertex3f( Puntos_aux[n][0],Puntos_aux[n][1] ,Puntos_aux[n][2] );
-            glVertex3f( Puntos_aux[n+1][0],Puntos_aux[n+1][1] ,Puntos_aux[n+1][2]);
+            glVertex3fv( Puntos_aux[n]);
+            glVertex3fv( Puntos_aux[n+1]);
             glEnd();
         }
         else
         {
             glBegin(GL_LINES);
-            glVertex3f( Puntos_aux[n][0],Puntos_aux[n][1] ,Puntos_aux[n][2] );
-            glVertex3f( Puntos_aux[21][0],Puntos_aux[21][1] ,Puntos_aux[21][2] );
+            glVertex3fv( Puntos_aux[n]);
+            glVertex3fv( Puntos_aux[21]);
             glEnd();
         }
     }
@@ -182,49 +170,49 @@ void Casa:: Draw()
         if (n!=28)
         {
             glBegin(GL_LINES);
-            glVertex3f( Puntos_aux[n][0],Puntos_aux[n][1] ,Puntos_aux[n][2] );
-            glVertex3f( Puntos_aux[n+1][0],Puntos_aux[n+1][1] ,Puntos_aux[n+1][2]);
+            glVertex3fv(Puntos_aux[n]);
+            glVertex3fv(Puntos_aux[n+1]);
             glEnd();
         }
         else
         {
             glBegin(GL_LINES);
-            glVertex3f( Puntos_aux[n][0],Puntos_aux[n][1] ,Puntos_aux[n][2] );
-            glVertex3f( Puntos_aux[25][0],Puntos_aux[25][1] ,Puntos_aux[25][2] );
+            glVertex3fv( Puntos_aux[n]);
+            glVertex3fv( Puntos_aux[25]);
             glEnd();
         }
     }
     //Cruz de ventana frontal
     glBegin(GL_LINES);
-            glVertex3f( Puntos_aux[29][0],Puntos_aux[29][1] ,Puntos_aux[29][2] );
-            glVertex3f( Puntos_aux[30][0],Puntos_aux[30][1] ,Puntos_aux[30][2] );
+            glVertex3fv( Puntos_aux[29]);
+            glVertex3fv( Puntos_aux[30]);
     glEnd();
 
     glBegin(GL_LINES);
-            glVertex3f( Puntos_aux[31][0],Puntos_aux[31][1] ,Puntos_aux[31][2] );
-            glVertex3f( Puntos_aux[32][0],Puntos_aux[32][1] ,Puntos_aux[32][2] );
+            glVertex3fv( Puntos_aux[31] );
+            glVertex3fv( Puntos_aux[32] );
     glEnd();
 
     //Cruz de ventana deracha
     glBegin(GL_LINES);
-            glVertex3f( Puntos_aux[33][0],Puntos_aux[33][1] ,Puntos_aux[33][2] );
-            glVertex3f( Puntos_aux[34][0],Puntos_aux[34][1] ,Puntos_aux[34][2] );
+            glVertex3fv( Puntos_aux[33]);
+            glVertex3fv( Puntos_aux[34] );
     glEnd();
 
     glBegin(GL_LINES);
-            glVertex3f( Puntos_aux[35][0],Puntos_aux[35][1] ,Puntos_aux[35][2] );
-            glVertex3f( Puntos_aux[36][0],Puntos_aux[36][1] ,Puntos_aux[36][2] );
+            glVertex3fv( Puntos_aux[35]);
+            glVertex3fv( Puntos_aux[36]);
     glEnd();
 
     //Cruz de ventana izquierda
     glBegin(GL_LINES);
-            glVertex3f( Puntos_aux[37][0],Puntos_aux[37][1] ,Puntos_aux[37][2] );
-            glVertex3f( Puntos_aux[38][0],Puntos_aux[38][1] ,Puntos_aux[38][2] );
+            glVertex3fv( Puntos_aux[37]);
+            glVertex3fv( Puntos_aux[38]);
     glEnd();
 
     glBegin(GL_LINES);
-            glVertex3f( Puntos_aux[39][0],Puntos_aux[39][1] ,Puntos_aux[39][2] );
-            glVertex3f( Puntos_aux[40][0],Puntos_aux[40][1] ,Puntos_aux[40][2] );
+            glVertex3fv( Puntos_aux[39]);
+            glVertex3fv( Puntos_aux[40] );
     glEnd();
 
     for (int i=0;i<41;i++)

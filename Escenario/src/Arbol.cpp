@@ -88,13 +88,6 @@ void Arbol:: Rotar (float grade, float angx, float angy, float angz)
 void Arbol::Multiplicar()
 {
     Ope->multiplicar(aux,51);
-    /* for (int i=0;i<41;i++)
-    {
-        for (int j=0;j<3;j++)
-           printf("%d:::::%f  \t",i,Puntos_aux[i][j]);
-        printf("\n");
-    }
-    printf("\n FINNNNNNNNNNNNNNNNNN");*/
 }
 void Arbol:: Update()
 {
@@ -102,6 +95,7 @@ void Arbol:: Update()
 }
 void Arbol:: Draw()
 {
+     Ope->multiplicar(aux,51);
     int i,j;
     //Se define color del tronco
     glColor3f(1.0f, 0.5f, 0.0f);//Naranja

@@ -197,4 +197,7 @@ void Carro::Draw(int color)
     glVertex3f(PuntosAux[47][0],PuntosAux[47][1],PuntosAux[47][2]);
     glVertex3f(PuntosAux[44][0],PuntosAux[44][1],PuntosAux[44][2]);
     glEnd();
+    for(int i=0;i<48;i++)
+        for(int j=0;j<3;j++)
+            PuntosAux[i][j]=Puntos[i][j];
 }

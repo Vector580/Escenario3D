@@ -58,15 +58,17 @@ void drawCube(void)
     anguloCuboX+=0.05f;
 
 
-/*
+
     anguloCuboX+=0.1f;
     opera.LoadIdenty();
+    //opera.push();
     opera.rotacion(anguloCuboX,1,0,0);
     opera.escalar(10,10,10);
-    camioneta1.Multiplicar();
     camioneta1.Draw(4);
-    arb.Multiplicar();
-    arb.Draw();*/
+    arb.Draw();
+    opera.escalar(5,5,5);
+    casa_base.Draw();
+
     //
     /*opera.escalar(0.8,0.8,0.8);
     opera.trasladar(0.1,0.1,0.1);
