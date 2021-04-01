@@ -11,7 +11,7 @@ class Camioneta
     public:
             Camioneta();
             ~Camioneta();
-            void Draw();
+            void Draw(int);
 };
 
 #endif // CAMIONETA_H

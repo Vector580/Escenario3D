@@ -45,7 +45,7 @@ Camioneta::~Camioneta()
     //dtor
 }
 
-void Camioneta::Draw()
+void Camioneta::Draw(int color)
 {
     int i, j = 0;
     glLineWidth(2);
@@ -58,7 +58,29 @@ void Camioneta::Draw()
     }
     prisAux.Draw();
 
-    glColor3f(1.0f, 0.0f, 0.0f);
+    j = 0;
+    glColor3f(0.54f, 0.58f, 0.59f);
+    for (i=24; i<32; i++)
+    {
+        prisAux.setPoints(Puntos[i][0],Puntos[i][1],Puntos[i][2],j);
+        j++;
+    }
+    prisAux.Draw();
+
+    //COLOR DEL CARRO
+    switch (color)
+    {
+        case 1: glColor3f(1.0f, 0.0f, 0.0f);
+                break;
+        case 2: glColor3f(0.0f, 1.0f, 0.0f);
+                break;
+        case 3: glColor3f(0.0f, 0.0f, 1.0f);
+                break;
+        case 4: glColor3f(1.0f, 1.0f, 0.0f);
+                break;
+        case 5: glColor3f(1.0f, 0.0f, 1.0f);
+                break;
+    }
     j = 0;
     for (i=8; i<16; i++)
     {
@@ -69,15 +91,6 @@ void Camioneta::Draw()
 
     j = 0;
     for (i=16; i<24; i++)
-    {
-        prisAux.setPoints(Puntos[i][0],Puntos[i][1],Puntos[i][2],j);
-        j++;
-    }
-    prisAux.Draw();
-
-    j = 0;
-    glColor3f(0.54f, 0.58f, 0.59f);
-    for (i=24; i<32; i++)
     {
         prisAux.setPoints(Puntos[i][0],Puntos[i][1],Puntos[i][2],j);
         j++;

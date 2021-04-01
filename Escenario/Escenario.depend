@@ -64,15 +64,16 @@
 1617229178 source:c:\users\hucom\documents\github\escenario3d\escenario\src\matriz.cpp
 	"Matriz.h"
 
-1617227850 source:c:\users\btpas\documents\github\escenario3d\escenario\main.cpp
+1617263659 source:c:\users\btpas\documents\github\escenario3d\escenario\main.cpp
 	<GLUT/glut.h>
 	<GL/glut.h>
 	<stdlib.h>
 	"Prisma.h"
 	"Piramide.h"
 	"Casa.h"
+	"Camioneta.h"
 
-1617227850 c:\users\btpas\documents\github\escenario3d\escenario\include\operador.h
+1617262825 c:\users\btpas\documents\github\escenario3d\escenario\include\operador.h
 	<GL/glut.h>
 	<stdlib.h>
 	<stdio.h>
@@ -85,10 +86,10 @@
 	<GL/glut.h>
 	<stdio.h>
 
-1617129782 source:c:\users\btpas\documents\github\escenario3d\escenario\src\matriz.cpp
+1617262825 source:c:\users\btpas\documents\github\escenario3d\escenario\src\matriz.cpp
 	"Matriz.h"
 
-1617227850 source:c:\users\btpas\documents\github\escenario3d\escenario\src\operador.cpp
+1617262825 source:c:\users\btpas\documents\github\escenario3d\escenario\src\operador.cpp
 	"Operador.h"
 
 1617130178 source:c:\users\btpas\documents\github\escenario3d\escenario\src\piramide.cpp
@@ -205,21 +206,21 @@
 	"Prisma.h"
 	"Operador.h"
 
-1617227850 source:c:\users\btpas\documents\github\escenario3d\escenario\src\casa.cpp
+1617262825 source:c:\users\btpas\documents\github\escenario3d\escenario\src\casa.cpp
 	"Casa.h"
 
-1617228294 source:c:\users\btpas\documents\github\escenario3d\escenario\src\carro.cpp
+1617263799 source:c:\users\btpas\documents\github\escenario3d\escenario\src\carro.cpp
 	"Carro.h"
 	<GL/glut.h>
 
-1617227870 c:\users\btpas\documents\github\escenario3d\escenario\include\carro.h
+1617263095 c:\users\btpas\documents\github\escenario3d\escenario\include\carro.h
 	"Prisma.h"
 
-1617228290 source:c:\users\btpas\documents\github\escenario3d\escenario\src\camioneta.cpp
+1617263469 source:c:\users\btpas\documents\github\escenario3d\escenario\src\camioneta.cpp
 	"Camioneta.h"
 	<GL/glut.h>
 
-1617228368 c:\users\btpas\documents\github\escenario3d\escenario\include\camioneta.h
+1617263060 c:\users\btpas\documents\github\escenario3d\escenario\include\camioneta.h
 	"Prisma.h"
 
 1617229183 source:c:\users\hucom\documents\github\escenario3d\escenario\src\camioneta.cpp

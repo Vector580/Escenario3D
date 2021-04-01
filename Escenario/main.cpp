@@ -8,7 +8,8 @@
 #include "Prisma.h"
 #include "Piramide.h"
 #include "Casa.h"
-
+#include "Camioneta.h"
+#include "Carro.h"
 GLfloat anguloCuboX = 0.0f;
 GLfloat anguloCuboY = 0.0f;
 GLfloat anguloEsfera = 0.0f;
@@ -19,7 +20,8 @@ Operador opera;
 Prisma cubo1;
 Piramide piramide1;
 Casa casa_base(&opera);
-
+Camioneta camioneta1;
+Carro carro1;
 
 void reshape(int width, int height)
 {
@@ -59,7 +61,7 @@ void drawCube(void)
     opera.LoadIdenty();
 
     //
-    opera.escalar(0.8,0.8,0.8);
+    /*opera.escalar(0.8,0.8,0.8);
     opera.trasladar(0.1,0.1,0.1);
     opera.rotacion(15,1,0,0);
 
@@ -69,8 +71,9 @@ void drawCube(void)
     opera.LoadIdenty();
        anguloCuboX+=0.1f;
     anguloCuboY+=0.1f;
-    anguloEsfera+=0.2f;
-
+    anguloEsfera+=0.2f;*/
+    //camioneta1.Draw(1);
+    //carro1.Draw(2);
 }
 
 void display()
@@ -85,8 +88,6 @@ void display()
     drawCube();
 
     glutSwapBuffers();
-
-
 }
 
 void init()

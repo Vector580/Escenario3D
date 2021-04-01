@@ -11,7 +11,7 @@ class Carro
     public:
             Carro();
             ~Carro();
-            void Draw();
+            void Draw(int);
 };
 
 

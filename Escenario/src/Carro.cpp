@@ -45,28 +45,13 @@ Carro::~Carro()
     //dtor
 }
 
-void Carro::Draw()
+void Carro::Draw(int color)
 {
     int i, j = 0;
     glLineWidth(2);
+
     glColor3f(0.54f, 0.58f, 0.59f);
     for (i=0; i<8; i++)
-    {
-        prisAux.setPoints(Puntos[i][0],Puntos[i][1],Puntos[i][2],j);
-        j++;
-    }
-    prisAux.Draw();
-
-    j = 0;
-    glColor3f(1.0f, 0.0f, 0.0f);
-    for (i=8; i<16; i++)
-    {
-        prisAux.setPoints(Puntos[i][0],Puntos[i][1],Puntos[i][2],j);
-        j++;
-    }
-    prisAux.Draw();
-    j = 0;
-    for (i=16; i<24; i++)
     {
         prisAux.setPoints(Puntos[i][0],Puntos[i][1],Puntos[i][2],j);
         j++;
@@ -81,10 +66,34 @@ void Carro::Draw()
         j++;
     }
     prisAux.Draw();
+
+    //COLOR DEL CARRO
+    switch (color)
+    {
+        case 1: glColor3f(1.0f, 0.0f, 0.0f);
+                break;
+        case 2: glColor3f(0.0f, 1.0f, 0.0f);
+                break;
+        case 3: glColor3f(0.0f, 0.0f, 1.0f);
+                break;
+        case 4: glColor3f(1.0f, 1.0f, 0.0f);
+                break;
+        case 5: glColor3f(1.0f, 0.0f, 1.0f);
+                break;
+    }
+    j = 0;
+    for (i=8; i<16; i++)
+    {
+        prisAux.setPoints(Puntos[i][0],Puntos[i][1],Puntos[i][2],j);
+        j++;
+    }
+    prisAux.Draw();
+
+    j = 0;
+    for (i=16; i<24; i++)
+    {
+        prisAux.setPoints(Puntos[i][0],Puntos[i][1],Puntos[i][2],j);
+        j++;
+    }
+    prisAux.Draw();
 }
-
-/*
-
-
-*/
-
