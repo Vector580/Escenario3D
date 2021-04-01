@@ -106,9 +106,7 @@ void Arbol:: Draw()
     //Se define color del tronco
     glColor3f(1.0f, 0.5f, 0.0f);//Naranja
     for(i=0;i<8;i++)
-    {
        tronco.setPoints(aux[i][0],aux[i][1],aux[i][2],i);
-    }
     tronco.Draw();
     //Se define color de la copa
     glColor3f(0.0f, 1.0f, 0.0f);//Verde
@@ -116,50 +114,25 @@ void Arbol:: Draw()
     {
         glBegin(GL_LINES);
             glVertex3fv(aux[i]);
-            glVertex3fv(aux[i+1]);
+        switch(i)
+        {
+            case 15: glVertex3fv(aux[8]);
+                     break;
+            case 19: glVertex3fv(aux[24]);
+                     break;
+            case 23: glVertex3fv(aux[16]);
+                     break;
+            case 30: glVertex3fv(aux[19]);
+                     break;
+            case 34: glVertex3fv(aux[31]);
+                     break;
+            case 38: glVertex3fv(aux[35]);
+                     break;
+            case 50: glVertex3fv(aux[39]);
+                     break;
+            default: glVertex3fv(aux[i+1]);
+        }
         glEnd();
-        if(i==15)
-        {
-            glBegin(GL_LINES);
-                glVertex3fv(aux[i]);
-                glVertex3fv(aux[8]);
-            glEnd();
-        }
-        if(i==19 || i==30)
-        {
-            glBegin(GL_LINES);
-                glVertex3fv(aux[i]);
-                glVertex3fv(aux[24]);
-            glEnd();
-        }
-        if(i==23)
-        {
-            glBegin(GL_LINES);
-                glVertex3fv(aux[i]);
-                glVertex3fv(aux[16]);
-            glEnd();
-        }
-        if(i==34)
-        {
-            glBegin(GL_LINES);
-                glVertex3fv(aux[i]);
-                glVertex3fv(aux[31]);
-            glEnd();
-        }
-        if(i==38)
-        {
-            glBegin(GL_LINES);
-                glVertex3fv(aux[i]);
-                glVertex3fv(aux[35]);
-            glEnd();
-        }
-        if(i==50)
-        {
-            glBegin(GL_LINES);
-                glVertex3fv(aux[i]);
-                glVertex3fv(aux[39]);
-            glEnd();
-        }
     }
     for(i=8;i<16;i++)
     {
@@ -191,10 +164,6 @@ void Arbol:: Draw()
             glVertex3fv( aux[i+12]);
         glEnd();
     }
-    glBegin(GL_LINES);
-        glVertex3fv( aux[16]);
-        glVertex3fv( aux[31]);
-    glEnd();
     glBegin(GL_LINES);
         glVertex3fv( aux[24]);
         glVertex3fv( aux[35]);
