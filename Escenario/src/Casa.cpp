@@ -104,17 +104,15 @@ void Casa:: Draw()
 
     int n,j;
     //REducior con ciclos
+    glColor3f(0.3f, 0.3f, 0.3f);
      for(int i=0;i<8;i++)
         base.setPoints(Puntos_aux[i][0],Puntos_aux[i][1],Puntos_aux[i][2],i);
     base.Draw();
-
-    techo.setPoints(Puntos_aux[8][0],Puntos_aux[8][1],Puntos_aux[8][2],0);
-    techo.setPoints(Puntos_aux[9][0],Puntos_aux[9][1],Puntos_aux[9][2],1);
-    techo.setPoints(Puntos_aux[10][0],Puntos_aux[10][1],Puntos_aux[10][2],2);
-    techo.setPoints(Puntos_aux[11][0],Puntos_aux[11][1],Puntos_aux[11][2],3);
-    techo.setPoints(Puntos_aux[12][0],Puntos_aux[12][1],Puntos_aux[12][2],4);
+ glColor4f(0.7f, 0.0, 0.0f, 0.0f);//Techo de la cas
+    for(int i=8;i<13;i++)
+        techo.setPoints(Puntos_aux[i][0],Puntos_aux[i][1],Puntos_aux[i][2],i-8);
     techo.Draw();
-
+glColor4f(0.4f, 0.0f, 0.0f, 0.0f);//Puerta
     for(n=13;n<=16;n++){
         if (n!=16)
         {
@@ -131,7 +129,7 @@ void Casa:: Draw()
             glEnd();
         }
     }
-
+glColor3f(0.0f, 0.3f, 0.5f);
     for(n=17;n<=20;n++){
         if (n!=20)
         {
@@ -148,7 +146,7 @@ void Casa:: Draw()
             glEnd();
         }
     }
-
+glColor3f(0.0f, 0.3f, 0.5f);
     for(n=21;n<=24;n++){
         if (n!=24)
         {
@@ -165,7 +163,7 @@ void Casa:: Draw()
             glEnd();
         }
     }
-
+glColor3f(0.0f, 0.3f, 0.5f);
     for(n=25;n<=28;n++){
         if (n!=28)
         {

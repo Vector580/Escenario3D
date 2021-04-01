@@ -39,6 +39,7 @@ void reshape(int width, int height)
       glOrtho(-300, 300, -300, 300, -300, 300);
 
     glMatrixMode(GL_MODELVIEW);
+    glPointSize(2);
     glLoadIdentity();
     ancho = width;
     alto = height;
@@ -68,6 +69,7 @@ void drawCube(void)
     arb.Draw();
     opera.escalar(5,5,5);
     casa_base.Draw();
+
 
     //
     /*opera.escalar(0.8,0.8,0.8);

@@ -43,7 +43,7 @@
 1617250798 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\operador.cpp
 	"Operador.h"
 
-1617311237 source:c:\users\hucom\documents\github\escenario3d\escenario\main.cpp
+1617312380 source:c:\users\hucom\documents\github\escenario3d\escenario\main.cpp
 	<GLUT/glut.h>
 	<GL/glut.h>
 	<math.h>
@@ -168,7 +168,7 @@
 
 1617131639 c:\users\hucom\documents\github\escenario3d\escenario\include\prisma.h
 
-1617311841 source:c:\users\hucom\documents\github\escenario3d\escenario\src\casa.cpp
+1617312708 source:c:\users\hucom\documents\github\escenario3d\escenario\src\casa.cpp
 	"Casa.h"
 
 1617221964 c:\users\hucom\documents\github\escenario3d\escenario\include\casa.h
@@ -246,7 +246,7 @@
 	"Operador.h"
 	"Matriz.h"
 
-1617310724 source:c:\users\hucom\documents\github\escenario3d\escenario\src\carro.cpp
+1617311952 source:c:\users\hucom\documents\github\escenario3d\escenario\src\carro.cpp
 	"Carro.h"
 	<GL/glut.h>
 
