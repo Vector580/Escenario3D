@@ -8,8 +8,8 @@ class Camioneta
 {
     private:
         Prisma prisAux;
-        float Puntos[50][3];
-        float PuntosAux[50][3];
+        float Puntos[48][3];
+        float PuntosAux[48][3];
         Matriz MatL;
         Operador *Ope;
 

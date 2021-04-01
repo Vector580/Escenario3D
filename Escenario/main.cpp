@@ -64,9 +64,10 @@ void drawCube(void)
     anguloCuboX+=0.1f;
     opera.LoadIdenty();
     opera.rotacion(anguloCuboX,1,0,0);
+    camioneta1.Multiplicar();
+    camioneta1.Draw(4);
     arb.Multiplicar();
     arb.Draw();
-
     //
     /*opera.escalar(0.8,0.8,0.8);
     opera.trasladar(0.1,0.1,0.1);
@@ -74,19 +75,15 @@ void drawCube(void)
 
     casa_base.Multiplicar();
     casa_base.Draw();*/
-    opera.LoadIdenty();
-    camioneta1.Multiplicar();
-    camioneta1.Draw(4);
+
     //anguloCuboY+=0.1f;
     //anguloEsfera+=0.2f;
     //camioneta1.Draw(1);
     //carro1.Draw(2);
 
     //anguloCuboX+=0.05f;
-    anguloCuboY+=0.05f;
+    //anguloCuboY+=0.05f;
     //anguloEsfera+=0.1f;
-
-
 }
 
 void display()

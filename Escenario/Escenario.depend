@@ -67,7 +67,7 @@
 1617229178 source:c:\users\hucom\documents\github\escenario3d\escenario\src\matriz.cpp
 	"Matriz.h"
 
-1617291445 source:c:\users\btpas\documents\github\escenario3d\escenario\main.cpp
+1617293443 source:c:\users\btpas\documents\github\escenario3d\escenario\main.cpp
 	<GLUT/glut.h>
 	<GL/glut.h>
 	<stdlib.h>
@@ -214,20 +214,20 @@
 1617291064 source:c:\users\btpas\documents\github\escenario3d\escenario\src\casa.cpp
 	"Casa.h"
 
-1617291777 source:c:\users\btpas\documents\github\escenario3d\escenario\src\carro.cpp
+1617293182 source:c:\users\btpas\documents\github\escenario3d\escenario\src\carro.cpp
 	"Carro.h"
 	<GL/glut.h>
 
-1617291722 c:\users\btpas\documents\github\escenario3d\escenario\include\carro.h
+1617293182 c:\users\btpas\documents\github\escenario3d\escenario\include\carro.h
 	"Prisma.h"
 	"Operador.h"
 	"Matriz.h"
 
-1617291643 source:c:\users\btpas\documents\github\escenario3d\escenario\src\camioneta.cpp
+1617293182 source:c:\users\btpas\documents\github\escenario3d\escenario\src\camioneta.cpp
 	"Camioneta.h"
 	<GL/glut.h>
 
-1617291573 c:\users\btpas\documents\github\escenario3d\escenario\include\camioneta.h
+1617293182 c:\users\btpas\documents\github\escenario3d\escenario\include\camioneta.h
 	"Prisma.h"
 	"Operador.h"
 	"Matriz.h"

@@ -63,7 +63,7 @@ Camioneta::Camioneta(Operador *Op)
     Puntos[46][0] = 3.250;     Puntos[46][1] = 1.250;    Puntos[46][2] = -3.15;
     Puntos[47][0] = 3.125;     Puntos[47][1] = 1.250;    Puntos[47][2] = -3.15;
 
-    for(int i=0;i<50;i++)
+    for(int i=0;i<48;i++)
         for(int j=0;j<3;j++)
             PuntosAux[i][j]=Puntos[i][j];
    Ope = Op;
@@ -103,7 +103,7 @@ void Camioneta::Draw(int color)
     glColor3f(0.54f, 0.58f, 0.59f);
     for (i=0; i<8; i++)
     {
-        prisAux.setPoints(Puntos[i][0],Puntos[i][1],Puntos[i][2],j);
+        prisAux.setPoints(PuntosAux[i][0],PuntosAux[i][1],PuntosAux[i][2],j);
         j++;
     }
     prisAux.Draw();
@@ -112,7 +112,7 @@ void Camioneta::Draw(int color)
     glColor3f(0.54f, 0.58f, 0.59f);
     for (i=24; i<32; i++)
     {
-        prisAux.setPoints(Puntos[i][0],Puntos[i][1],Puntos[i][2],j);
+        prisAux.setPoints(PuntosAux[i][0],PuntosAux[i][1],PuntosAux[i][2],j);
         j++;
     }
     prisAux.Draw();
@@ -134,7 +134,7 @@ void Camioneta::Draw(int color)
     j = 0;
     for (i=8; i<16; i++)
     {
-        prisAux.setPoints(Puntos[i][0],Puntos[i][1],Puntos[i][2],j);
+        prisAux.setPoints(PuntosAux[i][0],PuntosAux[i][1],PuntosAux[i][2],j);
         j++;
     }
     prisAux.Draw();
@@ -142,58 +142,58 @@ void Camioneta::Draw(int color)
     j = 0;
     for (i=16; i<24; i++)
     {
-        prisAux.setPoints(Puntos[i][0],Puntos[i][1],Puntos[i][2],j);
+        prisAux.setPoints(PuntosAux[i][0],PuntosAux[i][1],PuntosAux[i][2],j);
         j++;
     }
     prisAux.Draw();
     glBegin(GL_LINES);
-    glVertex3f(Puntos[32][0],Puntos[32][1],Puntos[32][2]);
-    glVertex3f(Puntos[33][0],Puntos[33][1],Puntos[33][2]);
+    glVertex3f(PuntosAux[32][0],PuntosAux[32][1],PuntosAux[32][2]);
+    glVertex3f(PuntosAux[33][0],PuntosAux[33][1],PuntosAux[33][2]);
     glEnd();
     glBegin(GL_LINES);
-    glVertex3f(Puntos[34][0],Puntos[34][1],Puntos[34][2]);
-    glVertex3f(Puntos[35][0],Puntos[35][1],Puntos[35][2]);
+    glVertex3f(PuntosAux[34][0],PuntosAux[34][1],PuntosAux[34][2]);
+    glVertex3f(PuntosAux[35][0],PuntosAux[35][1],PuntosAux[35][2]);
     glEnd();
     glBegin(GL_LINES);
-    glVertex3f(Puntos[36][0],Puntos[36][1],Puntos[36][2]);
-    glVertex3f(Puntos[37][0],Puntos[37][1],Puntos[37][2]);
+    glVertex3f(PuntosAux[36][0],PuntosAux[36][1],PuntosAux[36][2]);
+    glVertex3f(PuntosAux[37][0],PuntosAux[37][1],PuntosAux[37][2]);
     glEnd();
     glBegin(GL_LINES);
-    glVertex3f(Puntos[38][0],Puntos[38][1],Puntos[38][2]);
-    glVertex3f(Puntos[39][0],Puntos[39][1],Puntos[39][2]);
-    glEnd();
-
-    glBegin(GL_LINES);
-    glVertex3f(Puntos[40][0],Puntos[40][1],Puntos[40][2]);
-    glVertex3f(Puntos[41][0],Puntos[41][1],Puntos[41][2]);
-    glEnd();
-    glBegin(GL_LINES);
-    glVertex3f(Puntos[41][0],Puntos[41][1],Puntos[41][2]);
-    glVertex3f(Puntos[42][0],Puntos[42][1],Puntos[42][2]);
-    glEnd();
-    glBegin(GL_LINES);
-    glVertex3f(Puntos[42][0],Puntos[42][1],Puntos[42][2]);
-    glVertex3f(Puntos[43][0],Puntos[43][1],Puntos[43][2]);
-    glEnd();
-    glBegin(GL_LINES);
-    glVertex3f(Puntos[43][0],Puntos[43][1],Puntos[43][2]);
-    glVertex3f(Puntos[40][0],Puntos[40][1],Puntos[40][2]);
+    glVertex3f(PuntosAux[38][0],PuntosAux[38][1],PuntosAux[38][2]);
+    glVertex3f(PuntosAux[39][0],PuntosAux[39][1],PuntosAux[39][2]);
     glEnd();
 
     glBegin(GL_LINES);
-    glVertex3f(Puntos[44][0],Puntos[44][1],Puntos[44][2]);
-    glVertex3f(Puntos[45][0],Puntos[45][1],Puntos[45][2]);
+    glVertex3f(PuntosAux[40][0],PuntosAux[40][1],PuntosAux[40][2]);
+    glVertex3f(PuntosAux[41][0],PuntosAux[41][1],PuntosAux[41][2]);
     glEnd();
     glBegin(GL_LINES);
-    glVertex3f(Puntos[45][0],Puntos[45][1],Puntos[45][2]);
-    glVertex3f(Puntos[46][0],Puntos[46][1],Puntos[46][2]);
+    glVertex3f(PuntosAux[41][0],PuntosAux[41][1],PuntosAux[41][2]);
+    glVertex3f(PuntosAux[42][0],PuntosAux[42][1],PuntosAux[42][2]);
     glEnd();
     glBegin(GL_LINES);
-    glVertex3f(Puntos[46][0],Puntos[46][1],Puntos[46][2]);
-    glVertex3f(Puntos[47][0],Puntos[47][1],Puntos[47][2]);
+    glVertex3f(PuntosAux[42][0],PuntosAux[42][1],PuntosAux[42][2]);
+    glVertex3f(PuntosAux[43][0],PuntosAux[43][1],PuntosAux[43][2]);
     glEnd();
     glBegin(GL_LINES);
-    glVertex3f(Puntos[47][0],Puntos[47][1],Puntos[47][2]);
-    glVertex3f(Puntos[44][0],Puntos[44][1],Puntos[44][2]);
+    glVertex3f(PuntosAux[43][0],PuntosAux[43][1],PuntosAux[43][2]);
+    glVertex3f(PuntosAux[40][0],PuntosAux[40][1],PuntosAux[40][2]);
+    glEnd();
+
+    glBegin(GL_LINES);
+    glVertex3f(PuntosAux[44][0],PuntosAux[44][1],PuntosAux[44][2]);
+    glVertex3f(PuntosAux[45][0],PuntosAux[45][1],PuntosAux[45][2]);
+    glEnd();
+    glBegin(GL_LINES);
+    glVertex3f(PuntosAux[45][0],PuntosAux[45][1],PuntosAux[45][2]);
+    glVertex3f(PuntosAux[46][0],PuntosAux[46][1],PuntosAux[46][2]);
+    glEnd();
+    glBegin(GL_LINES);
+    glVertex3f(PuntosAux[46][0],PuntosAux[46][1],PuntosAux[46][2]);
+    glVertex3f(PuntosAux[47][0],PuntosAux[47][1],PuntosAux[47][2]);
+    glEnd();
+    glBegin(GL_LINES);
+    glVertex3f(PuntosAux[47][0],PuntosAux[47][1],PuntosAux[47][2]);
+    glVertex3f(PuntosAux[44][0],PuntosAux[44][1],PuntosAux[44][2]);
     glEnd();
 }
