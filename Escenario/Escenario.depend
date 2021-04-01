@@ -43,9 +43,10 @@
 1617250798 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\operador.cpp
 	"Operador.h"
 
-1617294086 source:c:\users\hucom\documents\github\escenario3d\escenario\main.cpp
+1617310291 source:c:\users\hucom\documents\github\escenario3d\escenario\main.cpp
 	<GLUT/glut.h>
 	<GL/glut.h>
+	<math.h>
 	<stdlib.h>
 	"Prisma.h"
 	"Piramide.h"
@@ -53,6 +54,7 @@
 	"Camioneta.h"
 	"Carro.h"
 	"Arbol.h"
+	"Cilindro.h"
 
 1617229568 c:\users\hucom\documents\github\escenario3d\escenario\include\operador.h
 	<GL/glut.h>
@@ -235,7 +237,7 @@
 	"Operador.h"
 	"Matriz.h"
 
-1617294062 source:c:\users\hucom\documents\github\escenario3d\escenario\src\camioneta.cpp
+1617294136 source:c:\users\hucom\documents\github\escenario3d\escenario\src\camioneta.cpp
 	"Camioneta.h"
 	<GL/glut.h>
 
@@ -266,4 +268,11 @@
 1617266763 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\carro.cpp
 	"Carro.h"
 	<GL/glut.h>
+
+1617310141 source:c:\users\hucom\documents\github\escenario3d\escenario\src\cilindro.cpp
+	"Cilindro.h"
+	<math.h>
+	<GL/glut.h>
+
+1617310084 c:\users\hucom\documents\github\escenario3d\escenario\include\cilindro.h
 

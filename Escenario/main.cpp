@@ -3,7 +3,7 @@
 #else
 #include <GL/glut.h>
 #endif
-
+#include <math.h>
 #include <stdlib.h>
 #include "Prisma.h"
 #include "Piramide.h"
@@ -11,6 +11,7 @@
 #include "Camioneta.h"
 #include "Carro.h"
 #include "Arbol.h"
+#include "Cilindro.h"
 GLfloat anguloCuboX = 0.0f;
 GLfloat anguloCuboY = 0.0f;
 GLfloat anguloEsfera = 0.0f;
@@ -24,6 +25,7 @@ Casa casa_base(&opera);
 Camioneta camioneta1(&opera);
 Carro carro1(&opera);
 Arbol arb(&opera);
+Cilindro cilin;
 
 
 void reshape(int width, int height)
@@ -34,7 +36,7 @@ void reshape(int width, int height)
     if(hazPerspectiva)
       gluPerspective(60.0f, (GLfloat)width/(GLfloat)height, 1.0f, 20.0f);
     else
-      glOrtho(-20, 20, -20, 20, -20, 20);
+      glOrtho(-300, 300, -300, 300, -300, 300);
 
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
@@ -45,13 +47,26 @@ void reshape(int width, int height)
 void drawCube(void)
 {
 
+    glLoadIdentity();
+    anguloCuboX+=0.05f;
+    glRotatef(15, 1.0f, 0.0f, 0.0f);
+    //glRotatef(anguloCuboX, 0.0f, 0.0f, 1.0f);
+    cilin.setCentro(100,-100,1);
+    cilin.setRadio(40);
+    cilin.setProfundidad(40);
+    cilin.Draw();
+    anguloCuboX+=0.05f;
+
+
+/*
     anguloCuboX+=0.1f;
     opera.LoadIdenty();
     opera.rotacion(anguloCuboX,1,0,0);
+    opera.escalar(10,10,10);
     camioneta1.Multiplicar();
     camioneta1.Draw(4);
     arb.Multiplicar();
-    arb.Draw();
+    arb.Draw();*/
     //
     /*opera.escalar(0.8,0.8,0.8);
     opera.trasladar(0.1,0.1,0.1);
