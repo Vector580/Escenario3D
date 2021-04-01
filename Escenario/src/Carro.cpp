@@ -98,6 +98,7 @@ void Carro:: Update()
 
 void Carro::Draw(int color)
 {
+    Ope->multiplicar(PuntosAux,48);
     int i, j = 0;
     glLineWidth(2);
 
