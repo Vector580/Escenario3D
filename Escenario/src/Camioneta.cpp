@@ -204,8 +204,20 @@ void Camioneta::Draw(int color)
 
     glColor3f(1.0f, 1.0f, 1.0f);
     cilin.setApunter(Ope);
-    cilin.setCentro(20,0,-1);
-    cilin.setRadio(.5);
-    cilin.setProfundidad(1);
+    cilin.setCentro(20,0,-0.5);
+    cilin.setRadio(.45);
+    cilin.setProfundidad(0.75);
+    cilin.Draw();
+    cilin.setCentro(20,0,-3.7);
+    cilin.setRadio(0.45);
+    cilin.setProfundidad(0.75);
+    cilin.Draw();
+    cilin.setCentro(45,0,-3.7);
+    cilin.setRadio(0.45);
+    cilin.setProfundidad(0.75);
+    cilin.Draw();
+    cilin.setCentro(45,0,-0.5);
+    cilin.setRadio(0.45);
+    cilin.setProfundidad(0.75);
     cilin.Draw();
 }

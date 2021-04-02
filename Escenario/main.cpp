@@ -58,51 +58,20 @@ void drawCube(void)
     cilin.setRadio(40);
     cilin.setProfundidad(40);
     cilin.Draw();*/
-
-
-    cilin.setCentro(0,0,0);
+    /*cilin.setCentro(0,0,0);
     cilin.setRadio(10);
     cilin.setProfundidad(10);
-
-    anguloCuboX+=0.1f;
-    opera.LoadIdenty();
-    opera.push();
-
-    opera.rotacion(anguloCuboX,1,0,0);
-    opera.escalar(15,15,15);
-    opera.trasladar(-10,0,0);
-    camioneta1.Draw(1);
-    opera.pop();
-    opera.push();
+    anguloCuboX+=0.1f;*/
+    //opera.pop();
+    //opera.push();
     //opera.escalar(0.3,0.3,0.3);
-    opera.rotacion(anguloCuboX,1,0,0);
-    sol.Draw();
-    cilin.Draw();
-    opera.pop();
-    opera.push();
-    opera.escalar(50,50,50);
-    casa_base.Draw(3);
-    opera.pop();
-
-
-
-
-    //
-    /*opera.escalar(0.8,0.8,0.8);
-    opera.trasladar(0.1,0.1,0.1);
-
-
-    casa_base.Multiplicar();
-    casa_base.Draw();*/
-
+    //opera.rotacion(anguloCuboX,1,0,0);
     //anguloCuboY+=0.1f;
     //anguloEsfera+=0.2f;
-    //camioneta1.Draw(1);
-    //carro1.Draw(2);
-
-   // anguloCuboX+=0.05f;
+    //anguloCuboX+=0.05f;
     //anguloCuboY+=0.05f;
     //anguloEsfera+=0.1f;
+
 }
 
 void display()
