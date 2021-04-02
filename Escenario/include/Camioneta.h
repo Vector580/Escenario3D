@@ -11,16 +11,12 @@ class Camioneta
         Prisma prisAux;
         float Puntos[48][3];
         float PuntosAux[48][3];
-        Matriz MatL;
         Operador *Ope;
 
     public:
         Cilindro cilin;
         Camioneta(Operador*);
         virtual ~Camioneta();
-        void Multiplicar();
-        void Trasladar(float, float, float);
-        void Escalar (float, float, float);
         void Update();
         void Draw(int);
 };

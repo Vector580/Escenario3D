@@ -20,7 +20,7 @@
 	<GL/glu.h>
 	<stdlib.h>
 
-1617344906 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\main.cpp
+1617345713 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\main.cpp
 	<GLUT/glut.h>
 	<GL/glut.h>
 	<math.h>
@@ -34,16 +34,15 @@
 	"Cilindro.h"
 	"Sol.h"
 
-1617345216 c:\users\victor\desktop\proyectos\escenario3d\escenario\include\operador.h
+1617346909 c:\users\victor\desktop\proyectos\escenario3d\escenario\include\operador.h
 	<GL/glut.h>
 	<stdlib.h>
-	<stdio.h>
 	<stack>
 	<math.h>
 	"iostream"
 	"Matriz.h"
 
-1617345216 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\operador.cpp
+1617346885 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\operador.cpp
 	"Operador.h"
 
 1617330455 source:c:\users\hucom\documents\github\escenario3d\escenario\main.cpp
@@ -192,21 +191,21 @@
 	"Prisma.h"
 	"Operador.h"
 
-1617345322 c:\users\victor\desktop\proyectos\escenario3d\escenario\include\casa.h
+1617346661 c:\users\victor\desktop\proyectos\escenario3d\escenario\include\casa.h
 	"Matriz.h"
 	"Operador.h"
 	"Piramide.h"
 	"Prisma.h"
 
-1617345259 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\arbol.cpp
+1617346299 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\arbol.cpp
 	"Arbol.h"
 
-1617345259 c:\users\victor\desktop\proyectos\escenario3d\escenario\include\arbol.h
+1617346299 c:\users\victor\desktop\proyectos\escenario3d\escenario\include\arbol.h
 	"Matriz.h"
 	"Prisma.h"
 	"Operador.h"
 
-1617345322 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\casa.cpp
+1617346661 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\casa.cpp
 	"Casa.h"
 
 1617314036 c:\users\btpas\documents\github\escenario3d\escenario\include\casa.h
@@ -264,22 +263,22 @@
 	"Operador.h"
 	"Matriz.h"
 
-1617345216 c:\users\victor\desktop\proyectos\escenario3d\escenario\include\camioneta.h
+1617346505 c:\users\victor\desktop\proyectos\escenario3d\escenario\include\camioneta.h
 	"Prisma.h"
 	"Operador.h"
 	"Matriz.h"
 	"Cilindro.h"
 
-1617345295 c:\users\victor\desktop\proyectos\escenario3d\escenario\include\carro.h
+1617346542 c:\users\victor\desktop\proyectos\escenario3d\escenario\include\carro.h
 	"Prisma.h"
 	"Operador.h"
 	"Matriz.h"
 
-1617345216 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\camioneta.cpp
+1617346505 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\camioneta.cpp
 	"Camioneta.h"
 	<GL/glut.h>
 
-1617345295 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\carro.cpp
+1617346542 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\carro.cpp
 	"Carro.h"
 	<GL/glut.h>
 
@@ -318,7 +317,7 @@
 1617332188 c:\users\victor\desktop\proyectos\escenario3d\escenario\include\cilindro.h
 	"Operador.h"
 
-1617345524 c:\users\victor\desktop\proyectos\escenario3d\escenario\include\sol.h
+1617346796 c:\users\victor\desktop\proyectos\escenario3d\escenario\include\sol.h
 	"Operador.h"
 	"Cilindro.h"
 

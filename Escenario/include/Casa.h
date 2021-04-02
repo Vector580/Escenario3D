@@ -8,7 +8,6 @@
 class Casa
 {
     private:
-        Matriz MatL;
         Operador *Ope;
         Prisma base;
         Piramide techo;
@@ -18,10 +17,6 @@ class Casa
     public:
         Casa(Operador*);
         ~Casa();
-        void Trasladar(float, float, float);
-        void Escalar (float, float, float);
-        void Multiplicar();
-        void Update();
         void Draw(int color);
 };
 

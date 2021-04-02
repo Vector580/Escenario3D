@@ -10,14 +10,9 @@ class Arbol //: public Objeto
     public:
         Arbol(Operador*);
         virtual ~Arbol();
-        void Multiplicar();
-        void Trasladar(float, float, float);
-        void Escalar (float, float, float);
-        void Update();
         void Draw();
 
     private:
-        Matriz MatL;
         Operador *Ope;
         Prisma tronco;
         float Puntos[51][3];

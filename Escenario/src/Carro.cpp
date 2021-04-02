@@ -74,20 +74,6 @@ Carro::~Carro()
     //dtor
 }
 
-
-void Carro:: Trasladar(float x, float y, float z)
-{
-    Ope->trasladar(x,y,z);
-}
-void Carro:: Escalar (float escX, float escY, float escZ)
-{
-    Ope->escalar(escX,escY,escZ);
-}
-
-void Carro::Multiplicar()
-{
-    Ope->multiplicar(PuntosAux,51);
-}
 void Carro:: Update()
 {
 

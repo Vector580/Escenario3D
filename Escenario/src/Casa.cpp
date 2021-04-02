@@ -76,24 +76,6 @@ Casa::~Casa()
     //dtor
 }
 
-void Casa:: Trasladar(float x, float y, float z)
-{
-    Ope->trasladar(x,y,z);
-}
-void Casa:: Escalar (float escX, float escY, float escZ)
-{
-    Ope->escalar(escX,escY,escZ);
-}
-
-void Casa::Multiplicar()
-{
-    Ope->multiplicar(Puntos_aux,41);
-
-}
-void Casa:: Update()
-{
-
-}
 void Casa:: Draw(int color)
 {
 

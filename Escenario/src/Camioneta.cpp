@@ -74,19 +74,6 @@ Camioneta::~Camioneta()
     //dtor
 }
 
-void Camioneta:: Trasladar(float x, float y, float z)
-{
-    Ope->trasladar(x,y,z);
-}
-void Camioneta:: Escalar (float escX, float escY, float escZ)
-{
-    Ope->escalar(escX,escY,escZ);
-}
-
-void Camioneta::Multiplicar()
-{
-    Ope->multiplicar(PuntosAux,48);
-}
 void Camioneta:: Update()
 {
 

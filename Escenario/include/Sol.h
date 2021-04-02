@@ -8,9 +8,6 @@ class Sol
     public:
         Sol(Operador*);
         ~Sol();
-        void Trasladar(float, float, float);
-        void Escalar (float, float, float);
-        void Multiplicar();
         void Update();
         void Draw();
 
@@ -18,7 +15,7 @@ class Sol
     private:        //Matriz MatL;
         Operador *Ope;
         float Puntos[360][3];
-             float px;
+        float px;
         float py;
         float pz;
         int radio;

@@ -73,23 +73,6 @@ Arbol::~Arbol()
     //dtor
 }
 
-void Arbol:: Trasladar(float x, float y, float z)
-{
-    Ope->trasladar(x,y,z);
-}
-void Arbol:: Escalar (float escX, float escY, float escZ)
-{
-    Ope->escalar(escX,escY,escZ);
-}
-
-void Arbol::Multiplicar()
-{
-    Ope->multiplicar(aux,51);
-}
-void Arbol:: Update()
-{
-
-}
 void Arbol:: Draw()
 {
     Ope->rotarX(-90);
