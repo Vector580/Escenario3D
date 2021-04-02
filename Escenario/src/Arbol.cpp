@@ -93,8 +93,6 @@ void Arbol:: Draw()
         {
             case 15: glVertex3fv(aux[8]);
                      break;
-            case 19: glVertex3fv(aux[24]);
-                     break;
             case 23: glVertex3fv(aux[16]);
                      break;
             case 30: glVertex3fv(aux[19]);
@@ -142,6 +140,14 @@ void Arbol:: Draw()
     glBegin(GL_LINES);
         glVertex3fv( aux[24]);
         glVertex3fv( aux[35]);
+    glEnd();
+    glBegin(GL_LINES);
+        glVertex3fv( aux[19]);
+        glVertex3fv( aux[31]);
+    glEnd();
+    glBegin(GL_LINES);
+        glVertex3fv( aux[19]);
+        glVertex3fv( aux[24]);
     glEnd();
     for(i=0;i<51;i++)
         for(j=0;j<3;j++)

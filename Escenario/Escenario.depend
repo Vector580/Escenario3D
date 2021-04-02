@@ -197,7 +197,7 @@
 	"Piramide.h"
 	"Prisma.h"
 
-1617346299 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\arbol.cpp
+1617348245 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\arbol.cpp
 	"Arbol.h"
 
 1617346299 c:\users\victor\desktop\proyectos\escenario3d\escenario\include\arbol.h
@@ -326,7 +326,7 @@
 	<math.h>
 	<GL/glut.h>
 
-1617345524 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\sol.cpp
+1617346962 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\sol.cpp
 	"Sol.h"
 	<math.h>
 
