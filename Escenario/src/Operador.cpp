@@ -50,7 +50,7 @@ void Operador::escalar(float sx, float sy, float sz)
             for (j=0;j<4;j++)
                 *(Ap+(4*j+i))=aux[i][j];
 }
-
+/*
 //Operador de rotacion, recibe los grados
 //ESta funcion era para una rotacion libre pero no sirve
 void Operador::rotar(float grade, float tx, float ty, float tz)
@@ -102,6 +102,63 @@ void Operador::rotar(float grade, float tx, float ty, float tz)
     for (i=0;i<4;i++)
             for (j=0;j<4;j++)
                 *(Ap+(4*j+i))=aux[i][j];
+}*/
+
+void Operador::rotarlib(float grade, float xp1, float yp1, float zp1,float xp2, float yp2, float zp2)
+{
+    float rad=grade*0.0174533;
+    float aux[4][4]={{0,0,0,0},{0,0,0,0},{0,0,0,0},{0,0,0,0}};
+    float aux2[4][4]={{0,0,0,0},{0,0,0,0},{0,0,0,0},{0,0,0,0}};
+    int i,j,k,m;
+    float vectorUni[4],magnitud,valor;
+    magnitud=sqrt(((xp2-xp1)*(xp2-xp1))+((yp2-yp1)*(yp2-yp1))+((zp2-zp1)*(zp2-zp1)));
+    vectorUni[0]=(xp2-xp1)/magnitud;//a
+    vectorUni[1]=(yp2-yp1)/magnitud;//b
+    vectorUni[2]=(zp2-zp1)/magnitud;//c
+    vectorUni[3]=sqrt(((vectorUni[1])*(vectorUni[1]))+((vectorUni[2])*(vectorUni[2])));//d=raiz(b^2+c^2)
+    //Inversas
+    float Rx[4][4]={{1,0,0,0},{0,vectorUni[1]/vectorUni[3],vectorUni[2]/vectorUni[3],0},{0,-1*(vectorUni[2]/vectorUni[3]),vectorUni[1]/vectorUni[3],0},{0,0,0,1}};
+    float Ry[4][4]={{vectorUni[3],0,-1*(vectorUni[0]),0},{0,1,0,0},{vectorUni[0],0,vectorUni[3],0},{0,0,0,1}};
+    float Rz[4][4]={{cos(rad),-sin(rad),0,0},{sin(-rad),cos(rad),0,0},{0,0,1,0},{0,0,0,1}};
+
+    for (i=0;i<4;i++)
+        for (j=0;j<4;j++)
+            for (k=0;k<4;k++)
+                aux[i][j]=aux[i][j]+Rx[i][k]*Ry[k][j];
+    for (i=0;i<4;i++)
+        for (j=0;j<4;j++)
+            for (k=0;k<4;k++)
+                aux2[i][j]=aux2[i][j]+aux[i][k]*Rz[k][j];
+    for (i=0;i<4;i++)
+        for (j=0;j<4;j++)
+            aux[i][j]=0;
+
+    Ry[0][2]=-1*Ry[0][2];
+    Ry[2][0]=-1*Ry[2][0];
+    for (i=0;i<4;i++)
+        for (j=0;j<4;j++)
+            for (k=0;k<4;k++)
+                aux[i][j]=aux[i][j]+aux2[i][k]*Ry[k][j];
+    for (i=0;i<4;i++)
+        for (j=0;j<4;j++)
+            aux2[i][j]=0;
+
+    Rx[1][2]=-1*Rx[1][2];
+    Rx[2][1]=-1*Rx[2][1];
+    for (i=0;i<4;i++)
+        for (j=0;j<4;j++)
+            for (k=0;k<4;k++)
+                aux2[i][j]=aux2[i][j]+aux[i][k]*Rx[k][j];
+    for (i=0;i<4;i++)
+        for (j=0;j<4;j++)
+            aux[i][j]=0;
+    for (i=0;i<4;i++)
+        for (j=0;j<4;j++)
+            for (k=0;k<4;k++)
+                aux[i][j]=aux[i][j]+(aux2[i][k]*((*(Ap+(4*j+k)))));
+    for (i=0;i<4;i++)
+            for (j=0;j<4;j++)
+                *(Ap+(4*j+i))=aux[i][j];
 }
 //Funcion para rotar, dependiendo del eje
 void Operador::rotacion(float grade, float tx, float ty, float tz){
@@ -133,6 +190,50 @@ void Operador::rotacion(float grade, float tx, float ty, float tz){
             for (k=0;k<4;k++)
                 aux[i][j]=aux[i][j]+((*(Ap+(4*k+i)))*rotate_z[k][j]);
     }
+    for (i=0;i<4;i++)
+            for (j=0;j<4;j++)
+                *(Ap+(4*j+i))=aux[i][j];
+}
+
+void Operador::rotarX(float grade)
+{
+    float rad=grade*0.0174533;
+    float aux[4][4]={{0,0,0,0},{0,0,0,0},{0,0,0,0},{0,0,0,0}};
+    int i,j,k,m;
+    float rotate_x[4][4]={{1,0,0,0},{0,cos(rad),-1*sin(rad),0},{0,sin(rad),cos(rad),0},{0,0,0,1}};
+    for (i=0;i<4;i++)
+        for (j=0;j<4;j++)
+            for (k=0;k<4;k++)
+                aux[i][j]=aux[i][j]+((*(Ap+(4*k+i)))*rotate_x[k][j]);
+    for (i=0;i<4;i++)
+            for (j=0;j<4;j++)
+                *(Ap+(4*j+i))=aux[i][j];
+}
+void Operador::rotarY(float grade)
+{
+    float rad=grade*0.0174533;
+    float aux[4][4]={{0,0,0,0},{0,0,0,0},{0,0,0,0},{0,0,0,0}};
+    int i,j,k,m;
+    float rotate_y[4][4]={{cos(rad),0,sin(rad),0},{0,1,0,0},{-1*sin(rad),0,cos(rad),0},{0,0,01}};
+    for (i=0;i<4;i++)
+        for (j=0;j<4;j++)
+            for (k=0;k<4;k++)
+                aux[i][j]=aux[i][j]+((*(Ap+(4*k+i)))*rotate_y[k][j]);
+    for (i=0;i<4;i++)
+            for (j=0;j<4;j++)
+                *(Ap+(4*j+i))=aux[i][j];
+}
+
+void Operador::rotarZ(float grade)
+{
+    float rad=grade*0.0174533;
+    float aux[4][4]={{0,0,0,0},{0,0,0,0},{0,0,0,0},{0,0,0,0}};
+    int i,j,k,m;
+    float rotate_z[4][4]={{cos(rad),-1*sin(rad),0,0},{sin(rad),cos(rad),0,0},{0,0,1,0},{0,0,0,1}};
+    for (i=0;i<4;i++)
+        for (j=0;j<4;j++)
+            for (k=0;k<4;k++)
+                aux[i][j]=aux[i][j]+((*(Ap+(4*k+i)))*rotate_z[k][j]);
     for (i=0;i<4;i++)
             for (j=0;j<4;j++)
                 *(Ap+(4*j+i))=aux[i][j];
