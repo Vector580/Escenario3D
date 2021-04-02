@@ -38,7 +38,7 @@ void reshape(int width, int height)
     if(hazPerspectiva)
       gluPerspective(60.0f, (GLfloat)width/(GLfloat)height, 1.0f, 20.0f);
     else
-      glOrtho(-600, 600, -325, 325, -300, 300);
+      glOrtho(-600, 600, -325, 325, -600, 600);
 
     glMatrixMode(GL_MODELVIEW);
     glPointSize(2);
@@ -58,20 +58,247 @@ void drawCube(void)
     cilin.setRadio(40);
     cilin.setProfundidad(40);
     cilin.Draw();*/
+
+
     /*cilin.setCentro(0,0,0);
     cilin.setRadio(10);
     cilin.setProfundidad(10);
-    anguloCuboX+=0.1f;*/
-    //opera.pop();
-    //opera.push();
+
+    anguloCuboX+=0.1f;
+    opera.LoadIdenty();
+    opera.push();
+
+    opera.rotacion(anguloCuboX,1,0,0);
+    opera.escalar(15,15,15);
+    opera.trasladar(-20,10,0);
+    camioneta1.Draw(1);
+    opera.pop();
+    opera.push();
     //opera.escalar(0.3,0.3,0.3);
-    //opera.rotacion(anguloCuboX,1,0,0);
+    opera.rotacion(anguloCuboX,1,0,0);
+    sol.Draw();
+    cilin.Draw();
+    opera.pop();
+    opera.push();
+    opera.escalar(50,50,50);
+    casa_base.Draw(3);
+    opera.pop();*/
+
     //anguloCuboY+=0.1f;
     //anguloEsfera+=0.2f;
-    //anguloCuboX+=0.05f;
-    //anguloCuboY+=0.05f;
-    //anguloEsfera+=0.1f;
+    //camioneta1.Draw(1);
+    //carro1.Draw(2);
+    glRotatef(anguloCuboX, 0.0f, 0.0f, 1.0f);
 
+    glLineWidth(2);
+    opera.LoadIdenty();
+    opera.escalar(40,40,40);
+    opera.trasladar(6,0,-5);//
+    casa_base.Draw(1);
+
+    opera.LoadIdenty();
+    opera.escalar(40,40,40);
+    opera.trasladar(3.5,0,-8);//
+    casa_base.Draw(2);
+
+    opera.LoadIdenty();
+    opera.escalar(40,40,40);
+    opera.trasladar(3,0,-6);//
+    casa_base.Draw(3);
+
+    opera.LoadIdenty();
+    opera.escalar(40,40,40);
+    opera.trasladar(1,0,-13);//
+    casa_base.Draw(4);
+
+    opera.LoadIdenty();
+    opera.escalar(40,40,40);
+    opera.trasladar(0,0,-7);//
+    casa_base.Draw(5);
+
+    opera.LoadIdenty();
+    opera.escalar(40,40,40);
+    opera.trasladar(-2,0,-12);//
+    casa_base.Draw(1);
+
+    opera.LoadIdenty();
+    opera.escalar(40,40,40);
+    opera.trasladar(-3.5,0,-7);//
+    casa_base.Draw(2);
+
+    opera.LoadIdenty();
+    opera.escalar(40,40,40);
+    opera.trasladar(-6.5,0,-5.5);//
+    casa_base.Draw(3);
+
+    opera.LoadIdenty();
+    opera.escalar(40,40,40);
+    opera.trasladar(-7,0,-8.5);//
+    casa_base.Draw(4);
+
+    opera.LoadIdenty();
+    opera.escalar(40,40,40);
+    opera.trasladar(-10,0,-13);//
+    casa_base.Draw(5);
+
+    opera.LoadIdenty();
+    opera.escalar(40,40,40);
+    opera.trasladar(-10,0,-9);//
+    casa_base.Draw(1);
+
+    opera.LoadIdenty();
+    opera.escalar(40,40,40);
+    opera.trasladar(-14,0,-13);//
+    casa_base.Draw(2);
+
+    opera.LoadIdenty();
+    opera.escalar(40,40,40);
+    opera.trasladar(-12.5,0,-7);//
+    casa_base.Draw(3);
+
+    opera.LoadIdenty();
+    opera.escalar(40,40,40);
+    opera.trasladar(-6.5,0,-12.5);
+    casa_base.Draw(4);
+
+    opera.LoadIdenty();
+    opera.escalar(40,40,40);
+    opera.trasladar(-4.9,0,-12);
+    casa_base.Draw(5);
+
+    opera.LoadIdenty();
+    opera.escalar(40,40,40);
+    opera.trasladar(6,0,-10);
+    casa_base.Draw(1);
+
+    opera.LoadIdenty();
+    opera.escalar(40,40,40);
+    opera.trasladar(4,0,-11);
+    casa_base.Draw(2);
+
+    opera.LoadIdenty();
+    opera.escalar(40,40,40);
+    opera.trasladar(-3.8,0,-9.5);
+    casa_base.Draw(3);
+
+    opera.LoadIdenty();
+    opera.escalar(40,40,40);
+    opera.trasladar(5,0,-13.5);
+    casa_base.Draw(4);
+/////////////////////////////////////
+    opera.LoadIdenty();
+    opera.escalar(40,40,40);
+    opera.trasladar(7,0,5);
+    casa_base.Draw(1);
+
+    opera.LoadIdenty();
+    opera.escalar(40,40,40);
+    opera.trasladar(3.5,0,8);
+    casa_base.Draw(2);
+
+    opera.LoadIdenty();
+    opera.escalar(40,40,40);
+    opera.trasladar(3,0,6);
+    casa_base.Draw(3);
+
+    opera.LoadIdenty();
+    opera.escalar(40,40,40);
+    opera.trasladar(1,0,13);
+    casa_base.Draw(4);
+
+    opera.LoadIdenty();
+    opera.escalar(40,40,40);
+    opera.trasladar(0,0,7);
+    casa_base.Draw(5);
+
+    opera.LoadIdenty();
+    opera.escalar(40,40,40);
+    opera.trasladar(-2,0,12);
+    casa_base.Draw(1);
+
+    opera.LoadIdenty();
+    opera.escalar(40,40,40);
+    opera.trasladar(-3.5,0,7);
+    casa_base.Draw(2);
+
+    opera.LoadIdenty();
+    opera.escalar(40,40,40);
+    opera.trasladar(-6.5,0,5.5);
+    casa_base.Draw(2);
+
+    opera.LoadIdenty();
+    opera.escalar(40,40,40);
+    opera.trasladar(-7,0,8.5);
+    casa_base.Draw(3);
+
+    opera.LoadIdenty();
+    opera.escalar(40,40,40);
+    opera.trasladar(-10,0,13);
+    casa_base.Draw(1);
+
+    opera.LoadIdenty();
+    opera.escalar(40,40,40);
+    opera.trasladar(-10,0,9);
+    casa_base.Draw(2);
+
+    opera.LoadIdenty();
+    opera.escalar(40,40,40);
+    opera.trasladar(-14,0,13);
+    casa_base.Draw(3);
+
+    opera.LoadIdenty();
+    opera.escalar(40,40,40);
+    opera.trasladar(-12.5,0,7);
+    casa_base.Draw(1);
+
+    opera.LoadIdenty();
+    opera.escalar(40,40,40);
+    opera.trasladar(-6.5,0,12.5);
+    casa_base.Draw(2);
+
+    opera.LoadIdenty();
+    opera.escalar(40,40,40);
+    opera.trasladar(2,0,-10);
+    casa_base.Draw(3);
+
+    opera.LoadIdenty();
+    opera.escalar(40,40,40);
+    opera.trasladar(-4,0,-14);
+    casa_base.Draw(3);
+
+    opera.LoadIdenty();
+    opera.escalar(40,40,40);
+    opera.trasladar(-12,0,-14.5);
+    casa_base.Draw(3);
+
+    opera.LoadIdenty();
+    opera.escalar(40,40,40);
+    opera.trasladar(2,0,10);
+    casa_base.Draw(1);
+
+    opera.LoadIdenty();
+    opera.escalar(40,40,40);
+    opera.trasladar(-4,0,14);
+    casa_base.Draw(2);
+
+    opera.LoadIdenty();
+    opera.escalar(40,40,40);
+    opera.trasladar(4,0,11);
+    casa_base.Draw(2);
+
+    opera.LoadIdenty();
+    opera.escalar(40,40,40);
+    opera.trasladar(-3.8,0,9.5);
+    casa_base.Draw(3);
+
+    opera.LoadIdenty();
+    opera.escalar(40,40,40);
+    opera.trasladar(5,0,13.5);
+    casa_base.Draw(4);
+
+    anguloCuboX+=0.0025f;
+    anguloCuboY+=0.025f;
+    anguloEsfera+=0.05f;
 }
 
 void display()
@@ -80,9 +307,9 @@ void display()
 
    glLoadIdentity();
 
-    /*glTranslatef(0.0f, 0.0f, -5.0f);
+    glTranslatef(0.0f, 0.0f, -5.0f);
     glRotatef(anguloCuboX, 1.0f, 0.0f, 0.0f);
-    glRotatef(anguloCuboY, 0.0f, 1.0f, 0.0f);*/
+    glRotatef(anguloCuboY, 0.0f, 1.0f, 0.0f);
     drawCube();
 
     glutSwapBuffers();

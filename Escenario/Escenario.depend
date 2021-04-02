@@ -73,7 +73,7 @@
 1617229675 source:c:\users\hucom\documents\github\escenario3d\escenario\src\matriz.cpp
 	"Matriz.h"
 
-1617330959 source:c:\users\btpas\documents\github\escenario3d\escenario\main.cpp
+1617339832 source:c:\users\btpas\documents\github\escenario3d\escenario\main.cpp
 	<GLUT/glut.h>
 	<GL/glut.h>
 	<math.h>
@@ -291,7 +291,7 @@
 	"Operador.h"
 	"Cilindro.h"
 
-1617330674 c:\users\btpas\documents\github\escenario3d\escenario\include\cilindro.h
+1617332991 c:\users\btpas\documents\github\escenario3d\escenario\include\cilindro.h
 	"Operador.h"
 
 1617319531 c:\users\btpas\documents\github\escenario3d\escenario\include\sol.h
