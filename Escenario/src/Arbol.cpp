@@ -75,8 +75,10 @@ Arbol::~Arbol()
 
 void Arbol:: Draw()
 {
+    Ope->push();
     Ope->rotarX(-90);
-     Ope->multiplicar(aux,51);
+    Ope->multiplicar(aux,51);
+    Ope->pop();
     int i,j;
     //Se define color del tronco
     glColor3f(1.0f, 0.5f, 0.0f);//Naranja

@@ -2,7 +2,6 @@
 #define CARRO_H
 #include "Prisma.h"
 #include "Operador.h"
-#include "Matriz.h"
 
 class Carro
 {

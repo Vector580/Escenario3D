@@ -1,6 +1,5 @@
 #ifndef CASA_H
 #define CASA_H
-#include "Matriz.h"
 #include "Operador.h"
 #include "Piramide.h"
 #include "Prisma.h"

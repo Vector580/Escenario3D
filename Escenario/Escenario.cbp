@@ -50,6 +50,7 @@
 		<Unit filename="include/Casa.h" />
 		<Unit filename="include/Cilindro.h" />
 		<Unit filename="include/Matriz.h" />
+		<Unit filename="include/Nube.h" />
 		<Unit filename="include/Operador.h" />
 		<Unit filename="include/Piramide.h" />
 		<Unit filename="include/Prisma.h" />
@@ -61,6 +62,7 @@
 		<Unit filename="src/Casa.cpp" />
 		<Unit filename="src/Cilindro.cpp" />
 		<Unit filename="src/Matriz.cpp" />
+		<Unit filename="src/Nube.cpp" />
 		<Unit filename="src/Operador.cpp" />
 		<Unit filename="src/Piramide.cpp" />
 		<Unit filename="src/Prisma.cpp" />

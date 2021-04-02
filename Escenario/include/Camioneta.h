@@ -2,7 +2,6 @@
 #define CAMIONETA_H
 #include "Prisma.h"
 #include "Operador.h"
-#include "Matriz.h"
 #include "Cilindro.h"
 
 class Camioneta

@@ -20,7 +20,7 @@
 	<GL/glu.h>
 	<stdlib.h>
 
-1617345713 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\main.cpp
+1617350384 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\main.cpp
 	<GLUT/glut.h>
 	<GL/glut.h>
 	<math.h>
@@ -33,6 +33,7 @@
 	"Arbol.h"
 	"Cilindro.h"
 	"Sol.h"
+	"Nube.h"
 
 1617346909 c:\users\victor\desktop\proyectos\escenario3d\escenario\include\operador.h
 	<GL/glut.h>
@@ -197,11 +198,10 @@
 	"Piramide.h"
 	"Prisma.h"
 
-1617348245 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\arbol.cpp
+1617349926 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\arbol.cpp
 	"Arbol.h"
 
-1617346299 c:\users\victor\desktop\proyectos\escenario3d\escenario\include\arbol.h
-	"Matriz.h"
+1617349926 c:\users\victor\desktop\proyectos\escenario3d\escenario\include\arbol.h
 	"Prisma.h"
 	"Operador.h"
 
@@ -329,4 +329,10 @@
 1617346962 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\sol.cpp
 	"Sol.h"
 	<math.h>
+
+1617349926 c:\users\victor\desktop\proyectos\escenario3d\escenario\include\nube.h
+	"Operador.h"
+
+1617350137 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\nube.cpp
+	"Nube.h"
 

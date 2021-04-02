@@ -1,6 +1,5 @@
 #ifndef ARBOL_H
 #define ARBOL_H
-#include "Matriz.h"
 #include "Prisma.h"
 #include "Operador.h"
 

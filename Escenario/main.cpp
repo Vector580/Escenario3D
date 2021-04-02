@@ -13,6 +13,7 @@
 #include "Arbol.h"
 #include "Cilindro.h"
 #include "Sol.h"
+#include "Nube.h"
 GLfloat anguloCuboX = 0.0f;
 GLfloat anguloCuboY = 0.0f;
 GLfloat anguloEsfera = 0.0f;
@@ -28,6 +29,7 @@ Carro carro1(&opera);
 Arbol arb(&opera);
 Cilindro cilin(&opera);
 Sol sol(&opera);
+Nube nub(&opera);
 
 
 void reshape(int width, int height)
@@ -299,6 +301,9 @@ void drawCube(void)
     opera.LoadIdenty();
     opera.escalar(10,10,10);
     arb.Draw();
+
+    opera.trasladar(0,15,0);
+    nub.Draw();
 
     anguloCuboX+=0.0025f;
     anguloCuboY+=0.025f;
