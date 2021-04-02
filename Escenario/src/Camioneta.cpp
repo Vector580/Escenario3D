@@ -82,10 +82,7 @@ void Camioneta:: Escalar (float escX, float escY, float escZ)
 {
     Ope->escalar(escX,escY,escZ);
 }
-void Camioneta:: Rotar (float grade, float angx, float angy, float angz)
-{
-    Ope->rotar(grade, angx, angy, angz);
-}
+
 void Camioneta::Multiplicar()
 {
     Ope->multiplicar(PuntosAux,48);

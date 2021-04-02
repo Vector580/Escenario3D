@@ -296,6 +296,10 @@ void drawCube(void)
     opera.trasladar(5,0,13.5);
     casa_base.Draw(4);
 
+    opera.LoadIdenty();
+    opera.escalar(10,10,10);
+    arb.Draw();
+
     anguloCuboX+=0.0025f;
     anguloCuboY+=0.025f;
     anguloEsfera+=0.05f;

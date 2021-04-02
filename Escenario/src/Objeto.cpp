@@ -18,10 +18,7 @@ void Objeto:: Escalar (float escX, float escY, float escZ)
 {
     Op->escalar(escX,escY,escZ);
 }
-void Objeto:: Rotar (float grade, float angx, float angy, float angz)
-{
-    Op->rotar(grade, angx, angy, angz);
-}
+
 void Objeto:: Update()
 {
 

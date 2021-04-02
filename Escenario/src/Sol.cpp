@@ -20,10 +20,7 @@ void Sol:: Escalar (float escX, float escY, float escZ)
 {
     Ope->escalar(escX,escY,escZ);
 }
-void Sol:: Rotar (float grade, float angx, float angy, float angz)
-{
-    Ope->rotar(grade, angx, angy, angz);
-}
+
 void Sol::Multiplicar()
 {
     Ope->multiplicar(Puntos,41);

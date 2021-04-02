@@ -21,7 +21,6 @@ class Camioneta
         void Multiplicar();
         void Trasladar(float, float, float);
         void Escalar (float, float, float);
-        void Rotar (float, float, float, float);
         void Update();
         void Draw(int);
 };

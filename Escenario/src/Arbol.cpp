@@ -81,10 +81,7 @@ void Arbol:: Escalar (float escX, float escY, float escZ)
 {
     Ope->escalar(escX,escY,escZ);
 }
-void Arbol:: Rotar (float grade, float angx, float angy, float angz)
-{
-    Ope->rotar(grade, angx, angy, angz);
-}
+
 void Arbol::Multiplicar()
 {
     Ope->multiplicar(aux,51);
@@ -95,6 +92,7 @@ void Arbol:: Update()
 }
 void Arbol:: Draw()
 {
+    Ope->rotarX(-90);
      Ope->multiplicar(aux,51);
     int i,j;
     //Se define color del tronco

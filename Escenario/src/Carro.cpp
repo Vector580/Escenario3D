@@ -83,10 +83,7 @@ void Carro:: Escalar (float escX, float escY, float escZ)
 {
     Ope->escalar(escX,escY,escZ);
 }
-void Carro:: Rotar (float grade, float angx, float angy, float angz)
-{
-    Ope->rotar(grade, angx, angy, angz);
-}
+
 void Carro::Multiplicar()
 {
     Ope->multiplicar(PuntosAux,51);

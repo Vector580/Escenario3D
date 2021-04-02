@@ -10,7 +10,6 @@ class Sol
         ~Sol();
         void Trasladar(float, float, float);
         void Escalar (float, float, float);
-        void Rotar (float, float, float, float);
         void Multiplicar();
         void Update();
         void Draw();
