@@ -43,7 +43,7 @@
 1617250798 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\operador.cpp
 	"Operador.h"
 
-1617318676 source:c:\users\hucom\documents\github\escenario3d\escenario\main.cpp
+1617330455 source:c:\users\hucom\documents\github\escenario3d\escenario\main.cpp
 	<GLUT/glut.h>
 	<GL/glut.h>
 	<math.h>
@@ -238,14 +238,15 @@
 	"Operador.h"
 	"Matriz.h"
 
-1617311005 source:c:\users\hucom\documents\github\escenario3d\escenario\src\camioneta.cpp
+1617330378 source:c:\users\hucom\documents\github\escenario3d\escenario\src\camioneta.cpp
 	"Camioneta.h"
 	<GL/glut.h>
 
-1617293665 c:\users\hucom\documents\github\escenario3d\escenario\include\camioneta.h
+1617330107 c:\users\hucom\documents\github\escenario3d\escenario\include\camioneta.h
 	"Prisma.h"
 	"Operador.h"
 	"Matriz.h"
+	"Cilindro.h"
 
 1617311952 source:c:\users\hucom\documents\github\escenario3d\escenario\src\carro.cpp
 	"Carro.h"
@@ -270,15 +271,15 @@
 	"Carro.h"
 	<GL/glut.h>
 
-1617318503 source:c:\users\hucom\documents\github\escenario3d\escenario\src\cilindro.cpp
+1617330107 source:c:\users\hucom\documents\github\escenario3d\escenario\src\cilindro.cpp
 	"Cilindro.h"
 	<math.h>
 	<GL/glut.h>
 
-1617318491 c:\users\hucom\documents\github\escenario3d\escenario\include\cilindro.h
+1617330579 c:\users\hucom\documents\github\escenario3d\escenario\include\cilindro.h
 	"Operador.h"
 
-1617318779 source:c:\users\hucom\documents\github\escenario3d\escenario\src\sol.cpp
+1617329662 source:c:\users\hucom\documents\github\escenario3d\escenario\src\sol.cpp
 	"Sol.h"
 	<math.h>
 

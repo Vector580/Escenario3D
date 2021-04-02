@@ -10,8 +10,8 @@ class Cilindro
       ~Cilindro();
       void setApunter(Operador*);
       void setCentro(float x, float y, float z);
-      void setRadio(int radio);
-      void setProfundidad(int profundidad);
+      void setRadio(float radio);
+      void setProfundidad(float profundidad);
       void Draw();
 
     private:
@@ -19,8 +19,8 @@ class Cilindro
         float px;
         float py;
         float pz;
-        int radio;
-        int profundidad;
+        float radio;
+        float profundidad;
         float Puntos [360][3];
 
 };

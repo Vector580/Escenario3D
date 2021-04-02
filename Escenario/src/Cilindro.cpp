@@ -61,11 +61,11 @@ void Cilindro::setCentro(float x, float y, float z)
     pz=y;
     pz=z;
 }
-void Cilindro::setRadio(int r)
+void Cilindro::setRadio(float r)
 {
     radio=r;
 }
-void Cilindro::setProfundidad(int profun)
+void Cilindro::setProfundidad(float profun)
 {
     profundidad=profun;
 }

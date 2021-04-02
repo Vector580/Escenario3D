@@ -3,6 +3,7 @@
 #include "Prisma.h"
 #include "Operador.h"
 #include "Matriz.h"
+#include "Cilindro.h"
 
 class Camioneta
 {
@@ -14,6 +15,7 @@ class Camioneta
         Operador *Ope;
 
     public:
+        Cilindro cilin;
         Camioneta(Operador*);
         virtual ~Camioneta();
         void Multiplicar();

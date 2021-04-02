@@ -201,4 +201,11 @@ void Camioneta::Draw(int color)
     for(int i=0;i<48;i++)
         for(int j=0;j<3;j++)
             PuntosAux[i][j]=Puntos[i][j];
+
+    glColor3f(1.0f, 1.0f, 1.0f);
+    cilin.setApunter(Ope);
+    cilin.setCentro(20,0,-1);
+    cilin.setRadio(.5);
+    cilin.setProfundidad(1);
+    cilin.Draw();
 }

@@ -3,12 +3,7 @@
 Sol::Sol(Operador *Op)
 {
 
-    cilin.setApunter(Op);
-   cilin.setCentro(0,0,0);
-    cilin.setRadio(60);
-    cilin.setProfundidad(30);
     Ope=Op;
-
 
 }
 
@@ -40,6 +35,10 @@ void Sol:: Update()
 }
 void Sol:: Draw()
 {
+    cilin.setApunter(Ope);
+   cilin.setCentro(0,0,0);
+    cilin.setRadio(60);
+    cilin.setProfundidad(30);
     glColor3f(1,0.7,0);
     cilin.Draw();
 }
