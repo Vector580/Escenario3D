@@ -109,14 +109,14 @@
 1617350744 source:c:\users\btpas\documents\github\escenario3d\escenario\src\operador.cpp
 	"Operador.h"
 
-1617291064 source:c:\users\btpas\documents\github\escenario3d\escenario\src\piramide.cpp
+1617418773 source:c:\users\btpas\documents\github\escenario3d\escenario\src\piramide.cpp
 	"Piramide.h"
 	<GL/glut.h>
 	<stdlib.h>
 
 1617291064 c:\users\btpas\documents\github\escenario3d\escenario\include\piramide.h
 
-1617291064 source:c:\users\btpas\documents\github\escenario3d\escenario\src\prisma.cpp
+1617419225 source:c:\users\btpas\documents\github\escenario3d\escenario\src\prisma.cpp
 	"Prisma.h"
 	<GL/glut.h>
 	<stdlib.h>
@@ -220,7 +220,7 @@
 	"Prisma.h"
 	"Operador.h"
 
-1617398110 source:c:\users\btpas\documents\github\escenario3d\escenario\src\casa.cpp
+1617419204 source:c:\users\btpas\documents\github\escenario3d\escenario\src\casa.cpp
 	"Casa.h"
 
 1617350744 source:c:\users\btpas\documents\github\escenario3d\escenario\src\carro.cpp

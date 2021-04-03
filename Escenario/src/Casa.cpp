@@ -31,8 +31,6 @@ Casa::Casa(Operador *Op)
     Puntos[19][0]=0.85;Puntos[19][1]=0.8;Puntos[19][2]=0;
     Puntos[20][0]=0.85;Puntos[20][1]=0.5;Puntos[20][2]=0;
 
-
-
     //Ventana derecha
     Puntos[21][0]=1;Puntos[21][1]=0.3;Puntos[21][2]=-0.2;
     Puntos[22][0]=1;Puntos[22][1]=0.75;Puntos[22][2]=-0.2;
@@ -101,14 +99,13 @@ void Casa:: Draw(int color)
      for(int i=0;i<8;i++)
         base.setPoints(Puntos_aux[i][0],Puntos_aux[i][1],Puntos_aux[i][2],i);
     base.Draw();
-    glColor4f(0.15f, 0.15f, 0.15f, 0.0f);//Techo de la cas
-    glLineWidth(3);
+    glColor4f(0.57f, 0.0f, 0.0f, 0.0f);//Techo de la cas
     for(int i=8;i<13;i++)
         techo.setPoints(Puntos_aux[i][0],Puntos_aux[i][1],Puntos_aux[i][2],i-8);
     techo.Draw();
 //glColor4f(0.4f, 0.0f, 0.0f, 0.0f);//Puerta
 glColor3f(0.65f, 0.48f, 0.35f);
-glLineWidth(1);
+glLineWidth(1.5);
     for(n=13;n<=16;n++){
         if (n!=16)
         {

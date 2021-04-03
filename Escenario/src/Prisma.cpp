@@ -25,6 +25,7 @@ void Prisma::Draw()
     int n, i;
     for (n=0; n < 8; n++)
     {
+        glLineWidth(2);
         if (n!=3 && n!=7 )
         {
             glBegin(GL_LINES);
