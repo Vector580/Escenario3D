@@ -1,0 +1,16 @@
+#ifndef ESCENARIO_
+#define ESCENARIO_
+
+
+class Escenario
+{
+    public:
+        Escenario();
+        virtual ~Escenario();
+
+    protected:
+
+    private:
+};
+
+#endif // ESCENARIO_

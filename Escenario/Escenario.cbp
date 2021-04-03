@@ -49,6 +49,7 @@
 		<Unit filename="include/Carro.h" />
 		<Unit filename="include/Casa.h" />
 		<Unit filename="include/Cilindro.h" />
+		<Unit filename="include/Escenario.h" />
 		<Unit filename="include/Matriz.h" />
 		<Unit filename="include/Nube.h" />
 		<Unit filename="include/Operador.h" />
@@ -61,6 +62,7 @@
 		<Unit filename="src/Carro.cpp" />
 		<Unit filename="src/Casa.cpp" />
 		<Unit filename="src/Cilindro.cpp" />
+		<Unit filename="src/Escenario.cpp" />
 		<Unit filename="src/Matriz.cpp" />
 		<Unit filename="src/Nube.cpp" />
 		<Unit filename="src/Operador.cpp" />

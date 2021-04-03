@@ -8,7 +8,9 @@ class Arbol //: public Objeto
 {
     public:
         Arbol(Operador*);
+        Arbol();
         virtual ~Arbol();
+        void setPunter(Operador*);
         void Draw();
 
     private:
