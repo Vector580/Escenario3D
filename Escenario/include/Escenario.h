@@ -19,16 +19,18 @@ class Escenario
         Escenario();
         virtual ~Escenario();
         void draw();
+        void update();
 
     private:
-        Operador* opera= new Operador();
-        Casa* casa_base= new Casa(opera);
-        Camioneta* camioneta1=new Camioneta(opera);
-        Carro* carro1= new Carro(opera);
-        Arbol* arb=new Arbol(opera);
-        Cilindro* cilin= new Cilindro(opera);
-        Sol* sol=new Sol(opera);
-        Nube* nub=new Nube(opera);
+        Operador* opera = new Operador();
+        Casa* casa_base = new Casa(opera);
+        Camioneta* camioneta1 = new Camioneta(opera);
+        Carro* carro1 = new Carro(opera);
+        Arbol* arb = new Arbol(opera);
+        Cilindro* cilin = new Cilindro(opera);
+        Sol* sol = new Sol(opera);
+        Nube* nub = new Nube(opera);
+        float viento=0;
 };
 
 #endif // ESCENARIO_H

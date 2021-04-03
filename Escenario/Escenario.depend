@@ -20,23 +20,13 @@
 	<GL/glu.h>
 	<stdlib.h>
 
-1617469442 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\main.cpp
+1617479194 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\main.cpp
 	<GLUT/glut.h>
 	<GL/glut.h>
-	<math.h>
 	<stdlib.h>
-	"Prisma.h"
-	"Piramide.h"
-	"Casa.h"
-	"Camioneta.h"
-	"Carro.h"
-	"Arbol.h"
-	"Cilindro.h"
-	"Sol.h"
-	"Nube.h"
 	"Escenario.h"
 
-1617346909 c:\users\victor\desktop\proyectos\escenario3d\escenario\include\operador.h
+1617476682 c:\users\victor\desktop\proyectos\escenario3d\escenario\include\operador.h
 	<GL/glut.h>
 	<stdlib.h>
 	<stack>
@@ -44,7 +34,7 @@
 	"iostream"
 	"Matriz.h"
 
-1617346885 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\operador.cpp
+1617479308 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\operador.cpp
 	"Operador.h"
 
 1617330455 source:c:\users\hucom\documents\github\escenario3d\escenario\main.cpp
@@ -336,10 +326,10 @@
 1617350744 source:c:\users\btpas\documents\github\escenario3d\escenario\src\nube.cpp
 	"Nube.h"
 
-1617470670 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\escenario.cpp
+1617479086 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\escenario.cpp
 	"Escenario.h"
 
-1617469441 c:\users\victor\desktop\proyectos\escenario3d\escenario\include\escenario.h
+1617473390 c:\users\victor\desktop\proyectos\escenario3d\escenario\include\escenario.h
 	<GL/glut.h>
 	<stdlib.h>
 	"Prisma.h"

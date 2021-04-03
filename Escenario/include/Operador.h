@@ -30,6 +30,7 @@ class Operador
         void multiplicar(float vert[][3],int tam);
         void push();
         void pop();
+        void imprimir();
 };
 
 #endif // OPERADOR_H

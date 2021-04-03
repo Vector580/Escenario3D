@@ -38,7 +38,7 @@ void Operador::trasladar(float tx, float ty, float tz)
 //Operador de escalamiento, recibe los escalares
 void Operador::escalar(float sx, float sy, float sz)
 {
-    float scale[4][4]={{sx,0,0,1},{0,sy,0,1},{0,0,sz,1},{0,0,0,1}};
+    float scale[4][4]={{sx,0,0,0},{0,sy,0,0},{0,0,sz,0},{0,0,0,1}};
     float aux[4][4]={{0,0,0,0},{0,0,0,0},{0,0,0,0},{0,0,0,0}};
     int i,j,k,m;
     for (i=0;i<4;i++)
@@ -127,7 +127,7 @@ void Operador::rotarY(float grade)
     float rad=grade*0.0174533;
     float aux[4][4]={{0,0,0,0},{0,0,0,0},{0,0,0,0},{0,0,0,0}};
     int i,j,k,m;
-    float rotate_y[4][4]={{cos(rad),0,sin(rad),0},{0,1,0,0},{-1*sin(rad),0,cos(rad),0},{0,0,01}};
+    float rotate_y[4][4]={{cos(rad),0,sin(rad),0},{0,1,0,0},{-1*sin(rad),0,cos(rad),0},{0,0,0,1}};
     for (i=0;i<4;i++)
         for (j=0;j<4;j++)
             for (k=0;k<4;k++)
@@ -210,4 +210,18 @@ void Operador::pop()
 {
     A=pila.top();
     pila.pop();
+}
+
+void Operador::imprimir()
+{
+    int i,j;
+    for(i=0;i<4;i++)
+    {
+        for(j=0;j<4;j++)
+        {
+            printf("%f",*(Ap+(4*j+i)));
+            printf("\t");
+        }
+        printf("\n");
+    }
 }

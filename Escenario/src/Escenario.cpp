@@ -477,14 +477,14 @@ void Escenario::draw()
     //NUBES
     opera->pop();
     opera->push();
-    opera->escalar(12,12,1);
+    opera->escalar(12,12,12);
     opera->trasladar(0,20,25);
     nub->Draw();
 
     opera->pop();
     opera->push();
     opera->escalar(10,10,10);
-    opera->trasladar(30,15,50);
+    opera->trasladar(viento,15,50);
     nub->Draw();
 
     opera->pop();
@@ -554,6 +554,36 @@ void Escenario::draw()
     opera->escalar(10,10,10);
     opera->trasladar(-90,15,40);
     nub->Draw();
+
+
+    opera->pop();
+    opera->push();
+    opera->trasladar(600,0,391.67);
+    opera->escalar(18,18,18);
+    opera->rotarY(90);
+    camioneta1->Draw(3);
+
+    opera->pop();
+    opera->push();
+    opera->trasladar(600,0,-24.93);
+    opera->escalar(18,18,18);
+    opera->rotarY(90);
+    camioneta1->Draw(1);
+
+    opera->pop();
+    opera->push();
+    opera->trasladar(600,0,-441.53);
+    opera->escalar(18,18,18);
+    opera->rotarY(90);
+    camioneta1->Draw(2);
+
+    opera->pop();
+    opera->push();
+    opera->trasladar(600,0,-858.13);
+    opera->escalar(18,18,18);
+    opera->rotarY(90);
+    camioneta1->Draw(2);
+
     //carretera
     glColor3f(0.54f, 0.58f, 0.59f);
     glBegin(GL_LINES);
@@ -600,4 +630,9 @@ void Escenario::draw()
     glVertex3f(i,0,0);
     glVertex3f(i+10,0,0);
     glEnd();
+}
+
+void Escenario::update()
+{
+    viento-=0.01;
 }

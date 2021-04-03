@@ -4,8 +4,8 @@
 #include <GL/glut.h>
 #endif
 #include <stdlib.h>
-
 #include "Escenario.h"
+
 GLfloat anguloCuboX = 0.0f;
 GLfloat anguloCuboY = 0.0f;
 GLfloat anguloEsfera = 0.0f;
@@ -35,6 +35,7 @@ void reshape(int width, int height)
 void drawCube(void)
 {
     esc.draw();
+    esc.update();
 
     glRotatef(anguloCuboX, 0.0f, 0.0f, 1.0f);
 
