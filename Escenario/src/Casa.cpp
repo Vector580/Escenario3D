@@ -84,15 +84,15 @@ void Casa:: Draw(int color)
     int n,j;
     switch (color)
     {
-        case 1:  glColor3f(0.3f, 0.3f, 0.3f);
+        case 1: glColor3f(0.98f, 0.71f, 0.81f); //ROSADO
                 break;
-        case 2: glColor3f(0.0f, 1.0f, 0.0f);
+        case 2: glColor3f(1.0f, 0.50f, 0.0f); //naranja
                 break;
-        case 3: glColor3f(0.0f, 0.0f, 1.0f);
+        case 3: glColor3f(0.0f, 0.75f, 1.0f);//azul
                 break;
-        case 4: glColor3f(1.0f, 1.0f, 0.0f);
+        case 4: glColor3f(0.64f, 0.53f, 0.75f);//Purpura
                 break;
-        case 5: glColor3f(1.0f, 0.0f, 1.0f);
+        case 5: glColor3f(0.0f, 0.50f, 0.50f);//Verde obscuro
                 break;
     }
 
@@ -101,11 +101,14 @@ void Casa:: Draw(int color)
      for(int i=0;i<8;i++)
         base.setPoints(Puntos_aux[i][0],Puntos_aux[i][1],Puntos_aux[i][2],i);
     base.Draw();
- glColor4f(0.7f, 0.0, 0.0f, 0.0f);//Techo de la cas
+    glColor4f(0.15f, 0.15f, 0.15f, 0.0f);//Techo de la cas
+    glLineWidth(3);
     for(int i=8;i<13;i++)
         techo.setPoints(Puntos_aux[i][0],Puntos_aux[i][1],Puntos_aux[i][2],i-8);
     techo.Draw();
-glColor4f(0.4f, 0.0f, 0.0f, 0.0f);//Puerta
+//glColor4f(0.4f, 0.0f, 0.0f, 0.0f);//Puerta
+glColor3f(0.65f, 0.48f, 0.35f);
+glLineWidth(1);
     for(n=13;n<=16;n++){
         if (n!=16)
         {
@@ -122,7 +125,7 @@ glColor4f(0.4f, 0.0f, 0.0f, 0.0f);//Puerta
             glEnd();
         }
     }
-glColor3f(0.0f, 0.3f, 0.5f);
+glColor3f(0.54f, 0.58f, 0.59f);
     for(n=17;n<=20;n++){
         if (n!=20)
         {
@@ -139,7 +142,7 @@ glColor3f(0.0f, 0.3f, 0.5f);
             glEnd();
         }
     }
-glColor3f(0.0f, 0.3f, 0.5f);
+glColor3f(0.54f, 0.58f, 0.59f);
     for(n=21;n<=24;n++){
         if (n!=24)
         {
@@ -156,7 +159,8 @@ glColor3f(0.0f, 0.3f, 0.5f);
             glEnd();
         }
     }
-glColor3f(0.0f, 0.3f, 0.5f);
+//glColor3f(0.0f, 0.3f, 0.5f);
+glColor3f(0.54f, 0.58f, 0.59f);
     for(n=25;n<=28;n++){
         if (n!=28)
         {
@@ -167,6 +171,7 @@ glColor3f(0.0f, 0.3f, 0.5f);
         }
         else
         {
+            glColor3f(0.54f, 0.58f, 0.59f);
             glBegin(GL_LINES);
             glVertex3fv( Puntos_aux[n]);
             glVertex3fv( Puntos_aux[25]);
@@ -174,33 +179,36 @@ glColor3f(0.0f, 0.3f, 0.5f);
         }
     }
     //Cruz de ventana frontal
+    glColor3f(0.54f, 0.58f, 0.59f);
     glBegin(GL_LINES);
             glVertex3fv( Puntos_aux[29]);
             glVertex3fv( Puntos_aux[30]);
     glEnd();
-
+    glColor3f(0.54f, 0.58f, 0.59f);
     glBegin(GL_LINES);
             glVertex3fv( Puntos_aux[31] );
             glVertex3fv( Puntos_aux[32] );
     glEnd();
 
     //Cruz de ventana deracha
+    glColor3f(0.54f, 0.58f, 0.59f);
     glBegin(GL_LINES);
             glVertex3fv( Puntos_aux[33]);
             glVertex3fv( Puntos_aux[34] );
     glEnd();
-
+    glColor3f(0.54f, 0.58f, 0.59f);
     glBegin(GL_LINES);
             glVertex3fv( Puntos_aux[35]);
             glVertex3fv( Puntos_aux[36]);
     glEnd();
 
     //Cruz de ventana izquierda
+    glColor3f(0.54f, 0.58f, 0.59f);
     glBegin(GL_LINES);
             glVertex3fv( Puntos_aux[37]);
             glVertex3fv( Puntos_aux[38]);
     glEnd();
-
+    glColor3f(0.54f, 0.58f, 0.59f);
     glBegin(GL_LINES);
             glVertex3fv( Puntos_aux[39]);
             glVertex3fv( Puntos_aux[40] );
@@ -209,4 +217,5 @@ glColor3f(0.0f, 0.3f, 0.5f);
     for (int i=0;i<41;i++)
         for (int j=0;j<4;j++)
             Puntos_aux[i][j]=Puntos[i][j];
+    glLineWidth(2);
 }

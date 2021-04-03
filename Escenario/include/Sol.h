@@ -21,9 +21,6 @@ class Sol
         int radio;
         int profundidad;
         Cilindro cilin;
-
-
-
 };
 
 #endif // SOL_H
