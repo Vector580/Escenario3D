@@ -67,7 +67,7 @@
 1617229675 source:c:\users\hucom\documents\github\escenario3d\escenario\src\matriz.cpp
 	"Matriz.h"
 
-1617501322 source:c:\users\btpas\documents\github\escenario3d\escenario\main.cpp
+1617505182 source:c:\users\btpas\documents\github\escenario3d\escenario\main.cpp
 	<GLUT/glut.h>
 	<GL/glut.h>
 	<stdlib.h>
@@ -204,7 +204,7 @@
 1617419204 source:c:\users\btpas\documents\github\escenario3d\escenario\src\casa.cpp
 	"Casa.h"
 
-1617504059 source:c:\users\btpas\documents\github\escenario3d\escenario\src\carro.cpp
+1617504396 source:c:\users\btpas\documents\github\escenario3d\escenario\src\carro.cpp
 	"Carro.h"
 	<GL/glut.h>
 
@@ -213,7 +213,7 @@
 	"Operador.h"
 	"Cilindro.h"
 
-1617504080 source:c:\users\btpas\documents\github\escenario3d\escenario\src\camioneta.cpp
+1617504396 source:c:\users\btpas\documents\github\escenario3d\escenario\src\camioneta.cpp
 	"Camioneta.h"
 	<GL/glut.h>
 

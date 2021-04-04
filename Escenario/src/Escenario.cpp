@@ -593,9 +593,9 @@ void Escenario::draw()
 
     opera->pop();//2
     opera->push();
-    opera->trasladar(-433.33,0,90);
+    opera->trasladar(233.66,0,90);
     opera->escalar(18,18,18);
-    camioneta1->Draw(4);
+    camioneta1->Draw(1);
 
 
     opera->pop();//3
@@ -606,9 +606,9 @@ void Escenario::draw()
 
     opera->pop();//4
     opera->push();
-    opera->trasladar(233.66,0,90);
+    opera->trasladar(-433.33,0,90);
     opera->escalar(18,18,18);
-    camioneta1->Draw(1);
+    camioneta1->Draw(4);
 
     opera->pop();//5
     opera->push();
@@ -631,7 +631,7 @@ void Escenario::draw()
     opera->rotarY(180);
     carro1->Draw(4);
 
-    opera->pop();//1
+    opera->pop();//8
     opera->push();
     opera->trasladar(425,0,-391.67);
     opera->escalar(18,18,18);

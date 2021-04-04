@@ -23,7 +23,7 @@ void reshape(int width, int height)
     if(hazPerspectiva)
       gluPerspective(60.0f, (GLfloat)width/(GLfloat)height, 1.0f, 20.0f);
     else
-      glOrtho(-600, 600, -325, 325, -1000, 1000);
+      glOrtho(-600, 600, -325, 325, -900, 900);
 
     glMatrixMode(GL_MODELVIEW);
     glPointSize(2);
