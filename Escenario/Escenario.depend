@@ -67,22 +67,13 @@
 1617229675 source:c:\users\hucom\documents\github\escenario3d\escenario\src\matriz.cpp
 	"Matriz.h"
 
-1617406028 source:c:\users\btpas\documents\github\escenario3d\escenario\main.cpp
+1617501322 source:c:\users\btpas\documents\github\escenario3d\escenario\main.cpp
 	<GLUT/glut.h>
 	<GL/glut.h>
-	<math.h>
 	<stdlib.h>
-	"Prisma.h"
-	"Piramide.h"
-	"Casa.h"
-	"Camioneta.h"
-	"Carro.h"
-	"Arbol.h"
-	"Cilindro.h"
-	"Sol.h"
-	"Nube.h"
+	"Escenario.h"
 
-1617350744 c:\users\btpas\documents\github\escenario3d\escenario\include\operador.h
+1617479725 c:\users\btpas\documents\github\escenario3d\escenario\include\operador.h
 	<GL/glut.h>
 	<stdlib.h>
 	<stack>
@@ -97,10 +88,10 @@
 1617291064 source:c:\users\btpas\documents\github\escenario3d\escenario\src\matriz.cpp
 	"Matriz.h"
 
-1617350744 source:c:\users\btpas\documents\github\escenario3d\escenario\src\operador.cpp
+1617479725 source:c:\users\btpas\documents\github\escenario3d\escenario\src\operador.cpp
 	"Operador.h"
 
-1617418773 source:c:\users\btpas\documents\github\escenario3d\escenario\src\piramide.cpp
+1617419262 source:c:\users\btpas\documents\github\escenario3d\escenario\src\piramide.cpp
 	"Piramide.h"
 	<GL/glut.h>
 	<stdlib.h>
@@ -203,25 +194,26 @@
 	"Piramide.h"
 	"Prisma.h"
 
-1617350744 source:c:\users\btpas\documents\github\escenario3d\escenario\src\arbol.cpp
+1617471219 source:c:\users\btpas\documents\github\escenario3d\escenario\src\arbol.cpp
 	"Arbol.h"
 
-1617350744 c:\users\btpas\documents\github\escenario3d\escenario\include\arbol.h
+1617471219 c:\users\btpas\documents\github\escenario3d\escenario\include\arbol.h
 	"Prisma.h"
 	"Operador.h"
 
 1617419204 source:c:\users\btpas\documents\github\escenario3d\escenario\src\casa.cpp
 	"Casa.h"
 
-1617350744 source:c:\users\btpas\documents\github\escenario3d\escenario\src\carro.cpp
+1617504059 source:c:\users\btpas\documents\github\escenario3d\escenario\src\carro.cpp
 	"Carro.h"
 	<GL/glut.h>
 
-1617350744 c:\users\btpas\documents\github\escenario3d\escenario\include\carro.h
+1617503332 c:\users\btpas\documents\github\escenario3d\escenario\include\carro.h
 	"Prisma.h"
 	"Operador.h"
+	"Cilindro.h"
 
-1617350744 source:c:\users\btpas\documents\github\escenario3d\escenario\src\camioneta.cpp
+1617504080 source:c:\users\btpas\documents\github\escenario3d\escenario\src\camioneta.cpp
 	"Camioneta.h"
 	<GL/glut.h>
 
@@ -289,7 +281,7 @@
 	"Operador.h"
 	"Cilindro.h"
 
-1617330674 source:c:\users\btpas\documents\github\escenario3d\escenario\src\cilindro.cpp
+1617503650 source:c:\users\btpas\documents\github\escenario3d\escenario\src\cilindro.cpp
 	"Cilindro.h"
 	<math.h>
 	<GL/glut.h>
@@ -330,6 +322,23 @@
 	"Escenario.h"
 
 1617473390 c:\users\victor\desktop\proyectos\escenario3d\escenario\include\escenario.h
+	<GL/glut.h>
+	<stdlib.h>
+	"Prisma.h"
+	"Piramide.h"
+	"Casa.h"
+	"Camioneta.h"
+	"Carro.h"
+	"Arbol.h"
+	"Cilindro.h"
+	"Sol.h"
+	"Nube.h"
+	"Operador.h"
+
+1617504237 source:c:\users\btpas\documents\github\escenario3d\escenario\src\escenario.cpp
+	"Escenario.h"
+
+1617479725 c:\users\btpas\documents\github\escenario3d\escenario\include\escenario.h
 	<GL/glut.h>
 	<stdlib.h>
 	"Prisma.h"

@@ -107,7 +107,7 @@ void Carro::Draw(int color)
     {
         case 1: glColor3f(1.0f, 0.0f, 0.0f);
                 break;
-        case 2: glColor3f(0.0f, 1.0f, 0.0f);
+        case 2: glColor3f(0.41f, 0.35f, 0.80f);
                 break;
         case 3: glColor3f(0.0f, 0.0f, 1.0f);
                 break;
@@ -184,4 +184,23 @@ void Carro::Draw(int color)
     for(int i=0;i<48;i++)
         for(int j=0;j<3;j++)
             PuntosAux[i][j]=Puntos[i][j];
+
+    glColor3f(1.0f, 1.0f, 1.0f);
+    cilin.setApunter(Ope);
+    cilin.setCentro(20,3,-0.5);
+    cilin.setRadio(.45);
+    cilin.setProfundidad(0.75);
+    cilin.Draw();
+    cilin.setCentro(20,3,-3.7);
+    cilin.setRadio(0.45);
+    cilin.setProfundidad(0.75);
+    cilin.Draw();
+    cilin.setCentro(45,3,-3.7);
+    cilin.setRadio(0.45);
+    cilin.setProfundidad(0.75);
+    cilin.Draw();
+    cilin.setCentro(45,3,-0.5);
+    cilin.setRadio(0.45);
+    cilin.setProfundidad(0.75);
+    cilin.Draw();
 }

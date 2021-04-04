@@ -23,7 +23,7 @@ void reshape(int width, int height)
     if(hazPerspectiva)
       gluPerspective(60.0f, (GLfloat)width/(GLfloat)height, 1.0f, 20.0f);
     else
-      glOrtho(-600, 600, -325, 325, -650, 650);
+      glOrtho(-600, 600, -325, 325, -1000, 1000);
 
     glMatrixMode(GL_MODELVIEW);
     glPointSize(2);
@@ -39,9 +39,9 @@ void drawCube(void)
 
     glRotatef(anguloCuboX, 0.0f, 0.0f, 1.0f);
 
-    anguloCuboX+=0.0025f;
-    anguloCuboY+=0.025f;
-    anguloEsfera+=0.05f;
+    anguloCuboX+=0.025f;
+    anguloCuboY+=0.25f;
+    anguloEsfera+=0.5f;
 }
 
 void display()

@@ -555,34 +555,88 @@ void Escenario::draw()
     opera->trasladar(-90,15,40);
     nub->Draw();
 
+    //CAMIONETAS
+    opera->pop();
+    opera->push();
+    opera->trasladar(625,0,391.67);
+    opera->escalar(18,18,18);
+    opera->rotarY(90);
+    carro1->Draw(4);
 
     opera->pop();
     opera->push();
-    opera->trasladar(600,0,391.67);
+    opera->trasladar(625,0,-24.93);
     opera->escalar(18,18,18);
     opera->rotarY(90);
-    camioneta1->Draw(3);
+    camioneta1->Draw(5);
 
     opera->pop();
     opera->push();
-    opera->trasladar(600,0,-24.93);
+    opera->trasladar(625,0,-441.53);
     opera->escalar(18,18,18);
     opera->rotarY(90);
+    carro1->Draw(1);
+
+    opera->pop();
+    opera->push();
+    opera->trasladar(625,0,-858.13);
+    opera->escalar(18,18,18);
+    opera->rotarY(90);
+    camioneta1->Draw(2);
+
+    opera->pop();//1
+    opera->push();
+    opera->trasladar(425,0,391.67);
+    opera->escalar(18,18,18);
+    opera->rotarY(270);
+    carro1->Draw(3);
+
+    opera->pop();//2
+    opera->push();
+    opera->trasladar(-433.33,0,90);
+    opera->escalar(18,18,18);
+    camioneta1->Draw(4);
+
+
+    opera->pop();//3
+    opera->push();
+    opera->trasladar(-100.00,0,90);
+    opera->escalar(18,18,18);
+    carro1->Draw(5);
+
+    opera->pop();//4
+    opera->push();
+    opera->trasladar(233.66,0,90);
+    opera->escalar(18,18,18);
     camioneta1->Draw(1);
 
-    opera->pop();
+    opera->pop();//5
     opera->push();
-    opera->trasladar(600,0,-441.53);
+    opera->trasladar(-433.33,0,-90);
     opera->escalar(18,18,18);
-    opera->rotarY(90);
-    camioneta1->Draw(2);
+    opera->rotarY(180);
+    carro1->Draw(2);
 
-    opera->pop();
+    opera->pop();//6
     opera->push();
-    opera->trasladar(600,0,-858.13);
+    opera->trasladar(-100.00,0,-90);
     opera->escalar(18,18,18);
-    opera->rotarY(90);
-    camioneta1->Draw(2);
+    opera->rotarY(180);
+    camioneta1->Draw(3);
+
+    opera->pop();//7
+    opera->push();
+    opera->trasladar(233.66,0,-90);
+    opera->escalar(18,18,18);
+    opera->rotarY(180);
+    carro1->Draw(4);
+
+    opera->pop();//1
+    opera->push();
+    opera->trasladar(425,0,-391.67);
+    opera->escalar(18,18,18);
+    opera->rotarY(270);
+    camioneta1->Draw(5);
 
     //carretera
     glColor3f(0.54f, 0.58f, 0.59f);

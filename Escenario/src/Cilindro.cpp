@@ -58,7 +58,7 @@ void Cilindro::setApunter(Operador *Op)
 void Cilindro::setCentro(float x, float y, float z)
 {
     px=x;
-    pz=y;
+    py=y;
     pz=z;
 }
 void Cilindro::setRadio(float r)

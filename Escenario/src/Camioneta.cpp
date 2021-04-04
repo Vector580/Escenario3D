@@ -107,7 +107,7 @@ void Camioneta::Draw(int color)
     {
         case 1: glColor3f(1.0f, 0.0f, 0.0f);
                 break;
-        case 2: glColor3f(0.0f, 1.0f, 0.0f);
+        case 2: glColor3f(0.41f, 0.35f, 0.80f);
                 break;
         case 3: glColor3f(0.0f, 0.0f, 1.0f);
                 break;
@@ -188,19 +188,19 @@ void Camioneta::Draw(int color)
 
     glColor3f(1.0f, 1.0f, 1.0f);
     cilin.setApunter(Ope);
-    cilin.setCentro(20,0,-0.5);
+    cilin.setCentro(20,3,-0.5);
     cilin.setRadio(.45);
     cilin.setProfundidad(0.75);
     cilin.Draw();
-    cilin.setCentro(20,0,-3.7);
+    cilin.setCentro(20,3,-3.7);
     cilin.setRadio(0.45);
     cilin.setProfundidad(0.75);
     cilin.Draw();
-    cilin.setCentro(45,0,-3.7);
+    cilin.setCentro(45,3,-3.7);
     cilin.setRadio(0.45);
     cilin.setProfundidad(0.75);
     cilin.Draw();
-    cilin.setCentro(45,0,-0.5);
+    cilin.setCentro(45,3,-0.5);
     cilin.setRadio(0.45);
     cilin.setProfundidad(0.75);
     cilin.Draw();
