@@ -487,7 +487,7 @@ void Escenario::draw()
     opera->pop();
     opera->push();
     opera->escalar(10,10,10);
-    opera->trasladar(viento,15,50);
+    opera->trasladar(0,15,50);
     nub->Draw();
 
     opera->pop();
@@ -587,30 +587,40 @@ void Escenario::draw()
     opera->rotarY(90);
     camioneta1->Draw(2);
 
+    opera->pop();//0
+    opera->push();
+    opera->trasladar(carril1[0][0],0,carril1[0][1]);
+    opera->escalar(18,18,18);
+    opera->rotarY(carril1[0][2]);
+    carro1->Draw(1);
+
     opera->pop();//1
     opera->push();
-    opera->trasladar(425,0,391.67);
+    opera->trasladar(carril1[1][0],0,carril1[1][1]);
     opera->escalar(18,18,18);
-    opera->rotarY(270);
+    opera->rotarY(carril1[1][2]);
     carro1->Draw(3);
 
     opera->pop();//2
     opera->push();
-    opera->trasladar(233.66,0,90);
+    opera->trasladar(carril1[2][0],0,carril1[2][1]);
     opera->escalar(18,18,18);
+    opera->rotarY(carril1[2][2]);
     camioneta1->Draw(1);
 
 
     opera->pop();//3
     opera->push();
-    opera->trasladar(-100.00,0,90);
+    opera->trasladar(carril1[3][0],0,carril1[3][1]);
     opera->escalar(18,18,18);
+    opera->rotarY(carril1[3][2]);
     carro1->Draw(5);
 
     opera->pop();//4
     opera->push();
-    opera->trasladar(-433.33,0,90);
+    opera->trasladar(carril1[4][0],0,carril1[4][1]);
     opera->escalar(18,18,18);
+    opera->rotarY(carril1[4][2]);
     camioneta1->Draw(4);
 
     opera->pop();//5
@@ -698,5 +708,27 @@ void Escenario::update()
             avanzar[i]++;
         else
             avanzar[i]=-858.13;
+    }
+    for(i=0;i<5;i++)
+    {
+        if(carril1[i][1]>90)
+        {
+            carril1[i][1]--;
+            if(carril1[i][1]<=125)
+                carril1[i][2]-=7.71;
+        }
+        else
+        {
+            if(carril1[i][2]!=0)
+                carril1[i][2]=0;
+            if(carril1[i][0]>-766.66)
+                carril1[i][0]--;
+            else
+            {
+                carril1[i][0]=425;
+                carril1[i][1]=808.27;
+                carril1[i][2]=270;
+            }
+        }
     }
 }
