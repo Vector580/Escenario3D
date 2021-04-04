@@ -20,7 +20,7 @@
 	<GL/glu.h>
 	<stdlib.h>
 
-1617479194 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\main.cpp
+1617513254 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\main.cpp
 	<GLUT/glut.h>
 	<GL/glut.h>
 	<stdlib.h>
@@ -246,15 +246,16 @@
 	"Operador.h"
 	"Cilindro.h"
 
-1617350593 c:\users\victor\desktop\proyectos\escenario3d\escenario\include\carro.h
+1617510554 c:\users\victor\desktop\proyectos\escenario3d\escenario\include\carro.h
 	"Prisma.h"
 	"Operador.h"
+	"Cilindro.h"
 
-1617346505 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\camioneta.cpp
+1617510555 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\camioneta.cpp
 	"Camioneta.h"
 	<GL/glut.h>
 
-1617346542 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\carro.cpp
+1617510555 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\carro.cpp
 	"Carro.h"
 	<GL/glut.h>
 
@@ -297,7 +298,7 @@
 	"Operador.h"
 	"Cilindro.h"
 
-1617332188 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\cilindro.cpp
+1617510555 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\cilindro.cpp
 	"Cilindro.h"
 	<math.h>
 	<GL/glut.h>
@@ -321,7 +322,7 @@
 1617479086 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\escenario.cpp
 	"Escenario.h"
 
-1617473390 c:\users\victor\desktop\proyectos\escenario3d\escenario\include\escenario.h
+1617513861 c:\users\victor\desktop\proyectos\escenario3d\escenario\include\escenario.h
 	<GL/glut.h>
 	<stdlib.h>
 	"Prisma.h"

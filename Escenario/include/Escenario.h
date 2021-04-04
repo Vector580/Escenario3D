@@ -31,6 +31,7 @@ class Escenario
         Sol* sol = new Sol(opera);
         Nube* nub = new Nube(opera);
         float viento=0;
+        float avanzar[4];
 };
 
 #endif // ESCENARIO_H

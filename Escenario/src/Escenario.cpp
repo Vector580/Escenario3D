@@ -2,7 +2,10 @@
 
 Escenario::Escenario()
 {
-
+    avanzar[0]=391.67;
+    avanzar[1]=-24.93;
+    avanzar[2]=-441.53;
+    avanzar[3]=-858.13;
 }
 
 Escenario::~Escenario()
@@ -558,28 +561,28 @@ void Escenario::draw()
     //CAMIONETAS
     opera->pop();
     opera->push();
-    opera->trasladar(625,0,391.67);
+    opera->trasladar(625,0,avanzar[0]);
     opera->escalar(18,18,18);
     opera->rotarY(90);
     carro1->Draw(4);
 
     opera->pop();
     opera->push();
-    opera->trasladar(625,0,-24.93);
+    opera->trasladar(625,0,avanzar[1]);
     opera->escalar(18,18,18);
     opera->rotarY(90);
     camioneta1->Draw(5);
 
     opera->pop();
     opera->push();
-    opera->trasladar(625,0,-441.53);
+    opera->trasladar(625,0,avanzar[2]);
     opera->escalar(18,18,18);
     opera->rotarY(90);
     carro1->Draw(1);
 
     opera->pop();
     opera->push();
-    opera->trasladar(625,0,-858.13);
+    opera->trasladar(625,0,avanzar[3]);
     opera->escalar(18,18,18);
     opera->rotarY(90);
     camioneta1->Draw(2);
@@ -688,5 +691,12 @@ void Escenario::draw()
 
 void Escenario::update()
 {
-    viento-=0.01;
+    int i;
+    for(i=0;i<4;i++)
+    {
+        if(avanzar[i]<808.27)
+            avanzar[i]++;
+        else
+            avanzar[i]=-858.13;
+    }
 }
