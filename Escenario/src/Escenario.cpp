@@ -481,81 +481,81 @@ void Escenario::draw()
     opera->pop();
     opera->push();
     opera->escalar(12,12,12);
-    opera->trasladar(0,20,25);
+    opera->trasladar(0,20,viento[0]);
     nub->Draw();
 
     opera->pop();
     opera->push();
     opera->escalar(10,10,10);
-    opera->trasladar(0,15,50);
+    opera->trasladar(0,15,viento[1]);
     nub->Draw();
 
     opera->pop();
     opera->push();
     opera->escalar(10,10,10);
-    opera->trasladar(60,20,45);
+    opera->trasladar(60,20,viento[2]);
     nub->Draw();
 
     opera->pop();
     opera->push();
     opera->escalar(10,10,10);
-    opera->trasladar(90,15,-0);
+    opera->trasladar(90,15,viento[3]);
     nub->Draw();
 
     opera->pop();
     opera->push();
     opera->escalar(10,10,10);
-    opera->trasladar(-30,15,-15);
+    opera->trasladar(-30,15,viento[4]);
     nub->Draw();
 
     opera->pop();
     opera->push();
     opera->escalar(10,10,10);
-    opera->trasladar(-60,20,-25);
+    opera->trasladar(-60,20,viento[5]);
     nub->Draw();
 
     opera->pop();
     opera->push();
     opera->escalar(10,10,10);
-    opera->trasladar(-90,15,-40);
+    opera->trasladar(-90,15,viento[6]);
     nub->Draw();
 
     //
     opera->pop();
     opera->push();
     opera->escalar(10,10,10);
-    opera->trasladar(0,20,-25);
+    opera->trasladar(0,20,viento[7]);
     nub->Draw();
 
     opera->pop();
     opera->push();
     opera->escalar(7,7,7);
-    opera->trasladar(30,15,-50);
+    opera->trasladar(30,15,viento[8]);
     nub->Draw();
 
     opera->pop();
     opera->push();
     opera->escalar(12,12,12);
-    opera->trasladar(60,20,-45);
+    opera->trasladar(60,20,viento[9]);
     nub->Draw();
 
 
     opera->pop();
     opera->push();
     opera->escalar(8,8,8);
-    opera->trasladar(-30,15,15);
+    opera->trasladar(-30,15,viento[10]);
     nub->Draw();
 
     opera->pop();
     opera->push();
     opera->escalar(5,5,5);
-    opera->trasladar(-60,35,30);
+    opera->trasladar(-60,35,viento[11]);
     nub->Draw();
 
     opera->pop();
     opera->push();
     opera->escalar(10,10,10);
-    opera->trasladar(-90,15,40);
+    opera->trasladar(-90,15,viento[12]);
     nub->Draw();
 
     //CAMIONETAS
@@ -623,32 +623,39 @@ void Escenario::draw()
     opera->rotarY(carril1[4][2]);
     camioneta1->Draw(4);
 
+    opera->pop();//4.5
+    opera->push();
+    opera->trasladar(carril2[0][0],0,carril2[0][1]);
+    opera->escalar(18,18,18);
+    opera->rotarY(carril2[0][2]);
+    carro1->Draw(2);
+
     opera->pop();//5
     opera->push();
-    opera->trasladar(-433.33,0,-90);
+    opera->trasladar(carril2[1][0],0,carril2[1][1]);
     opera->escalar(18,18,18);
-    opera->rotarY(180);
+    opera->rotarY(carril2[1][2]);
     carro1->Draw(2);
 
     opera->pop();//6
     opera->push();
-    opera->trasladar(-100.00,0,-90);
+    opera->trasladar(carril2[2][0],0,carril2[2][1]);
     opera->escalar(18,18,18);
-    opera->rotarY(180);
+    opera->rotarY(carril2[2][2]);
     camioneta1->Draw(3);
 
     opera->pop();//7
     opera->push();
-    opera->trasladar(233.66,0,-90);
+    opera->trasladar(carril2[3][0],0,carril2[3][1]);
     opera->escalar(18,18,18);
-    opera->rotarY(180);
+    opera->rotarY(carril2[3][2]);
     carro1->Draw(4);
 
     opera->pop();//8
     opera->push();
-    opera->trasladar(425,0,-391.67);
+    opera->trasladar(carril2[4][0],0,carril2[4][1]);
     opera->escalar(18,18,18);
-    opera->rotarY(270);
+    opera->rotarY(carril2[4][2]);
     camioneta1->Draw(5);
 
     //carretera
@@ -730,5 +737,35 @@ void Escenario::update()
                 carril1[i][2]=-90;
             }
         }
+    }
+
+    for(i=0;i<5;i++)
+    {
+        if(carril2[i][0]<425)
+        {
+            carril2[i][0]++;
+            if(carril2[i][0]>=400)
+                carril2[i][2]+=2.571;
+        }
+        else
+        {
+            if(carril2[i][2]!=270)
+                carril2[i][2]=270;
+            if(carril2[i][1]>-841.6)
+                carril2[i][1]--;
+            else
+            {
+                carril2[i][0]=-849.93;
+                carril2[i][1]=-90;
+                carril2[i][2]=180;
+            }
+        }
+    }
+    for(i=0;i<13;i++)
+    {
+        if(viento[i]>55)
+            viento[i]=-60;
+        else
+            viento[i]+=0.1;
     }
 }

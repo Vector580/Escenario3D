@@ -319,10 +319,10 @@
 1617350744 source:c:\users\btpas\documents\github\escenario3d\escenario\src\nube.cpp
 	"Nube.h"
 
-1617518351 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\escenario.cpp
+1617520491 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\escenario.cpp
 	"Escenario.h"
 
-1617518351 c:\users\victor\desktop\proyectos\escenario3d\escenario\include\escenario.h
+1617522147 c:\users\victor\desktop\proyectos\escenario3d\escenario\include\escenario.h
 	<GL/glut.h>
 	<stdlib.h>
 	"Prisma.h"
