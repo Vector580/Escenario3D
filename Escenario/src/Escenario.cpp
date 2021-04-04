@@ -17,452 +17,380 @@ void Escenario::draw()
 {
     glLineWidth(2);
     opera->LoadIdenty();
-    opera->push();
     opera->escalar(40,40,40);
+    opera->push();
+
     opera->trasladar(6,0,-5);//
     casa_base->Draw(1);
-
-    //opera->LoadIdenty();
     opera->pop();
+
     opera->push();
-    opera->escalar(40,40,40);
     opera->trasladar(3.5,0,-8);//
     casa_base->Draw(2);
-
     opera->pop();
-    opera->push();
-    opera->escalar(40,40,40);
 
-    opera->pop();
     opera->push();
-    opera->escalar(40,40,40);
     opera->trasladar(3,0,-6);//
     casa_base->Draw(3);
-
     opera->pop();
+
     opera->push();
-    opera->escalar(40,40,40);
     opera->trasladar(1,0,-13);//
     casa_base->Draw(4);
-
     opera->pop();
+
     opera->push();
-    opera->escalar(40,40,40);
     opera->trasladar(0,0,-7);//
     casa_base->Draw(5);
-
     opera->pop();
+
     opera->push();
-    opera->escalar(40,40,40);
     opera->trasladar(-2,0,-12);//
     casa_base->Draw(1);
-
     opera->pop();
+
     opera->push();
-    opera->escalar(40,40,40);
     opera->trasladar(-3.5,0,-7);//
     casa_base->Draw(2);
-
     opera->pop();
+
     opera->push();
-    opera->escalar(40,40,40);
     opera->trasladar(-6.5,0,-5.5);//
     casa_base->Draw(3);
-
     opera->pop();
+
     opera->push();
-    opera->escalar(40,40,40);
     opera->trasladar(-7,0,-8.5);//
     casa_base->Draw(4);
-
     opera->pop();
+
     opera->push();
-    opera->escalar(40,40,40);
     opera->trasladar(-10,0,-13);//
     casa_base->Draw(5);
-
     opera->pop();
+
     opera->push();
-    opera->escalar(40,40,40);
     opera->trasladar(-10,0,-9);//
     casa_base->Draw(1);
-
     opera->pop();
+
     opera->push();
-    opera->escalar(40,40,40);
     opera->trasladar(-14,0,-13);//
     casa_base->Draw(2);
-
     opera->pop();
+
     opera->push();
-    opera->escalar(40,40,40);
     opera->trasladar(-12.5,0,-7);//
     casa_base->Draw(3);
-
     opera->pop();
+
     opera->push();
-    opera->escalar(40,40,40);
     opera->trasladar(-6.5,0,-12.5);
     casa_base->Draw(4);
-
     opera->pop();
+
     opera->push();
-    opera->escalar(40,40,40);
     opera->trasladar(-4.9,0,-12);
     casa_base->Draw(5);
-
     opera->pop();
+
     opera->push();
-    opera->escalar(40,40,40);
     opera->trasladar(6,0,-10);
     casa_base->Draw(1);
-
     opera->pop();
+
     opera->push();
-    opera->escalar(40,40,40);
     opera->trasladar(4,0,-11);
     casa_base->Draw(2);
-
     opera->pop();
+
     opera->push();
-    opera->escalar(40,40,40);
     opera->trasladar(-3.8,0,-9.5);
     casa_base->Draw(3);
-
     opera->pop();
+
     opera->push();
-    opera->escalar(40,40,40);
     opera->trasladar(5,0,-13.5);
     casa_base->Draw(4);
-
     opera->pop();
+
     opera->push();
-    opera->escalar(40,40,40);
     opera->trasladar(7,0,5);
     casa_base->Draw(1);
-
     opera->pop();
+
     opera->push();
-    opera->escalar(40,40,40);
     opera->trasladar(3.5,0,8);
     casa_base->Draw(2);
-
     opera->pop();
+
     opera->push();
-    opera->escalar(40,40,40);
     opera->trasladar(3,0,6);
     casa_base->Draw(3);
-
     opera->pop();
+
     opera->push();
-    opera->escalar(40,40,40);
     opera->trasladar(1,0,13);
     casa_base->Draw(4);
-
     opera->pop();
+
     opera->push();
-    opera->escalar(40,40,40);
     opera->trasladar(0,0,7);
     casa_base->Draw(5);
-
     opera->pop();
+
     opera->push();
-    opera->escalar(40,40,40);
     opera->trasladar(-2,0,12);
     casa_base->Draw(1);
-
     opera->pop();
+
     opera->push();
-    opera->escalar(40,40,40);
     opera->trasladar(-3.5,0,7);
     casa_base->Draw(2);
-
     opera->pop();
+
     opera->push();
-    opera->escalar(40,40,40);
     opera->trasladar(-6.5,0,5.5);
     casa_base->Draw(2);
-
     opera->pop();
+
     opera->push();
-    opera->escalar(40,40,40);
     opera->trasladar(-7,0,8.5);
     casa_base->Draw(3);
-
     opera->pop();
+
     opera->push();
-    opera->escalar(40,40,40);
     opera->trasladar(-10,0,13);
     casa_base->Draw(1);
-
     opera->pop();
+
     opera->push();
-    opera->escalar(40,40,40);
     opera->trasladar(-10,0,9);
     casa_base->Draw(2);
-
     opera->pop();
+
     opera->push();
-    opera->escalar(40,40,40);
     opera->trasladar(-14,0,13);
     casa_base->Draw(3);
-
     opera->pop();
+
     opera->push();
-    opera->escalar(40,40,40);
     opera->trasladar(-12.5,0,7);
     casa_base->Draw(1);
-
     opera->pop();
+
     opera->push();
-    opera->escalar(40,40,40);
     opera->trasladar(-6.5,0,12.5);
     casa_base->Draw(2);
-
     opera->pop();
+
     opera->push();
-    opera->escalar(40,40,40);
     opera->trasladar(2,0,-10);
     casa_base->Draw(3);
-
     opera->pop();
+
     opera->push();
-    opera->escalar(40,40,40);
     opera->trasladar(-4,0,-14);
     casa_base->Draw(3);
-
     opera->pop();
+
     opera->push();
-    opera->escalar(40,40,40);
     opera->trasladar(-12,0,-14.5);
     casa_base->Draw(3);
-
     opera->pop();
+
     opera->push();
-    opera->escalar(40,40,40);
     opera->trasladar(2,0,10);
     casa_base->Draw(1);
-
     opera->pop();
+
     opera->push();
-    opera->escalar(40,40,40);
     opera->trasladar(-4,0,14);
     casa_base->Draw(2);
-
     opera->pop();
+
     opera->push();
-    opera->escalar(40,40,40);
     opera->trasladar(4,0,11);
     casa_base->Draw(2);
-
     opera->pop();
+
     opera->push();
-    opera->escalar(40,40,40);
     opera->trasladar(-3.8,0,9.5);
     casa_base->Draw(3);
-
     opera->pop();
-    opera->push();
-    opera->escalar(40,40,40);
+
     opera->trasladar(5,0,13.5);
     casa_base->Draw(4);
 
-    opera->pop();
-    opera->push();
+    opera->LoadIdenty();
     opera->escalar(6.0,6.0,6.0);
+    opera->push();
     opera->trasladar(0,0,90);
     arb->Draw();
-
     opera->pop();
+
     opera->push();
-    opera->escalar(6.0,6.0,6.0);
     opera->trasladar(5,0,65);
     arb->Draw();
-
     opera->pop();
+
     opera->push();
-    opera->escalar(6.0,6.0,6.0);
     opera->trasladar(5,0,65);
     arb->Draw();
-
     opera->pop();
+
     opera->push();
-    opera->escalar(6.0,6.0,6.0);
     opera->trasladar(-90,0,-25);
     arb->Draw();
-
     opera->pop();
+
     opera->push();
-    opera->escalar(6.0,6.0,6.0);
     opera->trasladar(-10,0,-30);
     arb->Draw();
-
     opera->pop();
+
     opera->push();
-    opera->escalar(6.0,6.0,6.0);
     opera->trasladar(60,0,-25);
     arb->Draw();
-
     opera->pop();
+
     opera->push();
-    opera->escalar(6.0,6.0,6.0);
     opera->trasladar(60,0,45);
     arb->Draw();
-
     opera->pop();
+
     opera->push();
-    opera->escalar(6.0,6.0,6.0);
     opera->trasladar(0,0,30);
     arb->Draw();
-
     opera->pop();
+
     opera->push();
-    opera->escalar(6.0,6.0,6.0);
     opera->trasladar(60,0,-60);
     arb->Draw();
-
     opera->pop();
+
     opera->push();
-    opera->escalar(6.0,6.0,6.0);
     opera->trasladar(50,0,-80);
     arb->Draw();
-
     opera->pop();
+
+    opera->push();
+    opera->trasladar(20,0,-85);
+    arb->Draw();
+    opera->pop();
+
+    opera->push();
+    opera->trasladar(35,0,-25);
+    arb->Draw();
+    opera->pop();
+
+    opera->push();
+    opera->trasladar(-55,0,-40);
+    arb->Draw();
+    opera->pop();
+
+    opera->push();
+    opera->trasladar(-55,0,-75);
+    arb->Draw();
+    opera->pop();
+
+    opera->push();
+    opera->trasladar(-10,0,-95);
+    arb->Draw();
+    opera->pop();
+
+    opera->push();
+    opera->trasladar(40,0,-55);
+    arb->Draw();
+    opera->pop();
+
+    opera->push();
+    opera->trasladar(-90,0,-55);
+    arb->Draw();
+    opera->pop();
+
+    opera->push();
+    opera->trasladar(-80,0,-75);
+    arb->Draw();
+    opera->pop();
+
+    opera->push();
+    opera->trasladar(-90,0,55);
+    arb->Draw();
+    opera->pop();
+
+    opera->push();
+    opera->trasladar(-70,0,75);
+    arb->Draw();
+    opera->pop();
+
+    opera->push();
+    opera->trasladar(-70,0,32);
+    arb->Draw();
+    opera->pop();
+
+    opera->push();
+    opera->trasladar(37,0,32);
+    arb->Draw();
+    opera->pop();
+
+    opera->push();
+    opera->trasladar(60,0,90);
+    arb->Draw();
+    opera->pop();
+
+    opera->push();
+    opera->trasladar(40,0,70);
+    arb->Draw();
+    opera->pop();
+
+    opera->push();
+    opera->trasladar(-20,0,30);
+    arb->Draw();
+    opera->pop();
+
+    opera->push();
+    opera->trasladar(-30,0,70);
+    arb->Draw();
+    opera->pop();
+
+    opera->push();
+    opera->trasladar(-50,0,70);
+    arb->Draw();
+    opera->pop();
+
+    opera->push();
+    opera->trasladar(45,0,55);
+    arb->Draw();
+    opera->pop();
+
+    opera->push();
+    opera->trasladar(120,0,0);
+    arb->Draw();
+    opera->pop();
+
+    opera->push();
+    opera->trasladar(110,0,-20);
+    arb->Draw();
+    opera->pop();
+
+    opera->push();
+    opera->trasladar(110,0,-50);
+    arb->Draw();
+    opera->pop();
+
+    opera->push();
+    opera->trasladar(115,0,70);
+    arb->Draw();
+    opera->pop();
+
+    opera->trasladar(115,0,30);
+    arb->Draw();
+
+    opera->LoadIdenty();
     opera->push();
     opera->escalar(7,7,7);
     opera->trasladar(0,0,-65);
-    arb->Draw();
-
-    opera->pop();
-    opera->push();
-    opera->escalar(6.0,6.0,6.0);
-    opera->trasladar(20,0,-85);
-    arb->Draw();
-
-    opera->pop();
-    opera->push();
-    opera->escalar(6.0,6.0,6.0);
-    opera->trasladar(35,0,-25);
-    arb->Draw();
-
-    opera->pop();
-    opera->push();
-    opera->escalar(6.0,6.0,6.0);
-    opera->trasladar(-55,0,-40);
-    arb->Draw();
-
-    opera->pop();
-    opera->push();
-    opera->escalar(6.0,6.0,6.0);
-    opera->trasladar(-55,0,-75);
-    arb->Draw();
-
-    opera->pop();
-    opera->push();
-    opera->escalar(6.0,6.0,6.0);
-    opera->trasladar(-10,0,-95);
-    arb->Draw();
-
-    opera->pop();
-    opera->push();
-    opera->escalar(6.0,6.0,6.0);
-    opera->trasladar(40,0,-55);
-    arb->Draw();
-
-    opera->pop();
-    opera->push();
-    opera->escalar(6.0,6.0,6.0);
-    opera->trasladar(-90,0,-55);
-    arb->Draw();
-
-    opera->pop();
-    opera->push();
-    opera->escalar(6.0,6.0,6.0);
-    opera->trasladar(-80,0,-75);
-    arb->Draw();
-
-    opera->pop();
-    opera->push();
-    opera->escalar(6.0,6.0,6.0);
-    opera->trasladar(-90,0,55);
-    arb->Draw();
-
-    opera->pop();
-    opera->push();
-    opera->escalar(6.0,6.0,6.0);
-    opera->trasladar(-70,0,75);
-    arb->Draw();
-
-    opera->pop();
-    opera->push();
-    opera->escalar(6.0,6.0,6.0);
-    opera->trasladar(-70,0,32);
-    arb->Draw();
-
-    opera->pop();
-    opera->push();
-    opera->escalar(6.0,6.0,6.0);
-    opera->trasladar(37,0,32);
-    arb->Draw();
-
-    opera->pop();
-    opera->push();
-    opera->escalar(6.0,6.0,6.0);
-    opera->trasladar(60,0,90);
-    arb->Draw();
-
-    opera->pop();
-    opera->push();
-    opera->escalar(6.0,6.0,6.0);
-    opera->trasladar(40,0,70);
-    arb->Draw();
-
-    opera->pop();
-    opera->push();
-    opera->escalar(6.0,6.0,6.0);
-    opera->trasladar(-20,0,30);
-    arb->Draw();
-
-    opera->pop();
-    opera->push();
-    opera->escalar(6.0,6.0,6.0);
-    opera->trasladar(-30,0,70);
-    arb->Draw();
-
-    opera->pop();
-    opera->push();
-    opera->escalar(6.0,6.0,6.0);
-    opera->trasladar(-50,0,70);
-    arb->Draw();
-
-    opera->pop();
-    opera->push();
-    opera->escalar(6.0,6.0,6.0);
-    opera->trasladar(45,0,55);
-    arb->Draw();
-
-    opera->pop();
-    opera->push();
-    opera->escalar(6.0,6.0,6.0);
-    opera->trasladar(120,0,0);
-    arb->Draw();
-
-    opera->pop();
-    opera->push();
-    opera->escalar(6.0,6.0,6.0);
-    opera->trasladar(110,0,-20);
-    arb->Draw();
-
-    opera->pop();
-    opera->push();
-    opera->escalar(6.0,6.0,6.0);
-    opera->trasladar(110,0,-50);
-    arb->Draw();
-
-    opera->pop();
-    opera->push();
-    opera->escalar(6.0,6.0,6.0);
-    opera->trasladar(115,0,70);
     arb->Draw();
 
     opera->pop();
@@ -471,60 +399,61 @@ void Escenario::draw()
     opera->trasladar(120,0,50);
     arb->Draw();
 
-    opera->pop();
-    opera->push();
-    opera->escalar(6.0,6.0,6.0);
-    opera->trasladar(115,0,30);
-    arb->Draw();
-
     //NUBES
     opera->pop();
-    opera->push();
     opera->escalar(12,12,12);
+    opera->push();
     opera->trasladar(0,20,viento[0]);
     nub->Draw();
-
     opera->pop();
-    opera->push();
+
+    opera->trasladar(60,20,viento[9]);
+    nub->Draw();
+
+    opera->LoadIdenty();
     opera->escalar(10,10,10);
+    opera->push();
+    opera->trasladar(-90,15,viento[12]);
+    nub->Draw();
+    opera->pop();
+
+    opera->push();
     opera->trasladar(0,15,viento[1]);
     nub->Draw();
-
     opera->pop();
+
     opera->push();
-    opera->escalar(10,10,10);
     opera->trasladar(60,20,viento[2]);
     nub->Draw();
-
     opera->pop();
+
     opera->push();
-    opera->escalar(10,10,10);
     opera->trasladar(90,15,viento[3]);
     nub->Draw();
-
     opera->pop();
+
     opera->push();
-    opera->escalar(10,10,10);
     opera->trasladar(-30,15,viento[4]);
     nub->Draw();
-
     opera->pop();
+
     opera->push();
-    opera->escalar(10,10,10);
     opera->trasladar(-60,20,viento[5]);
     nub->Draw();
-
     opera->pop();
+
     opera->push();
-    opera->escalar(10,10,10);
     opera->trasladar(-90,15,viento[6]);
     nub->Draw();
-
-    //
     opera->pop();
-    opera->push();
-    opera->escalar(10,10,10);
+
     opera->trasladar(0,20,viento[7]);
+    nub->Draw();
+
+    opera->LoadIdenty();
+    opera->push();
+    opera->escalar(8,8,8);
+    opera->trasladar(-30,15,viento[10]);
     nub->Draw();
 
     opera->pop();
@@ -535,27 +464,8 @@ void Escenario::draw()
 
     opera->pop();
     opera->push();
-    opera->escalar(12,12,12);
-    opera->trasladar(60,20,viento[9]);
-    nub->Draw();
-
-
-    opera->pop();
-    opera->push();
-    opera->escalar(8,8,8);
-    opera->trasladar(-30,15,viento[10]);
-    nub->Draw();
-
-    opera->pop();
-    opera->push();
     opera->escalar(5,5,5);
     opera->trasladar(-60,35,viento[11]);
-    nub->Draw();
-
-    opera->pop();
-    opera->push();
-    opera->escalar(10,10,10);
-    opera->trasladar(-90,15,viento[12]);
     nub->Draw();
 
     //CAMIONETAS
