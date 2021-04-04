@@ -31,8 +31,8 @@ class Escenario
         Sol* sol = new Sol(opera);
         Nube* nub = new Nube(opera);
         float avanzar[4];
-        float carril1[5][3]={{425,808.27,270},
-                             {425,391.67,270},
+        float carril1[5][3]={{425,808.27,-90},
+                             {425,391.67,-90},
                              {233.66,90,0},
                              {-100,90,0},
                              {-433.33,90,0}};

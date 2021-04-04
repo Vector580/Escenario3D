@@ -715,7 +715,7 @@ void Escenario::update()
         {
             carril1[i][1]--;
             if(carril1[i][1]<=125)
-                carril1[i][2]-=7.71;
+                carril1[i][2]+=2.571;
         }
         else
         {
@@ -727,7 +727,7 @@ void Escenario::update()
             {
                 carril1[i][0]=425;
                 carril1[i][1]=808.27;
-                carril1[i][2]=270;
+                carril1[i][2]=-90;
             }
         }
     }
