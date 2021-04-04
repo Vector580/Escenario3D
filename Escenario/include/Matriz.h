@@ -12,8 +12,8 @@ class Matriz
         float* getPunter();
 
     private:
-        float M[4][4];
-        float *p;
+        float M[4][4]; //Matriz
+        float *p;      //Apuntador de la primera posicion de la matriz
 };
 
 #endif // MATRIZ_H

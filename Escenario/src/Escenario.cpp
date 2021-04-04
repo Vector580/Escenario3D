@@ -18,6 +18,7 @@ void Escenario::draw()
     glLineWidth(2);
     opera->LoadIdenty();
     opera->escalar(40,40,40);
+
     opera->push();
 
     opera->trasladar(6,0,-5);//

@@ -14,6 +14,7 @@ Operador::~Operador()
 
 void Operador::LoadIdenty()
 {
+    //Carga la identidad
     A.LoadIdenty();
 }
 //Operadores geometrico
@@ -122,12 +123,13 @@ void Operador::rotarX(float grade)
             for (j=0;j<4;j++)
                 *(Ap+(4*j+i))=aux[i][j];
 }
+//Funcion que permite rotar en Y, recibe los grados a rotar
 void Operador::rotarY(float grade)
 {
-    float rad=grade*0.0174533;
+    float rad=grade*0.0174533;//Convierte los grados a radianoes
     float aux[4][4]={{0,0,0,0},{0,0,0,0},{0,0,0,0},{0,0,0,0}};
     int i,j,k,m;
-    float rotate_y[4][4]={{cos(rad),0,sin(rad),0},{0,1,0,0},{-1*sin(rad),0,cos(rad),0},{0,0,0,1}};
+    float rotate_y[4][4]={{cos(rad),0,sin(rad),0},{0,1,0,0},{-1*sin(rad),0,cos(rad),0},{0,0,0,1}}; //Se inicializa la matriz de rotacion Y
     for (i=0;i<4;i++)
         for (j=0;j<4;j++)
             for (k=0;k<4;k++)

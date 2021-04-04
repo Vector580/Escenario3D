@@ -18,7 +18,7 @@ class Operador
 
     public:
         Operador();
-        virtual ~Operador();
+        ~Operador();
         void LoadIdenty();
         void LoadIdenty(float M[][4]);
         void trasladar(float tx, float ty, float tz);

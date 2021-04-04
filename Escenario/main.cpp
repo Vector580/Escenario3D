@@ -48,7 +48,7 @@ void display()
 {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-   glLoadIdentity();
+    glLoadIdentity();
 
     glTranslatef(0.0f, 0.0f, -5.0f);
     glRotatef(anguloCuboX, 1.0f, 0.0f, 0.0f);

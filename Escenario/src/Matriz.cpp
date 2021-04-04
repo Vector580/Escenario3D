@@ -2,6 +2,7 @@
 
 Matriz::Matriz()
 {
+    //Se inicializa la matriz como una matriz identidad
     int i,j;
     for(i=0;i<4;i++)
     {
@@ -13,7 +14,7 @@ Matriz::Matriz()
                 M[i][j]=0;
         }
     }
-     p=&M[0][0];
+     p=&M[0][0]; //Se le asigna al apuntador la primera posicion de la matriz
 }
 
 Matriz::~Matriz()
@@ -34,16 +35,9 @@ void Matriz::LoadIdenty()
             else
                 M[i][j]=0;
         }
-    }/*
-    for (i=0;i<4;i++)
-    {
-        for (j=0;j<4;j++)
-           printf("%f \t",M[i][j]);
-        printf("\n");
     }
-    printf("\n");*/
 }
-
+//Funcion que devuelve el apuntador
 float* Matriz::getPunter()
 {
     return p;
