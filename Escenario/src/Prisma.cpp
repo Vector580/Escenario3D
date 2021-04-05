@@ -12,14 +12,16 @@ Prisma::~Prisma()
 {
     //dtor
 }
-
+//Funcion para definir las cordenads de un punto
+//Recibe las coordenadas en x, y, z
+//Recibe el numero de vertice -> n
 void Prisma::setPoints(float x, float y, float z, int n)
 {
    Puntos [n][0]= x;
    Puntos [n][1]= y;
    Puntos [n][2]= z;
 }
-
+//Funcion que se encargar de dibujar el prima
 void Prisma::Draw()
 {
     int n, i;

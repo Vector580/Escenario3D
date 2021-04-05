@@ -15,52 +15,26 @@ Cilindro::Cilindro(Operador *Op)
     pz=0;
     radio=4;
     profundidad=4;
-    /*
-    float rad;
-    int angulo, y, x;
 
-    int indice=0;
-    angulo=0;
-
-    for (angulo=0; angulo<360; angulo=angulo+2) {
-        rad=angulo*0.0174533;//Se convierte los angulos a radianes
-        x = radio*cos(rad);//Se calcula la posicion de x
-        y = radio*sin(rad);//Se calcula la posicion de y
-        Puntos[indice][0]=x+px;
-        Puntos[indice][1]=y+py;
-        Puntos[indice][2]=0+pz;
-        //auxp[indice]=vertices[indice];
-        indice++;
-
-    }
-    for (angulo=0; angulo<360; angulo=angulo+2) {
-        rad=angulo*0.0174533;//Se convierte los angulos a radianes
-        x = radio*cos(rad);//Se calcula la posicion de x
-        y = radio*sin(rad);//Se calcula la posicion de y
-        Puntos[indice][0]=x+px;
-       Puntos[indice][1]=y+py;
-        Puntos[indice][2]=profundidad+pz;
-        //auxp[indice]=vertices[indice];
-        indice++;
-
-    }
-    */
 }
 
 Cilindro::~Cilindro()
 {
     //dtor
 }
+//Funcion que define el apuntador a operador
 void Cilindro::setApunter(Operador *Op)
 {
     Ope=Op;
 }
+//Funcion que define el centro del cilindro
 void Cilindro::setCentro(float x, float y, float z)
 {
     px=x;
     py=y;
     pz=z;
 }
+
 void Cilindro::setRadio(float r)
 {
     radio=r;
@@ -84,9 +58,8 @@ void Cilindro::Draw()
         x = radio*cos(rad);//Se calcula la posicion de x
         y = radio*sin(rad);//Se calcula la posicion de y
         Puntos[indice][0]=(x+px)/10;
-       Puntos[indice][1]=(y+py)/10;
+        Puntos[indice][1]=(y+py)/10;
         Puntos[indice][2]=0+pz;
-        //auxp[indice]=vertices[indice];
         indice++;
 
     }
@@ -97,7 +70,6 @@ void Cilindro::Draw()
         Puntos[indice][0]=(x+px)/10;
        Puntos[indice][1]=(y+py)/10;
         Puntos[indice][2]=profundidad+pz;
-        //auxp[indice]=vertices[indice];
         indice++;
 
     }

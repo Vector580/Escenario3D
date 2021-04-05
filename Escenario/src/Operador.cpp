@@ -22,14 +22,15 @@ void Operador::LoadIdenty()
 //Operador de translacion, recibe las cordenadas del punto a moverse
 void Operador::trasladar(float tx, float ty, float tz)
 {
-    float trans[4][4]={{1,0,0,tx},{0,1,0,ty},{0,0,1,tz},{0,0,0,1}};
-    float aux[4][4]={{0,0,0,0},{0,0,0,0},{0,0,0,0},{0,0,0,0}};
+    float trans[4][4]={{1,0,0,tx},{0,1,0,ty},{0,0,1,tz},{0,0,0,1}};//Se inicializa la matriz de translacion
+    float aux[4][4]={{0,0,0,0},{0,0,0,0},{0,0,0,0},{0,0,0,0}}; //matriz auxiliar
     int i,j,k,m;
+    //Se multiplica la matriz global por la matriz de translacion, se guarda el resultado en la matriz auxiliar
     for (i=0;i<4;i++)
         for (j=0;j<4;j++)
             for (k=0;k<4;k++)
                 aux[i][j]=aux[i][j]+((*(Ap+(4*k+i)))*trans[k][j]);
-
+    //Actualizacion de la matriz global
     for (i=0;i<4;i++)
             for (j=0;j<4;j++)
                 *(Ap+(4*j+i))=aux[i][j];
@@ -39,14 +40,15 @@ void Operador::trasladar(float tx, float ty, float tz)
 //Operador de escalamiento, recibe los escalares
 void Operador::escalar(float sx, float sy, float sz)
 {
-    float scale[4][4]={{sx,0,0,0},{0,sy,0,0},{0,0,sz,0},{0,0,0,1}};
+    float scale[4][4]={{sx,0,0,0},{0,sy,0,0},{0,0,sz,0},{0,0,0,1}};//Se inicializa la matriz de escalamiento
     float aux[4][4]={{0,0,0,0},{0,0,0,0},{0,0,0,0},{0,0,0,0}};
     int i,j,k,m;
+    //Se multiplica la matriz global por la matriz de tescalamiento, se guarda el resultado en la matriz auxiliar
     for (i=0;i<4;i++)
         for (j=0;j<4;j++)
             for (k=0;k<4;k++)
                 aux[i][j]=aux[i][j]+((*(Ap+(4*k+i)))*scale[k][j]);
-
+    //Actualizacion de la matriz global
     for (i=0;i<4;i++)
             for (j=0;j<4;j++)
                 *(Ap+(4*j+i))=aux[i][j];
@@ -104,6 +106,7 @@ void Operador::rotarlib(float grade, float xp1, float yp1, float zp1,float xp2, 
         for (j=0;j<4;j++)
             for (k=0;k<4;k++)
                 aux[i][j]=aux[i][j]+(aux2[i][k]*((*(Ap+(4*j+k)))));
+    //Actualizacion de la matriz global
     for (i=0;i<4;i++)
             for (j=0;j<4;j++)
                 *(Ap+(4*j+i))=aux[i][j];
@@ -111,14 +114,16 @@ void Operador::rotarlib(float grade, float xp1, float yp1, float zp1,float xp2, 
 
 void Operador::rotarX(float grade)
 {
-    float rad=grade*0.0174533;
+    float rad=grade*0.0174533;//Convierte los grados a rotar
     float aux[4][4]={{0,0,0,0},{0,0,0,0},{0,0,0,0},{0,0,0,0}};
     int i,j,k,m;
-    float rotate_x[4][4]={{1,0,0,0},{0,cos(rad),-1*sin(rad),0},{0,sin(rad),cos(rad),0},{0,0,0,1}};
+    float rotate_x[4][4]={{1,0,0,0},{0,cos(rad),-1*sin(rad),0},{0,sin(rad),cos(rad),0},{0,0,0,1}};//Se inicializa la matriz de rotacion X
+    //Se multiplica la matriz global por la matriz de Rotacion X, se guarda el resultado en la matriz auxiliar
     for (i=0;i<4;i++)
         for (j=0;j<4;j++)
             for (k=0;k<4;k++)
                 aux[i][j]=aux[i][j]+((*(Ap+(4*k+i)))*rotate_x[k][j]);
+    //Actualizacion de la matriz global
     for (i=0;i<4;i++)
             for (j=0;j<4;j++)
                 *(Ap+(4*j+i))=aux[i][j];
@@ -126,9 +131,10 @@ void Operador::rotarX(float grade)
 //Funcion que permite rotar en Y, recibe los grados a rotar
 void Operador::rotarY(float grade)
 {
-    float rad=grade*0.0174533;//Convierte los grados a radianoes
+    float rad=grade*0.0174533;//Convierte los grados a radianes
     float aux[4][4]={{0,0,0,0},{0,0,0,0},{0,0,0,0},{0,0,0,0}};
     int i,j,k,m;
+    //Se multiplica la matriz global por la matriz de rotacion Y, se guarda el resultado en la matriz auxiliar
     float rotate_y[4][4]={{cos(rad),0,sin(rad),0},{0,1,0,0},{-1*sin(rad),0,cos(rad),0},{0,0,0,1}}; //Se inicializa la matriz de rotacion Y
     for (i=0;i<4;i++)
         for (j=0;j<4;j++)
@@ -141,14 +147,16 @@ void Operador::rotarY(float grade)
 
 void Operador::rotarZ(float grade)
 {
-    float rad=grade*0.0174533;
+    float rad=grade*0.0174533;//Convierte los grados a radianes
     float aux[4][4]={{0,0,0,0},{0,0,0,0},{0,0,0,0},{0,0,0,0}};
     int i,j,k,m;
-    float rotate_z[4][4]={{cos(rad),-1*sin(rad),0,0},{sin(rad),cos(rad),0,0},{0,0,1,0},{0,0,0,1}};
+    float rotate_z[4][4]={{cos(rad),-1*sin(rad),0,0},{sin(rad),cos(rad),0,0},{0,0,1,0},{0,0,0,1}};//Se inicializa la matriz de rotacion X
+    //Se multiplica la matriz global por la matriz de rotacion, se guarda el resultado en la matriz auxiliar
     for (i=0;i<4;i++)
         for (j=0;j<4;j++)
             for (k=0;k<4;k++)
                 aux[i][j]=aux[i][j]+((*(Ap+(4*k+i)))*rotate_z[k][j]);
+    //Actualizacion de la matriz global
     for (i=0;i<4;i++)
             for (j=0;j<4;j++)
                 *(Ap+(4*j+i))=aux[i][j];
@@ -202,18 +210,18 @@ void Operador::multiplicar(float aux[][3],int tam)
         aux[i][2]=auxi[2];
     }
 }
-
+//Funcion que se encargar de hacer push en la pila
 void Operador::push()
 {
     pila.push(A);
 }
-
+//Funcion que se encargar de hacer pop en la pila
 void Operador::pop()
 {
     A=pila.top();
     pila.pop();
 }
-
+//Funcion que imprime la matriz global, sirvio para detectar fallos
 void Operador::imprimir()
 {
     int i,j;

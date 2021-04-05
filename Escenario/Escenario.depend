@@ -37,7 +37,7 @@
 1617482908 source:c:\users\victor\desktop\proyectos\escenario3d\escenario\src\operador.cpp
 	"Operador.h"
 
-1617563107 source:c:\users\hucom\documents\github\escenario3d\escenario\main.cpp
+1617647157 source:c:\users\hucom\documents\github\escenario3d\escenario\main.cpp
 	<GLUT/glut.h>
 	<GL/glut.h>
 	<stdlib.h>
@@ -131,7 +131,7 @@
 	"Matriz.h"
 	"Operador.h"
 
-1617561622 source:c:\users\hucom\documents\github\escenario3d\escenario\src\operador.cpp
+1617648440 source:c:\users\hucom\documents\github\escenario3d\escenario\src\operador.cpp
 	"Operador.h"
 
 1617424595 source:c:\users\hucom\documents\github\escenario3d\escenario\src\piramide.cpp
@@ -361,6 +361,6 @@
 	"Nube.h"
 	"Operador.h"
 
-1617563107 source:c:\users\hucom\documents\github\escenario3d\escenario\src\escenario.cpp
+1617647157 source:c:\users\hucom\documents\github\escenario3d\escenario\src\escenario.cpp
 	"Escenario.h"
 
