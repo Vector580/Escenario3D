@@ -66,6 +66,7 @@ Casa::Casa(Operador *Op)
     for (int i=0;i<41;i++)
         for (int j=0;j<4;j++)
             Puntos_aux[i][j]=Puntos[i][j];
+    //Se define el apuntador
     Ope=Op;
 }
 
@@ -76,10 +77,11 @@ Casa::~Casa()
 
 void Casa:: Draw(int color)
 {
-
+    //Se manda a multiplicar los puntos por la matriz global
     Ope->multiplicar(Puntos_aux,41);
 
     int n,j;
+    //Colores de la casa
     switch (color)
     {
         case 1: glColor3f(0.98f, 0.71f, 0.81f); //ROSADO
@@ -94,18 +96,19 @@ void Casa:: Draw(int color)
                 break;
     }
 
-    //REducior con ciclos
 
-     for(int i=0;i<8;i++)
+
+    for(int i=0;i<8;i++)
         base.setPoints(Puntos_aux[i][0],Puntos_aux[i][1],Puntos_aux[i][2],i);
     base.Draw();
-    glColor4f(0.57f, 0.0f, 0.0f, 0.0f);//Techo de la cas
+    glColor4f(0.57f, 0.0f, 0.0f, 0.0f);//Techo de la casa
+
     for(int i=8;i<13;i++)
         techo.setPoints(Puntos_aux[i][0],Puntos_aux[i][1],Puntos_aux[i][2],i-8);
     techo.Draw();
-//glColor4f(0.4f, 0.0f, 0.0f, 0.0f);//Puerta
-glColor3f(0.65f, 0.48f, 0.35f);
-glLineWidth(1.5);
+    //glColor4f(0.4f, 0.0f, 0.0f, 0.0f);//Puerta
+    glColor3f(0.65f, 0.48f, 0.35f);
+    glLineWidth(1.5);
     for(n=13;n<=16;n++){
         if (n!=16)
         {
@@ -122,7 +125,7 @@ glLineWidth(1.5);
             glEnd();
         }
     }
-glColor3f(0.54f, 0.58f, 0.59f);
+    glColor3f(0.54f, 0.58f, 0.59f);
     for(n=17;n<=20;n++){
         if (n!=20)
         {
@@ -139,7 +142,7 @@ glColor3f(0.54f, 0.58f, 0.59f);
             glEnd();
         }
     }
-glColor3f(0.54f, 0.58f, 0.59f);
+    glColor3f(0.54f, 0.58f, 0.59f);
     for(n=21;n<=24;n++){
         if (n!=24)
         {
@@ -156,8 +159,8 @@ glColor3f(0.54f, 0.58f, 0.59f);
             glEnd();
         }
     }
-//glColor3f(0.0f, 0.3f, 0.5f);
-glColor3f(0.54f, 0.58f, 0.59f);
+
+    glColor3f(0.54f, 0.58f, 0.59f);
     for(n=25;n<=28;n++){
         if (n!=28)
         {
@@ -210,7 +213,7 @@ glColor3f(0.54f, 0.58f, 0.59f);
             glVertex3fv( Puntos_aux[39]);
             glVertex3fv( Puntos_aux[40] );
     glEnd();
-
+    //Reseteo de los puntos auxiliares
     for (int i=0;i<41;i++)
         for (int j=0;j<4;j++)
             Puntos_aux[i][j]=Puntos[i][j];

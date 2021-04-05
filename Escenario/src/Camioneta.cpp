@@ -3,6 +3,7 @@
 
 Camioneta::Camioneta(Operador *Op)
 {
+    //Se definen los vertices de la camioneta
     Puntos[0][0] = 1.0;     Puntos[0][1] = 0.25;    Puntos[0][2] = 0;
     Puntos[1][0] = 1.1;     Puntos[1][1] = 0.25;    Puntos[1][2] = 0;
     Puntos[2][0] = 1.1;     Puntos[2][1] = 0.75;    Puntos[2][2] = 0;
@@ -62,10 +63,11 @@ Camioneta::Camioneta(Operador *Op)
     Puntos[45][0] = 3.250;     Puntos[45][1] = 1.125;    Puntos[45][2] = -3.15;
     Puntos[46][0] = 3.250;     Puntos[46][1] = 1.250;    Puntos[46][2] = -3.15;
     Puntos[47][0] = 3.125;     Puntos[47][1] = 1.250;    Puntos[47][2] = -3.15;
-
+    //Se guardan los punto en una estructura auxiliar
     for(int i=0;i<48;i++)
         for(int j=0;j<3;j++)
             PuntosAux[i][j]=Puntos[i][j];
+    //Se define el apuntador
    Ope = Op;
 }
 
@@ -78,9 +80,10 @@ void Camioneta:: Update()
 {
 
 }
-
+//Funcion de dibujado, recibe el color a dibujar el objeto
 void Camioneta::Draw(int color)
 {
+    //Se multiplican los puntos por las matriz global
     Ope->multiplicar(PuntosAux,48);
     int i, j = 0;
     glLineWidth(2);
@@ -182,10 +185,11 @@ void Camioneta::Draw(int color)
     glVertex3f(PuntosAux[44][0],PuntosAux[44][1],PuntosAux[44][2]);
     glEnd();
 
+    //Reseteo de los puntos
     for(int i=0;i<48;i++)
         for(int j=0;j<3;j++)
             PuntosAux[i][j]=Puntos[i][j];
-
+    //Dibujado de las llantas
     glColor3f(1.0f, 1.0f, 1.0f);
     cilin.setApunter(Ope);
     cilin.setCentro(20,3,-0.5);

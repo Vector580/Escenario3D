@@ -14,6 +14,7 @@ Arbol::Arbol(Operador *Op)
    Puntos[7][0]=-2; Puntos[7][1]=0; Puntos[7][2]=6;
 
 
+    //copa del arbol
    Puntos[8][0]=-4; Puntos[8][1]=-4; Puntos[8][2]=6;
    Puntos[9][0]=4; Puntos[9][1]=-4; Puntos[9][2]=6;
    Puntos[10][0]=4; Puntos[10][1]=4; Puntos[10][2]=6;
@@ -62,9 +63,11 @@ Arbol::Arbol(Operador *Op)
    Puntos[49][0]=0; Puntos[49][1]=0; Puntos[49][2]=12;
    Puntos[50][0]=2; Puntos[50][1]=0; Puntos[50][2]=12;
 
+   //Se guardan los punto en una estructura auxiliar
    for(i=0;i<51;i++)
         for(j=0;j<3;j++)
             aux[i][j]=Puntos[i][j];
+   //Se establece el apuntador
    Ope=Op;
 }
 Arbol::Arbol()
@@ -80,7 +83,7 @@ Arbol::Arbol()
    Puntos[6][0]=-2; Puntos[6][1]=2; Puntos[6][2]=6;
    Puntos[7][0]=-2; Puntos[7][1]=0; Puntos[7][2]=6;
 
-
+    //Copa del arbol
    Puntos[8][0]=-4; Puntos[8][1]=-4; Puntos[8][2]=6;
    Puntos[9][0]=4; Puntos[9][1]=-4; Puntos[9][2]=6;
    Puntos[10][0]=4; Puntos[10][1]=4; Puntos[10][2]=6;
@@ -129,6 +132,7 @@ Arbol::Arbol()
    Puntos[49][0]=0; Puntos[49][1]=0; Puntos[49][2]=12;
    Puntos[50][0]=2; Puntos[50][1]=0; Puntos[50][2]=12;
 
+   //Se guardan los punto en una estructura auxiliar
    for(i=0;i<51;i++)
         for(j=0;j<3;j++)
             aux[i][j]=Puntos[i][j];
@@ -137,18 +141,20 @@ Arbol::~Arbol()
 {
     //dtor
 }
-
+//Funcion que define el apuntador
 void Arbol::setPunter(Operador *Op)
 {
     Ope=Op;
 }
-
+//Funcion para el dibujado
 void Arbol:: Draw()
 {
+    //Se ploteo mal y se soluciono con una rotacion sobre el eje x
     Ope->push();
     Ope->rotarX(-90);
     Ope->multiplicar(aux,51);
     Ope->pop();
+
     int i,j;
     //Se define color del tronco
     glColor3f(1.0f, 0.5f, 0.0f);//Naranja
@@ -221,6 +227,8 @@ void Arbol:: Draw()
         glVertex3fv( aux[19]);
         glVertex3fv( aux[24]);
     glEnd();
+
+    //Se resetean los puntos auxiliares
     for(i=0;i<51;i++)
         for(j=0;j<3;j++)
             aux[i][j]=Puntos[i][j];

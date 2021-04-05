@@ -134,14 +134,14 @@
 1617648440 source:c:\users\hucom\documents\github\escenario3d\escenario\src\operador.cpp
 	"Operador.h"
 
-1617424595 source:c:\users\hucom\documents\github\escenario3d\escenario\src\piramide.cpp
+1617648862 source:c:\users\hucom\documents\github\escenario3d\escenario\src\piramide.cpp
 	"Piramide.h"
 	<GL/glut.h>
 	<stdlib.h>
 
 1617135239 c:\users\hucom\documents\github\escenario3d\escenario\include\piramide.h
 
-1617424595 source:c:\users\hucom\documents\github\escenario3d\escenario\src\prisma.cpp
+1617648862 source:c:\users\hucom\documents\github\escenario3d\escenario\src\prisma.cpp
 	"Prisma.h"
 	<GL/glut.h>
 	<stdlib.h>
