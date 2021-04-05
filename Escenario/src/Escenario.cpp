@@ -213,7 +213,33 @@ void Escenario::draw()
     opera->trasladar(4,0,11);
     casa_base->Draw(2);
     opera->pop();
+//-----------
+    opera->push();
+    opera->trasladar(-20,0,-10);
+    casa_base->Draw(5);
+    opera->pop();
 
+    opera->push();
+    opera->trasladar(-20,0,-5);
+    casa_base->Draw(4);
+    opera->pop();
+
+    opera->push();
+    opera->trasladar(-15,0,-6);
+    casa_base->Draw(2);
+    opera->pop();
+
+    opera->push();
+    opera->trasladar(-23,0,-9);
+    casa_base->Draw(3);
+    opera->pop();
+
+    opera->push();
+    opera->trasladar(-17,0,-10);
+    casa_base->Draw(1);
+    opera->pop();
+
+//----------------
     opera->push();
     opera->trasladar(-3.8,0,9.5);
     casa_base->Draw(3);
@@ -222,10 +248,41 @@ void Escenario::draw()
     opera->trasladar(5,0,13.5);
     casa_base->Draw(4);
 
+
     opera->LoadIdenty();
     opera->escalar(6.0,6.0,6.0);
     opera->push();
     opera->trasladar(0,0,90);
+    arb->Draw();
+    opera->pop();
+
+    opera->push();
+    opera->trasladar(-120,0,-50);
+    arb->Draw();
+    opera->pop();
+
+    opera->push();
+    opera->trasladar(-120,0,-90);
+    arb->Draw();
+    opera->pop();
+
+    opera->push();
+    opera->trasladar(-105,0,-90);
+    arb->Draw();
+    opera->pop();
+
+    opera->push();
+    opera->trasladar(-150,0,-30);
+    arb->Draw();
+    opera->pop();
+
+    opera->push();
+    opera->trasladar(-150,0,-45);
+    arb->Draw();
+    opera->pop();
+
+    opera->push();
+    opera->trasladar(-50,0,-100);
     arb->Draw();
     opera->pop();
 
@@ -578,7 +635,7 @@ void Escenario::draw()
     glColor3f(0.54f, 0.58f, 0.59f);
     glBegin(GL_LINES);
     glVertex3f(400,0,125);
-    glVertex3f(400,0,600);
+    glVertex3f(400,0,900);
     glVertex3f(0,0,0);
     glEnd();
 
@@ -602,7 +659,7 @@ void Escenario::draw()
 
     glBegin(GL_LINES);
     glVertex3f(650,0,-600);
-    glVertex3f(650,0,600);
+    glVertex3f(650,0,700);
     glVertex3f(0,0,0);
     glEnd();
 
@@ -610,7 +667,7 @@ void Escenario::draw()
     glColor3f(1.0f, 1.0f, 0.0f);
     glBegin(GL_LINES);
     int i;
-    for (i=-600; i<650; i=i+20)
+    for (i=-600; i<850; i=i+20)
     glVertex3f(525,0,i);
     glVertex3f(525,0,i+10);
     glEnd();
