@@ -4,7 +4,7 @@
 #include "Operador.h"
 
 
-class Arbol //: public Objeto
+class Arbol
 {
     public:
         Arbol(Operador*);

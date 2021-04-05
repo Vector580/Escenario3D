@@ -148,7 +148,7 @@
 
 1617135239 c:\users\hucom\documents\github\escenario3d\escenario\include\prisma.h
 
-1617556009 source:c:\users\hucom\documents\github\escenario3d\escenario\src\casa.cpp
+1617651912 source:c:\users\hucom\documents\github\escenario3d\escenario\src\casa.cpp
 	"Casa.h"
 
 1617556009 c:\users\hucom\documents\github\escenario3d\escenario\include\casa.h
@@ -156,10 +156,10 @@
 	"Piramide.h"
 	"Prisma.h"
 
-1617556070 source:c:\users\hucom\documents\github\escenario3d\escenario\src\arbol.cpp
+1617651912 source:c:\users\hucom\documents\github\escenario3d\escenario\src\arbol.cpp
 	"Arbol.h"
 
-1617556070 c:\users\hucom\documents\github\escenario3d\escenario\include\arbol.h
+1617652429 c:\users\hucom\documents\github\escenario3d\escenario\include\arbol.h
 	"Prisma.h"
 	"Operador.h"
 
@@ -211,7 +211,7 @@
 	"Operador.h"
 	"Cilindro.h"
 
-1617556070 source:c:\users\hucom\documents\github\escenario3d\escenario\src\camioneta.cpp
+1617651912 source:c:\users\hucom\documents\github\escenario3d\escenario\src\camioneta.cpp
 	"Camioneta.h"
 	<GL/glut.h>
 
@@ -220,7 +220,7 @@
 	"Operador.h"
 	"Cilindro.h"
 
-1617556070 source:c:\users\hucom\documents\github\escenario3d\escenario\src\carro.cpp
+1617651912 source:c:\users\hucom\documents\github\escenario3d\escenario\src\carro.cpp
 	"Carro.h"
 	<GL/glut.h>
 
@@ -247,7 +247,7 @@
 	"Carro.h"
 	<GL/glut.h>
 
-1617556071 source:c:\users\hucom\documents\github\escenario3d\escenario\src\cilindro.cpp
+1617651912 source:c:\users\hucom\documents\github\escenario3d\escenario\src\cilindro.cpp
 	"Cilindro.h"
 	<math.h>
 	<GL/glut.h>
@@ -255,7 +255,7 @@
 1617334179 c:\users\hucom\documents\github\escenario3d\escenario\include\cilindro.h
 	"Operador.h"
 
-1617424595 source:c:\users\hucom\documents\github\escenario3d\escenario\src\sol.cpp
+1617652429 source:c:\users\hucom\documents\github\escenario3d\escenario\src\sol.cpp
 	"Sol.h"
 	<math.h>
 
@@ -341,7 +341,7 @@
 	"Nube.h"
 	"Operador.h"
 
-1617424595 source:c:\users\hucom\documents\github\escenario3d\escenario\src\nube.cpp
+1617652428 source:c:\users\hucom\documents\github\escenario3d\escenario\src\nube.cpp
 	"Nube.h"
 
 1617424595 c:\users\hucom\documents\github\escenario3d\escenario\include\nube.h
@@ -361,6 +361,6 @@
 	"Nube.h"
 	"Operador.h"
 
-1617647157 source:c:\users\hucom\documents\github\escenario3d\escenario\src\escenario.cpp
+1617652428 source:c:\users\hucom\documents\github\escenario3d\escenario\src\escenario.cpp
 	"Escenario.h"
 

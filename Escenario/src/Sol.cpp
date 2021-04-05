@@ -2,7 +2,7 @@
 #include <math.h>
 Sol::Sol(Operador *Op)
 {
-
+    //Se establece el apuntador
     Ope=Op;
 
 }
@@ -18,6 +18,7 @@ void Sol:: Update()
 }
 void Sol:: Draw()
 {
+    //Se manda a dibujar el cilindro
     cilin.setApunter(Ope);
     cilin.setCentro(0,0,0);
     cilin.setRadio(60);

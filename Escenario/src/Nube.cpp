@@ -3,7 +3,8 @@
 Nube::Nube(Operador *Op)
 {
     int i,j;
-    Puntos[0][0]=-4; Puntos[0][1]=-4; Puntos[0][2]=0;
+    //Se definen los puntos
+   Puntos[0][0]=-4; Puntos[0][1]=-4; Puntos[0][2]=0;
    Puntos[1][0]=4; Puntos[1][1]=-4; Puntos[1][2]=0;
    Puntos[2][0]=4; Puntos[2][1]=4; Puntos[2][2]=0;
    Puntos[3][0]=2; Puntos[3][1]=4; Puntos[3][2]=0;
@@ -21,9 +22,11 @@ Nube::Nube(Operador *Op)
    Puntos[14][0]=-6; Puntos[14][1]=-2; Puntos[14][2]=2;
    Puntos[15][0]=-4; Puntos[15][1]=-2; Puntos[15][2]=2;
 
+   //Se guardan los punto en una estructura auxiliar
    for(i=0;i<16;i++)
         for(j=0;j<3;j++)
             aux[i][j]=Puntos[i][j];
+   //Se define el apuntador
    Ope=Op;
 }
 
@@ -34,6 +37,7 @@ Nube::~Nube()
 
 void Nube::Draw()
 {
+    //se ploteo mal y se soluciono con una rotacion sobre el eje x
     Ope->push();
     Ope->rotarX(-90);
     Ope->multiplicar(aux,16);
@@ -62,6 +66,7 @@ void Nube::Draw()
             glVertex3fv( aux[i+8]);
         glEnd();
     }
+    //Se reinician los puntos
     for(i=0;i<16;i++)
         for(j=0;j<3;j++)
             aux[i][j]=Puntos[i][j];

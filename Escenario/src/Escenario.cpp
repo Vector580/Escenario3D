@@ -2,6 +2,7 @@
 
 Escenario::Escenario()
 {
+    //Se inicializan las variables de control
     avanzar[0]=391.67;
     avanzar[1]=-24.93;
     avanzar[2]=-441.53;
@@ -15,6 +16,7 @@ Escenario::~Escenario()
 
 void Escenario::draw()
 {
+
     glLineWidth(2);
     opera->LoadIdenty();
     opera->escalar(40,40,40);
