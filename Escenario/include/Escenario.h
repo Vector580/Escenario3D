@@ -30,6 +30,7 @@ class Escenario
         Cilindro* cilin = new Cilindro(opera);
         Sol* sol = new Sol(opera);
         Nube* nub = new Nube(opera);
+        float aumentoSol=0;
         float avanzar[4];
         float carril1[5][3]={{425,808.27,-90},
                              {425,391.67,-90},

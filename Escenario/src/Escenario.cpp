@@ -626,12 +626,89 @@ void Escenario::draw()
     opera->escalar(18,18,18);
     opera->rotarY(carril2[4][2]);
     camioneta1->Draw(5);
-
     opera->pop();
+
     opera->push();
     opera->escalar(0.7,0.7,0.7);
     opera->trasladar(-580,350,400);
+    opera->rotarX(0+aumentoSol);
+    opera->rotarZ(aumentoSol);
     sol->Draw();
+    opera->pop();
+
+    opera->push();
+    opera->escalar(0.7,0.7,0.7);
+    opera->trasladar(-580,350,400);
+    opera->rotarX(20+aumentoSol);;
+    opera->rotarZ(aumentoSol);
+    sol->Draw();
+    opera->pop();
+
+    opera->push();
+    opera->escalar(0.7,0.7,0.7);
+    opera->trasladar(-580,350,400);
+    opera->rotarX(40+aumentoSol);
+    opera->rotarZ(aumentoSol);
+    sol->Draw();
+    opera->pop();
+
+    opera->push();
+    opera->escalar(0.7,0.7,0.7);
+    opera->trasladar(-580,350,400);
+    opera->rotarX(60+aumentoSol);
+    opera->rotarZ(aumentoSol);
+    sol->Draw();
+    opera->pop();
+
+    opera->push();
+    opera->escalar(0.7,0.7,0.7);
+    opera->trasladar(-580,350,400);
+    opera->rotarX(80+aumentoSol);
+    opera->rotarZ(aumentoSol);
+    sol->Draw();
+    opera->pop();
+
+    opera->push();
+    opera->escalar(0.7,0.7,0.7);
+    opera->trasladar(-580,350,400);
+    opera->rotarX(100+aumentoSol);
+    opera->rotarZ(aumentoSol);
+    sol->Draw();
+    opera->pop();
+
+    opera->push();
+    opera->escalar(0.7,0.7,0.7);
+    opera->trasladar(-580,350,400);
+    opera->rotarX(120+aumentoSol);
+    opera->rotarZ(aumentoSol);
+    sol->Draw();
+    opera->pop();
+
+
+    opera->push();
+    opera->escalar(0.7,0.7,0.7);
+    opera->trasladar(-580,350,400);
+    opera->rotarX(140+aumentoSol);
+    opera->rotarZ(aumentoSol);
+    sol->Draw();
+    opera->pop();
+
+    opera->push();
+    opera->escalar(0.7,0.7,0.7);
+    opera->trasladar(-580,350,400);
+    opera->rotarX(160+aumentoSol);
+    opera->rotarZ(aumentoSol);
+    sol->Draw();
+    opera->pop();
+
+    opera->push();
+    opera->escalar(0.7,0.7,0.7);
+    opera->trasladar(-580,350,400);
+    opera->rotarX(180+aumentoSol);
+    opera->rotarZ(aumentoSol);
+    opera->rotarY(aumentoSol);
+    sol->Draw();
+    opera->pop();
 
     //carretera
     glColor3f(0.54f, 0.58f, 0.59f);
@@ -743,4 +820,5 @@ void Escenario::update()
         else
             viento[i]+=0.1;
     }
+    aumentoSol+=1;
 }

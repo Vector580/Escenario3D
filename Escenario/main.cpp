@@ -5,6 +5,7 @@
 #endif
 #include <stdlib.h>
 #include "Escenario.h"
+#include "Operador.h"
 
 GLfloat anguloCuboX = 0.0f;
 GLfloat anguloCuboY = 0.0f;
@@ -14,6 +15,7 @@ GLint ancho, alto;
 int hazPerspectiva = 0;
 
 Escenario esc;
+Operador operador;
 
 void reshape(int width, int height)
 {
